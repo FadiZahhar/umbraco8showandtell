@@ -1,6 +1,7 @@
 ﻿The credentials for access to the back office are:
 
 admin@highlydeveloped.net
+
 djkfk32$3lddep2 
 
 ## Introduction: Building the "Highly Developed" Community Website with Umbraco 8
