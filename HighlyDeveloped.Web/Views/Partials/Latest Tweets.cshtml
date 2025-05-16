@@ -2,6 +2,7 @@
 @using System.Globalization;
 @if (Model.Json != null)
 {
+
     dynamic json = Newtonsoft.Json.JsonConvert.DeserializeObject(Model.Json);
 
     <section class="container">

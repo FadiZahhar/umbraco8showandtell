@@ -30,7 +30,7 @@ namespace HighlyDeveloped.Core.Controllers
                 vm.Json = tweets;
                 vm.Error = false;
             }
-            catch(Exception exc)
+            catch (Exception exc)
             {
                 vm.Error = true;
                 vm.Message = exc.Message + exc.StackTrace;
@@ -54,9 +54,9 @@ namespace HighlyDeveloped.Core.Controllers
                                     .DescendantsOrSelfOfType("siteSettings")
                                     .FirstOrDefault();
 
-            if(siteSettings == null)
+            if (siteSettings == null)
             {
-                throw new Exception("No site settings"); 
+                throw new Exception("No site settings");
             }
             var oauth_token = siteSettings.Value<string>("twitterAccessToken");
             var oauth_token_secret = siteSettings.Value<string>("twitterAccessTokenSecret");
@@ -98,7 +98,7 @@ namespace HighlyDeveloped.Core.Controllers
                                         );
 
             baseString = string.Concat("GET&", Uri.EscapeDataString(resource_url),
-                         "&", Uri.EscapeDataString(baseString));
+                            "&", Uri.EscapeDataString(baseString));
 
             //Encrypt data
 
@@ -114,9 +114,9 @@ namespace HighlyDeveloped.Core.Controllers
 
 
             var headerFormat = "OAuth oauth_nonce=\"{0}\", oauth_signature_method=\"{1}\", " +
-                   "oauth_timestamp=\"{2}\", oauth_consumer_key=\"{3}\", " +
-                   "oauth_token=\"{4}\", oauth_signature=\"{5}\", " +
-                   "oauth_version=\"{6}\"";
+                    "oauth_timestamp=\"{2}\", oauth_consumer_key=\"{3}\", " +
+                    "oauth_token=\"{4}\", oauth_signature=\"{5}\", " +
+                    "oauth_version=\"{6}\"";
 
             var authHeader = string.Format(headerFormat,
                                     Uri.EscapeDataString(oauth_nonce),
