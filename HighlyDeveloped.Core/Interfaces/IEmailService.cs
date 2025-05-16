@@ -14,5 +14,7 @@ namespace HighlyDeveloped.Core.Interfaces
     {
         void SendContactNotificationToAdmin(ContactFormViewModel vm);
         void SendVerifyEmailAddressNotification(string membersEmail, string verificationToken);
+        void SendResetPasswordNotification(string membersEmail, string resetToken);
+        void SendPasswordChangedNotification(string membersEmail);
     }
 }

@@ -241,6 +241,7 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="Controllers\TwitterController.cs" />
     <Compile Include="Interfaces\IEmailService.cs" />
@@ -248,7 +249,10 @@
     <Compile Include="RegisterServicesComposer.cs" />
     <Compile Include="Services\EmailService.cs" />
     <Compile Include="ViewModel\ContactFormViewModel.cs" />
+    <Compile Include="ViewModel\ForgottenPasswordViewModel.cs" />
+    <Compile Include="ViewModel\LoginViewModel.cs" />
     <Compile Include="ViewModel\RegisterViewModel.cs" />
+    <Compile Include="ViewModel\ResetPasswordViewModel.cs" />
     <Compile Include="ViewModel\TwitterViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
