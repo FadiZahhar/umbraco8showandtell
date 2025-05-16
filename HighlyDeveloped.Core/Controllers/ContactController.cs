@@ -33,7 +33,7 @@ namespace HighlyDeveloped.Core.Controllers
 
             //Set the recaptcha site key
             var siteSettings = Umbraco.ContentAtRoot().DescendantsOrSelfOfType("siteSettings").FirstOrDefault();
-            if(siteSettings != null)
+            if (siteSettings != null)
             {
                 var siteKey = siteSettings.Value<string>("recaptchaSiteKey");
                 vm.RecaptchaSiteKey = siteKey;
@@ -51,7 +51,7 @@ namespace HighlyDeveloped.Core.Controllers
                 return CurrentUmbracoPage();
             }
             var siteSettings = Umbraco.ContentAtRoot().DescendantsOrSelfOfType("siteSettings").FirstOrDefault();
-            if(siteSettings != null)
+            if (siteSettings != null)
             {
                 var secretKey = siteSettings.Value<string>("recaptchaSecretKey");
                 //We might not have configure captcha so check
@@ -65,7 +65,7 @@ namespace HighlyDeveloped.Core.Controllers
                     }
                 }
             }
-            
+
             try
             {
                 //Create a new contact form in umbraco
@@ -118,7 +118,7 @@ namespace HighlyDeveloped.Core.Controllers
             //get response
             string jsonRes = res.Content.ReadAsStringAsync().Result;
             dynamic jsonData = JObject.Parse(jsonRes);
-            if(jsonData.success != "true")
+            if (jsonData.success != "true")
             {
                 return false;
             }
@@ -135,7 +135,7 @@ namespace HighlyDeveloped.Core.Controllers
             //Read email FROM and TO addresses
             //Get site settings
             var siteSettings = Umbraco.ContentAtRoot().DescendantsOrSelfOfType("siteSettings").FirstOrDefault();
-            if(siteSettings == null)
+            if (siteSettings == null)
             {
                 throw new Exception("There are no site settings");
             }
@@ -162,15 +162,15 @@ namespace HighlyDeveloped.Core.Controllers
             smtpMessage.From = new MailAddress(fromAddress);
 
             var toList = toAddresses.Split(',');
-            foreach(var item in toList)
+            foreach (var item in toList)
             {
-                if(!string.IsNullOrEmpty(item))
+                if (!string.IsNullOrEmpty(item))
                     smtpMessage.To.Add(item);
             }
-            
+
 
             //Send via whatever email service
-            using(var smtp = new SmtpClient())
+            using (var smtp = new SmtpClient())
             {
                 smtp.Send(smtpMessage);
             }

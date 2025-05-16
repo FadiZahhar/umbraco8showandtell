@@ -5,6 +5,7 @@
     Html.EnableClientValidation();
     Html.EnableUnobtrusiveJavaScript();
 }
+
 @* Added check to see if we added the recaptcha to site settings *@
 @if (!string.IsNullOrEmpty(Model.RecaptchaSiteKey))
 {
@@ -18,6 +19,7 @@
     });
     </script>
 }
+
 @if ((string)TempData["status"] == "OK")
 {
     @* show ok message *@

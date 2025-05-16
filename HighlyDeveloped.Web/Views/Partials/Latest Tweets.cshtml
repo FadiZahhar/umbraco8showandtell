@@ -1,10 +1,11 @@
 ﻿@model HighlyDeveloped.Core.ViewModel.TwitterViewModel
 @using System.Globalization;
+@* Added check if JSON is null - for case when you haven't added twitter config*@
 @if (Model.Json != null)
 {
-
+ 
     dynamic json = Newtonsoft.Json.JsonConvert.DeserializeObject(Model.Json);
-
+   
     <section class="container">
         <div class="row">
             <div class="col">
@@ -67,7 +68,7 @@ else
         <div class="row">
             <div class="col">
                 <h2>Latest Tweets for @Model.TwitterHandle</h2>
-                <p>Either there are no tweets or you haven't added your Twitter API keys!</p>
+                No tweets found.
             </div>
         </div>
     </section>
