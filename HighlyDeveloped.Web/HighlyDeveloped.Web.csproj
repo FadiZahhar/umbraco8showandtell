@@ -285,7 +285,13 @@
     <Content Include="config\Lang\sv-SE.user.xml" />
     <Content Include="config\Lang\zh-CN.user.xml" />
     <Content Include="config\logviewer.searches.config.js" />
+    <Content Include="css\CookieConsent.css" />
+    <Content Include="css\Site.css" />
     <Content Include="Global.asax" />
+    <Content Include="Media\0ifp0dkb\hero-image.jpg" />
+    <Content Include="Media\1ukmqejw\advertisements-batch-blur-business-518543.jpg" />
+    <Content Include="Media\gvkjzx5l\person-holding-a-burning-news-paper-close-up-photography-2538122.jpg" />
+    <Content Include="Media\pwjfxjdz\man-using-stylus-pen-for-touching-the-digital-tablet-screen-6335.jpg" />
     <Content Include="ReadMe.txt" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -317,12 +323,26 @@
     <Content Include="Views\About.cshtml" />
     <Content Include="Views\Home.cshtml" />
     <Content Include="Views\main.cshtml" />
+    <Content Include="Views\Partials\Footer.cshtml" />
+    <Content Include="Views\Partials\Hero.cshtml" />
+    <Content Include="Views\Partials\NavBar.cshtml" />
+    <Content Include="Views\Partials\Call To Action.cshtml" />
+    <Content Include="Views\Partials\Latest News.cshtml" />
+    <Content Include="Views\NewsArticle.cshtml" />
+    <Content Include="Views\NewsArticles.cshtml" />
+    <Content Include="Views\Partials\Latest Tweets.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HighlyDeveloped.Core\HighlyDeveloped.Core.csproj">
+      <Project>{b2b417fd-82b4-4501-ad27-27472678adae}</Project>
+      <Name>HighlyDeveloped.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

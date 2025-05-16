@@ -1,28 +1,4 @@
-﻿@*
-    main.cshtml - Main layout view for the HighlyDeveloped.Web application.
-
-    - Inherits from UmbracoViewPage, enabling access to Umbraco content and helpers.
-    - Uses ClientDependency.Core.Mvc for managing CSS and JS dependencies.
-    - Sets Layout to null, making this a root layout.
-    - Retrieves the home page content using Model.AncestorOrSelf<Home>().
-
-    Head Section:
-    - Registers external and local CSS files (Bootstrap, Font Awesome, CookieConsent).
-    - Registers external and local JS files (jQuery, Popper.js, Bootstrap, Font Awesome, CookieConsent).
-    - Uses integrity and crossorigin attributes for CDN resources to enhance security.
-    - Renders all required CSS with @Html.RenderCssHere().
-
-    Body Section:
-    - Renders the navigation bar via a partial view ("NavBar").
-    - Renders the main body content with @RenderBody().
-    - Renders the footer via a partial view ("Footer").
-    - Displays a cookie consent alert with a call-to-action button.
-    - Renders all required JS with @Html.RenderJsHere().
-
-    Note:
-    - This layout is designed for use with Umbraco 8 and leverages best practices for dependency management and partial rendering.
-*@
-@inherits Umbraco.Web.Mvc.UmbracoViewPage
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
 @using ClientDependency.Core.Mvc
 @{
     Layout = null;
@@ -40,6 +16,7 @@
         });
         Html.RequiresCss("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css");
         Html.RequiresCss("/css/CookieConsent.css");
+        Html.RequiresCss("/css/Site.css");
 
         Html.RequiresJs("https://code.jquery.com/jquery-3.2.1.slim.min.js",
         new
