@@ -3,7 +3,6 @@
 admin@highlydeveloped.net
 djkfk32$3lddep2 
 
-
 ## Introduction: Building the "Highly Developed" Community Website with Umbraco 8
 
 In this tutorial, we will build a feature-rich community website called **"Highly Developed"** using **Umbraco version 8**. This project will guide you step-by-step through the process of translating a complete design wireframe into a fully functional Umbraco CMS-powered site.
