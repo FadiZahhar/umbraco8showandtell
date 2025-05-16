@@ -1,4 +1,17 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+﻿@*
+    Renders a "Latest News" section displaying the three most recent visible news articles.
+    - Fetches news articles from a specific parent node using its GUID.
+    - Filters children by the "newsArticle" content type and visibility.
+    - Orders articles by creation date in descending order and takes the top three.
+    - For each article, displays:
+        - A thumbnail image cropped to the "Thumb" crop.
+        - The article name as the card title.
+        - The "leadIn" property as the card text.
+        - A "Read more" link to the article.
+        - Social sharing icons for Twitter, Facebook, and LinkedIn, prefilled with the article's lead-in and absolute URL.
+    - Uses Bootstrap card components for layout and styling.
+*@
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
 @using Umbraco.Core.PropertyEditors.ValueConverters;
 @{
 	var latestNews = Umbraco.Content(Guid.Parse("fe642e28-a25f-4c60-9c10-04b96035c922"))

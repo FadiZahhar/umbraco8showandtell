@@ -1,4 +1,23 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+﻿@*
+  Partial View: Hero.cshtml
+
+  Description:
+  This partial view renders a hero section for a webpage using Umbraco CMS. It displays a background image, an overlay, a title, and a subtitle.
+
+  Variables:
+  - heroImage: Retrieves the URL of the "heroImage" property from the current content node. If not set, defaults to an empty string.
+
+  Markup Structure:
+  - The main container is a div with classes "jumbotron jumbotron-fluid home-hero" and an inline background image style.
+  - An overlay div is used for visual effect.
+  - The inner content includes a container with:
+    - A heading (h1) displaying the "heroTitle" property.
+    - A paragraph (p) displaying the "heroSubtitle" property.
+
+  Usage:
+  - Place this partial in a view to display a hero section with dynamic content managed via Umbraco properties: "heroImage", "heroTitle", and "heroSubtitle".
+*@
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
 @{
 	var heroImage = Model.Value<IPublishedContent>("heroImage")?.Url ?? "";
 }

@@ -1,4 +1,20 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.Home>
+﻿@*
+    Home.cshtml - Umbraco View
+
+    This Razor view serves as the homepage for the website, inheriting from UmbracoViewPage with a strongly-typed model of ContentModels.Home.
+
+    Features:
+    - Sets the layout to "main.cshtml".
+    - Renders the "Hero" and "Call To Action" partial views for prominent homepage sections.
+    - Displays the latest news using the "Latest News" partial within a Bootstrap container and row.
+    - Shows the latest tweets from the specified Twitter handle ("HDeveloped") using both an MVC action (@Html.Action) and an Umbraco macro (@Umbraco.RenderMacro), allowing for flexible integration of dynamic social content.
+
+    Usage:
+    - Place this view in the Views/Home.cshtml path.
+    - Ensure referenced partials and macros exist and are properly configured.
+    - The view expects a ContentModels.Home model, typically provided by Umbraco's routing.
+*@
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.Home>
 @using ContentModels = Umbraco.Web.PublishedModels;
 
 @{

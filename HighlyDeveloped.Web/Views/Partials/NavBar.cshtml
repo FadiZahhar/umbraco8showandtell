@@ -1,4 +1,12 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+﻿@*
+    Renders a responsive navigation bar using Bootstrap classes.
+    - Inherits from UmbracoViewPage to access Umbraco content.
+    - Retrieves the home page node using Model.AncestorOrSelf<Home>().
+    - Iterates through the children of the home page to generate navigation links.
+    - Each child page is rendered as a navigation item with its name and URL.
+    - Includes Bootstrap's navbar toggler for mobile responsiveness.
+*@
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
 @{
     var homePage = Model.AncestorOrSelf<Home>();
 }

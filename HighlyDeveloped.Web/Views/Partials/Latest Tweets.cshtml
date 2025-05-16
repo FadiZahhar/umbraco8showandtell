@@ -1,4 +1,28 @@
-﻿@model HighlyDeveloped.Core.ViewModel.TwitterViewModel
+﻿@*
+    Renders a section displaying the latest tweets for a specified Twitter handle.
+
+    Model:
+        HighlyDeveloped.Core.ViewModel.TwitterViewModel
+            - TwitterHandle: The Twitter username to display tweets for.
+            - Json: A JSON string containing tweet data.
+
+    Functionality:
+        - If Model.Json is not null, deserializes the JSON to enumerate tweets.
+        - For each tweet:
+            - Parses the tweet's creation date.
+            - Displays the tweet's text, creation date, and a link to the tweet.
+            - Shows the Twitter handle and a Twitter icon.
+        - If Model.Json is null, displays a message indicating no tweets or missing API keys.
+
+    Dependencies:
+        - Newtonsoft.Json for JSON deserialization.
+        - System.Globalization for date parsing.
+        - Font Awesome for the Twitter icon.
+
+    Usage:
+        Place this partial view in a Razor page to show the latest tweets for a configured Twitter handle.
+*@
+@model HighlyDeveloped.Core.ViewModel.TwitterViewModel
 @using System.Globalization;
 @if (Model.Json != null)
 {

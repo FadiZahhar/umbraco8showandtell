@@ -1,4 +1,16 @@
-﻿@inherits Umbraco.Web.Macros.PartialViewMacroPage
+﻿@*
+    This Razor view macro partial displays the latest tweets from a specified Twitter handle.
+    - Expects a macro parameter "twitterHandle" (string) to be provided.
+    - Renders a Twitter timeline widget for the given handle using Twitter's embedded timeline.
+    - The Twitter widget script is loaded asynchronously.
+    Usage:
+        - Place this macro in a template or content page and provide the "twitterHandle" parameter.
+        - Example: twitterHandle = "HighlyDeveloped"
+    Note:
+        - Ensure the Twitter handle is valid and does not include the '@' symbol.
+        - The timeline will be embedded where this macro is rendered.
+*@
+@inherits Umbraco.Web.Macros.PartialViewMacroPage
 @{
 
     var twitterHandle = Model.MacroParameters["twitterHandle"] as string;
