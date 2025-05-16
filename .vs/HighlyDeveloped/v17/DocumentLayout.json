@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\user\\OneDrive\\Documents\\GitHub\\umbraco8showandtell\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|c:\\users\\user\\onedrive\\documents\\github\\umbraco8showandtell\\highlydeveloped.web\\views\\main.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|solutionrelative:highlydeveloped.web\\views\\main.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +14,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:1814480650:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\Views\\main.cshtml",
+              "RelativeDocumentMoniker": "HighlyDeveloped.Web\\Views\\main.cshtml",
+              "ToolTip": "C:\\Users\\user\\OneDrive\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\Views\\main.cshtml",
+              "RelativeToolTip": "HighlyDeveloped.Web\\Views\\main.cshtml",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-16T20:43:23.337Z",
+              "EditorCaption": ""
             }
           ]
         }
