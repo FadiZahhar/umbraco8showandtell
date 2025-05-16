@@ -56,9 +56,8 @@ namespace HighlyDeveloped.Core.Controllers
                         return CurrentUmbracoPage();
                     }
                 }
-
             }
-
+            
             try
             {
                 //Create a new contact form in umbraco
