@@ -1,4 +1,27 @@
-﻿@model HighlyDeveloped.Core.ViewModel.ContactFormViewModel
+﻿@*
+    Contact Form Partial View
+
+    This Razor view renders a contact form for user enquiries, including Google reCAPTCHA v3 integration for spam protection.
+    It displays a thank you message upon successful submission, or the form with validation otherwise.
+
+    Model:
+        HighlyDeveloped.Core.ViewModel.ContactFormViewModel
+
+    Features:
+    - Integrates Google reCAPTCHA v3 if a site key is provided in the model.
+    - Displays a success message if TempData["status"] == "OK".
+    - Renders a form with fields for Name, Email Address, Subject, and Comments.
+    - Includes client-side and unobtrusive validation.
+    - Uses AntiForgeryToken for CSRF protection.
+    - Posts form data to ContactController.HandleContactForm via Umbraco's form helper.
+    - Includes a hidden field for the reCAPTCHA token.
+
+    Usage:
+    - Place this partial in a view to provide a contact form with spam protection.
+    - Ensure the model is populated with the RecaptchaSiteKey for reCAPTCHA to function.
+    - Customize form fields and validation as needed.
+*@
+@model HighlyDeveloped.Core.ViewModel.ContactFormViewModel
 @using HighlyDeveloped.Core.Controllers
 @using System.Web.Mvc.Html
 @{
