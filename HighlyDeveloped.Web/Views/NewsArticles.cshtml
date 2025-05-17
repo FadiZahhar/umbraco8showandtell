@@ -1,4 +1,27 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.NewsArticles>
+﻿@*
+	NewsArticles.cshtml
+	-------------------
+	This Razor view is responsible for rendering a paginated and filterable list of news articles in an Umbraco CMS website.
+
+	Features:
+	- Inherits from UmbracoViewPage<ContentModels.NewsArticles>.
+	- Retrieves all news articles from the content tree and supports filtering by category via the "cat" query string parameter.
+	- Implements pagination with a configurable page size (default: 2 articles per page), using the "page" query string parameter.
+	- Dynamically calculates the total number of pages and ensures the selected page is within valid bounds.
+	- Renders each news article as a card, displaying its image, title, and lead-in text.
+	- Displays a hero section with an optional overlay color, based on the "heroOverlayColour" property.
+	- Generates a sidebar with a list of unique news categories for filtering, highlighting the active category, and providing a "Clear Filter" button.
+	- Includes custom CSS for card layout and active category highlighting.
+	- Uses Umbraco's ImageCropperValue for article images and supports image cropping.
+	- Utilizes partial view "Hero" for the hero section.
+	- Implements accessible pagination controls with "Previous" and "Next" navigation.
+
+	Usage:
+	- Place this view in the appropriate Views folder for the NewsArticles document type.
+	- Ensure the NewsArticles content type has properties: "heroOverlayColour", "newsCategories", "articleImage", "leadIn", and "postDate".
+	- The view expects query string parameters "cat" (category filter) and "page" (pagination).
+*@
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.NewsArticles>
 @using ContentModels = Umbraco.Web.PublishedModels;
 @using Umbraco.Core.PropertyEditors.ValueConverters;
 @{

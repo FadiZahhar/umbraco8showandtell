@@ -1,4 +1,33 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.Search>
+﻿@*
+    ------------------------------------------------------------------------------
+    FILE: /Views/Search.cshtml
+    PURPOSE: 
+        This Razor view renders a search page for Umbraco CMS, allowing users to 
+        search for "newsArticle" content using Umbraco's InternalIndex. It displays 
+        a hero section with an optional overlay color and image, a search form, 
+        and the search results or a message if no results are found.
+    MODEL:
+        Umbraco.Web.PublishedModels.Search
+    MAIN FEATURES:
+        - Displays a hero image with an optional colored overlay.
+        - Renders a search form that submits the query via GET.
+        - Processes the search query from the request string.
+        - Uses Umbraco's ContentQuery.Search to find "newsArticle" documents.
+        - Shows the number of results found or a "no results" message.
+        - Lists each result with a link to the content.
+    PARAMETERS:
+        heroImage (IPublishedContent): The image displayed in the hero section.
+        heroOverlayColour (string): The hex color code for the hero overlay.
+        searchQuery (string): The search term entered by the user.
+        searchResults (IEnumerable<PublishedSearchResult>): The search results.
+        resultsCount (int): The number of results found.
+    USAGE:
+        Place this view in the appropriate Views folder and ensure the model 
+        and document types are configured in Umbraco. The search form submits 
+        to the same page, displaying results dynamically.
+    ------------------------------------------------------------------------------
+*@
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.Search>
 @using ContentModels = Umbraco.Web.PublishedModels;
 @{
 	Layout = "main.cshtml";

@@ -1,4 +1,35 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.NewsArticle>
+﻿@*
+	NewsArticle.cshtml
+	------------------
+	This Razor view is used to render a news article page in an Umbraco CMS website.
+
+	Features:
+	- Inherits from UmbracoViewPage<ContentModels.NewsArticle> to provide strongly-typed access to NewsArticle content.
+	- Uses Umbraco's Image Cropper to retrieve and display the main article image and related article thumbnails.
+	- Sets up Open Graph meta tags for social sharing (title, description, type, image).
+	- Displays article metadata including author, post date, lead-in, and categories.
+	- Renders the main article content and a responsive image.
+	- Provides social sharing buttons for Twitter, LinkedIn, and Facebook.
+	- Displays a list of related articles, each with a thumbnail, title, lead-in, and social sharing options.
+
+	Variables:
+	- imgCropper: The main article image cropper value.
+	- imgUrl: The URL for the main cropped article image.
+	- articleUrl: The absolute URL of the current article.
+	- siteUrl: The base URL of the site.
+	- relatedArticles: A list of related article content items.
+
+	Sections:
+	- @section head: Injects Open Graph meta tags into the page head.
+	- Main article layout: Displays article title, metadata, lead-in, image, and content.
+	- Footer: Shows author, categories, and social sharing buttons.
+	- Related Articles: If available, displays related articles as cards with images, titles, lead-ins, and sharing links.
+
+	Notes:
+	- Ensure that the "articleImage" and "articleRelatedContent" properties exist and are configured in the NewsArticle content type.
+	- The view expects FontAwesome for social icons and Bootstrap for layout/styling.
+*@
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.NewsArticle>
 @using ContentModels = Umbraco.Web.PublishedModels;
 @using Umbraco.Core.PropertyEditors.ValueConverters;
 @{
