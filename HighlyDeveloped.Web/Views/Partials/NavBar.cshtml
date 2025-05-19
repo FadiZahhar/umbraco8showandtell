@@ -19,7 +19,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
 
-                @foreach (var page in homePage.Children)
+                @foreach (var page in homePage.Children.Where(w => w.IsVisible()))
                 {
                     <li class="nav-item">
                         <a class="nav-link" href="@page.Url">@page.Name</a>
