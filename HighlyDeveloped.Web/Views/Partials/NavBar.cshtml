@@ -7,6 +7,7 @@
     - The navigation bar is styled with Bootstrap's dark theme and is mobile-friendly with a collapsible menu.
 *@
 @inherits Umbraco.Web.Mvc.UmbracoViewPage
+    <!--reference Homepage handle, then iterate its children dynamically-->
 @{
     var homePage = Model.AncestorOrSelf<Home>();
 }
