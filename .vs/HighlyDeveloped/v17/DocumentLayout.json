@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.web\\views\\main.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|solutionrelative:highlydeveloped.web\\views\\main.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.web\\views\\partials\\navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|solutionrelative:highlydeveloped.web\\views\\partials\\navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\highlydeveloped.web\\views\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|solutionrelative:highlydeveloped.web\\views\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.web\\views\\main.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|solutionrelative:highlydeveloped.web\\views\\main.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,25 +26,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Home.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\Views\\Home.cshtml",
-              "RelativeDocumentMoniker": "HighlyDeveloped.Web\\Views\\Home.cshtml",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\Views\\Home.cshtml",
-              "RelativeToolTip": "HighlyDeveloped.Web\\Views\\Home.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "NavBar.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\Views\\Partials\\NavBar.cshtml",
+              "RelativeDocumentMoniker": "HighlyDeveloped.Web\\Views\\Partials\\NavBar.cshtml",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\Views\\Partials\\NavBar.cshtml",
+              "RelativeToolTip": "HighlyDeveloped.Web\\Views\\Partials\\NavBar.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-19T08:53:04.463Z"
+              "WhenOpened": "2025-05-19T09:21:41.304Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "main.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\Views\\main.cshtml",
               "RelativeDocumentMoniker": "HighlyDeveloped.Web\\Views\\main.cshtml",
               "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\Views\\main.cshtml",
               "RelativeToolTip": "HighlyDeveloped.Web\\Views\\main.cshtml",
-              "ViewState": "AgIAACwAAAAAAAAAAAAYwEoAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAADgAAAAAAAAAAAAYwEoAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-19T08:17:25.236Z",
               "EditorCaption": ""
