@@ -404,3 +404,5 @@ C:\Users\User\Documents\GitHub\umbraco8showandtell\HighlyDeveloped.Web\obj\Debug
 C:\Users\User\Documents\GitHub\umbraco8showandtell\HighlyDeveloped.Web\obj\Debug\HighlyDe.9FE59349.Up2Date
 C:\Users\User\Documents\GitHub\umbraco8showandtell\HighlyDeveloped.Web\obj\Debug\HighlyDeveloped.Web.dll
 C:\Users\User\Documents\GitHub\umbraco8showandtell\HighlyDeveloped.Web\obj\Debug\HighlyDeveloped.Web.pdb
+C:\Users\User\Documents\GitHub\umbraco8showandtell\HighlyDeveloped.Web\bin\HighlyDeveloped.Core.dll
+C:\Users\User\Documents\GitHub\umbraco8showandtell\HighlyDeveloped.Web\bin\HighlyDeveloped.Core.pdb
