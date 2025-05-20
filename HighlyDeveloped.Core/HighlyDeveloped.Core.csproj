@@ -271,7 +271,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\ContactFormViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -318,6 +318,7 @@
     <Content Include="Views\About.cshtml" />
     <Content Include="Views\Home.cshtml" />
     <Content Include="Views\main.cshtml" />
+    <Content Include="Views\Partials\Contact Form.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
