@@ -1,0 +1,17 @@
+
+
+/**umb_name:Heading 1*/
+.heading1 {
+	font-size:56px;
+}
+
+/**umb_name:Heading 2*/
+.heading2 {
+	font-size: 40px;
+}
+
+/**umb_name:Heading 3*/
+.heading3 {
+	font-size: 32px;
+	color: red;
+}
