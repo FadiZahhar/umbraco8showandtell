@@ -1,0 +1,15 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.Hero>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = null;
+	var overlayColor = Model.Value<string>("colorOverlay");
+}
+
+@if(!string.IsNullOrEmpty(overlayColor)){
+    <style>
+        .home-hero > .overlay{
+            background-color: #@overlayColor;
+            opacity: 0.5
+        }
+    </style>
+}
