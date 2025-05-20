@@ -21,8 +21,18 @@ namespace HighlyDeveloped.Core.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+
+        //when submitting it is handled here
         public ActionResult HandleContactForm(ContactFormViewModel vm)
         {
+            //VALIDATION IS FROM MODEL VALIDATION
+            if (!ModelState.IsValid)
+            {
+                ModelState.AddModelError("Error", "Please check the form");
+                return CurrentUmbracoPage();
+
+
+            }
             return null;
         }
     }
