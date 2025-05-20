@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Web.Mvc;
 using Umbraco.Web;
 using Umbraco.Web.Mvc;
-
+using Umbraco.Core.Logging;
 namespace HighlyDeveloped.Core.Controllers
 {
     //this operations for cntact form
@@ -34,29 +34,74 @@ namespace HighlyDeveloped.Core.Controllers
 
 
             }
-            //create a new contact form in umbraco
 
-            //get a handle to "contact forms"
-            var contactForms = Umbraco.ContentAtRoot().DescendantsOrSelfOfType("contactForms").FirstOrDefault();
-
-            if(contactForms!=null)
+            try
             {
-        
-                var newContact = Services.ContentService.Create("Contact", contactForms.Id, "contactForm");
-                newContact.SetValue("contactName", vm.Name);
-                newContact.SetValue("contactEmail", vm.EmailAddress);
-                newContact.SetValue("contactSubject", vm.Subject);
-                newContact.SetValue("contactComments", vm.Comment);
-                Services.ContentService.SaveAndPublish(newContact);
+                //create a new contact form in umbraco
+
+                //get a handle to "contact forms"
+                var contactForms = Umbraco.ContentAtRoot().DescendantsOrSelfOfType("contactForms").FirstOrDefault();
+
+                if (contactForms != null)
+                {
+
+                    var newContact = Services.ContentService.Create("Contact", contactForms.Id, "contactForm");
+                    newContact.SetValue("contactName", vm.Name);
+                    newContact.SetValue("contactEmail", vm.EmailAddress);
+                    newContact.SetValue("contactSubject", vm.Subject);
+                    newContact.SetValue("contactComments", vm.Comment);
+                    Services.ContentService.SaveAndPublish(newContact);
+
+                }
+
+                //send out email to site admin
+
+
+                SendContactFormReceivedEmail(vm);
+
+
+
+                //return confirmation message to user
+                TempData["status"] = "OK";
+                return RedirectToCurrentUmbracoPage();
+                //return null;
+            }
+
+            catch (Exception exc){
+                Logger.Error<ContactController>("There was an error in contact form", exc.Message);
+                ModelState.AddModelError("Error", "Sorry, there was a problem. Would you please try again later");
+            }
+
+            return CurrentUmbracoPage();
+        }
+
+        private void SendContactFormReceivedEmail(ContactFormViewModel vm)
+        {
+            //Get site settings
+            var siteSettings = Umbraco.ContentAtRoot().DescendantsOrSelfOfType("siteSettings").FirstOrDefault();
+            if(siteSettings == null)
+            {
+                throw new Exception("There are no site settings");
+            }
+
+            var fromAddress = siteSettings.Value<string>("emailSettingsFromAddress");
+            var toAddresses = siteSettings.Value<string>("emailSettingsAdminAccount");
+
+            if (string.IsNullOrEmpty(fromAddress))
+            {
+                throw new Exception("There needs to be a from address in site settings");
 
             }
 
-            //send out email to site admin
-            TempData["status"] = "OK";
-            //return confirmation message to user
+            if (string.IsNullOrEmpty(toAddresses))
+            {
+                throw new Exception("There needs to be a to address in site settings");
 
-            return RedirectToCurrentUmbracoPage();
-            //return null;
+            }
+
+            //read email from and to addressess
+            //Construct the actual email
+            //Send via whatever email service
         }
     }
 }
