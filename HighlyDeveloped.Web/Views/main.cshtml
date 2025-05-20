@@ -40,7 +40,7 @@
         });
         Html.RequiresCss("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css");
         Html.RequiresCss("/css/CookieConsent.css");
-         Html.RequiresCss("/css/RTE.css");
+        Html.RequiresCss("/css/RTE.css");
 
         Html.RequiresJs("https://code.jquery.com/jquery-3.2.1.slim.min.js",
         new
@@ -65,6 +65,8 @@
             });
 
         Html.RequiresJs("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js");
+        Html.RequiresJs("https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js");
+        Html.RequiresJs("https://cdnjs.cloudflare.com/ajax/libs/jquery-validate-unobstrusive/3.2.11/jquery.validate.unobtrusive.min.js");
         Html.RequiresJs("/scripts/CookieConsent.js");
     }
 
@@ -94,6 +96,8 @@
         </div>
     </div>
 
+
+  
     @Html.RenderJsHere()
 
 </body>

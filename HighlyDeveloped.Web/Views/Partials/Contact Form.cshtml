@@ -3,6 +3,13 @@
 @using HighlyDeveloped.Core.Controllers
 @using System.Web.Mvc.Html
 
+
+
+@{ 
+    Html.EnableClientValidation();
+    Html.EnableUnobtrusiveJavaScript();
+}
+
 @using (Html.BeginUmbracoForm<ContactController>("HandleContactForm"))
 {
     @Html.ValidationSummary()
