@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace HighlyDeveloped.Core.Interfaces
 {
-    //handles all email operations
-    public interface  IEmailService
+ 
+    public interface IEmailService
     {
         void SendContactNotificationToAdmin(ContactFormViewModel vm);
     }

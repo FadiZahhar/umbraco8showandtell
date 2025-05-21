@@ -20,7 +20,8 @@ namespace HighlyDeveloped.Core.Controllers
     /// </summary>
     public class ContactController : SurfaceController
     {
-        private IEmailService _emailService; 
+        private IEmailService _emailService;
+
         public ContactController(IEmailService emailService)
         {
             _emailService = emailService;
@@ -63,7 +64,6 @@ namespace HighlyDeveloped.Core.Controllers
                         return CurrentUmbracoPage();
                     }
                 }
-
             }
 
             try
@@ -83,7 +83,7 @@ namespace HighlyDeveloped.Core.Controllers
                 }
 
                 //Send out an email to site admin
-                // SendContactFormReceivedEmail(vm);
+                //SendContactFormReceivedEmail(vm);
                 _emailService.SendContactNotificationToAdmin(vm);
 
                 //Return confirmation message to user
