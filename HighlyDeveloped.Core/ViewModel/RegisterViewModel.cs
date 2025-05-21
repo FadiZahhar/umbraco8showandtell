@@ -30,7 +30,7 @@ namespace HighlyDeveloped.Core.ViewModel
         [UIHint("Password")]
         [DisplayName("Password")]
         [Required(ErrorMessage = "Please enter your password")]
-        [MinLength(10, ErrorMessage = "Please make your password at least 10 characters")]
+        [MinLength(10, ErrorMessage = "Please make your password at least 8 characters")]
         public string Password { get; set; }
         [UIHint("Confirm Password")]
         [DisplayName("Confirm Password")]
