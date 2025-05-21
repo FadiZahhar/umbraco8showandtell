@@ -28,6 +28,7 @@
     Layout = null;
 
     var homePage = Model.AncestorOrSelf<Home>();
+    var siteUrl = Request.Url.GetLeftPart(UriPartial.Authority);
 }
 <html>
 <head>
@@ -72,7 +73,19 @@
     }
 
     @Html.RenderCssHere()
+     @{
+        var seoTitle = Model.Value("sEOTitle");
+        var metaDescription = Model.Value("sEODescription");
+        var ogImage = Model.Value<IPublishedContent>("sEOOGImage");
+        var mediaUrl = ogImage?.Url();
+        
+}
 
+<meta name="title" content="@seoTitle" />
+<meta name="description" content="@metaDescription" />
+@if(ogImage != null) {
+<meta property="og:image" content="@siteUrl@mediaUrl" />
+}
     @RenderSection("head", false)
 </head>
 <body>

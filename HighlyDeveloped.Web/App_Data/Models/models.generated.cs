@@ -17,14 +17,14 @@ using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 using Umbraco.ModelsBuilder.Embedded;
 
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "81ea7bec67d8a2f")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.4")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "8f84f02d52af80ed")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
 
 namespace Umbraco.Web.PublishedModels
 {
 	/// <summary>Home</summary>
 	[PublishedModel("home")]
-	public partial class Home : PublishedContentModel, ICallToAction, IHero, IPageContent
+	public partial class Home : PublishedContentModel, ICallToAction, IHero, IPageContent, ISEometada
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -102,6 +102,27 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		[ImplementPropertyType("pageContentText")]
 		public string PageContentText => global::Umbraco.Web.PublishedModels.PageContent.GetPageContentText(this);
+
+		///<summary>
+		/// SEO Description
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("sEODescription")]
+		public string SEodescription => global::Umbraco.Web.PublishedModels.SEometada.GetSEodescription(this);
+
+		///<summary>
+		/// SEO OG Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("sEOOGImage")]
+		public global::Umbraco.Core.Models.PublishedContent.IPublishedContent SEoogimage => global::Umbraco.Web.PublishedModels.SEometada.GetSEoogimage(this);
+
+		///<summary>
+		/// SEO Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("sEOTitle")]
+		public string SEotitle => global::Umbraco.Web.PublishedModels.SEometada.GetSEotitle(this);
 	}
 
 	// Mixin Content Type with alias "pageContent"
@@ -394,7 +415,7 @@ namespace Umbraco.Web.PublishedModels
 
 	/// <summary>News Article</summary>
 	[PublishedModel("newsArticle")]
-	public partial class NewsArticle : PublishedContentModel
+	public partial class NewsArticle : PublishedContentModel, ISEometada
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -465,11 +486,32 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		[ImplementPropertyType("postDate")]
 		public global::System.DateTime PostDate => this.Value<global::System.DateTime>("postDate");
+
+		///<summary>
+		/// SEO Description
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("sEODescription")]
+		public string SEodescription => global::Umbraco.Web.PublishedModels.SEometada.GetSEodescription(this);
+
+		///<summary>
+		/// SEO OG Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("sEOOGImage")]
+		public global::Umbraco.Core.Models.PublishedContent.IPublishedContent SEoogimage => global::Umbraco.Web.PublishedModels.SEometada.GetSEoogimage(this);
+
+		///<summary>
+		/// SEO Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("sEOTitle")]
+		public string SEotitle => global::Umbraco.Web.PublishedModels.SEometada.GetSEotitle(this);
 	}
 
 	/// <summary>News Articles</summary>
 	[PublishedModel("newsArticles")]
-	public partial class NewsArticles : PublishedContentModel, IHero
+	public partial class NewsArticles : PublishedContentModel, IHero, ISEometada
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -519,11 +561,32 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		[ImplementPropertyType("heroTitle")]
 		public string HeroTitle => global::Umbraco.Web.PublishedModels.Hero.GetHeroTitle(this);
+
+		///<summary>
+		/// SEO Description
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("sEODescription")]
+		public string SEodescription => global::Umbraco.Web.PublishedModels.SEometada.GetSEodescription(this);
+
+		///<summary>
+		/// SEO OG Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("sEOOGImage")]
+		public global::Umbraco.Core.Models.PublishedContent.IPublishedContent SEoogimage => global::Umbraco.Web.PublishedModels.SEometada.GetSEoogimage(this);
+
+		///<summary>
+		/// SEO Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("sEOTitle")]
+		public string SEotitle => global::Umbraco.Web.PublishedModels.SEometada.GetSEotitle(this);
 	}
 
 	/// <summary>Content Page</summary>
 	[PublishedModel("contentPage")]
-	public partial class ContentPage : PublishedContentModel, IHero, INavigation, IUsefulLinks
+	public partial class ContentPage : PublishedContentModel, IHero, INavigation, ISEometada, IUsefulLinks
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -594,6 +657,27 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		[ImplementPropertyType("umbracoNaviHide")]
 		public bool UmbracoNaviHide => global::Umbraco.Web.PublishedModels.Navigation.GetUmbracoNaviHide(this);
+
+		///<summary>
+		/// SEO Description
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("sEODescription")]
+		public string SEodescription => global::Umbraco.Web.PublishedModels.SEometada.GetSEodescription(this);
+
+		///<summary>
+		/// SEO OG Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("sEOOGImage")]
+		public global::Umbraco.Core.Models.PublishedContent.IPublishedContent SEoogimage => global::Umbraco.Web.PublishedModels.SEometada.GetSEoogimage(this);
+
+		///<summary>
+		/// SEO Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("sEOTitle")]
+		public string SEotitle => global::Umbraco.Web.PublishedModels.SEometada.GetSEotitle(this);
 
 		///<summary>
 		/// Link Nested Content: This is nested content of links
@@ -850,7 +934,7 @@ namespace Umbraco.Web.PublishedModels
 
 	/// <summary>Search</summary>
 	[PublishedModel("search")]
-	public partial class Search : PublishedContentModel, IHero
+	public partial class Search : PublishedContentModel, IHero, ISEometada
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -900,6 +984,27 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		[ImplementPropertyType("heroTitle")]
 		public string HeroTitle => global::Umbraco.Web.PublishedModels.Hero.GetHeroTitle(this);
+
+		///<summary>
+		/// SEO Description
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("sEODescription")]
+		public string SEodescription => global::Umbraco.Web.PublishedModels.SEometada.GetSEodescription(this);
+
+		///<summary>
+		/// SEO OG Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("sEOOGImage")]
+		public global::Umbraco.Core.Models.PublishedContent.IPublishedContent SEoogimage => global::Umbraco.Web.PublishedModels.SEometada.GetSEoogimage(this);
+
+		///<summary>
+		/// SEO Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("sEOTitle")]
+		public string SEotitle => global::Umbraco.Web.PublishedModels.SEometada.GetSEotitle(this);
 	}
 
 	/// <summary>Email Template</summary>
@@ -1076,6 +1181,108 @@ namespace Umbraco.Web.PublishedModels
 		// properties
 	}
 
+	// Mixin Content Type with alias "sEOMetada"
+	/// <summary>SEO Metada</summary>
+	public partial interface ISEometada : IPublishedContent
+	{
+		/// <summary>SEO Description</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		string SEodescription { get; }
+
+		/// <summary>SEO OG Image</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		global::Umbraco.Core.Models.PublishedContent.IPublishedContent SEoogimage { get; }
+
+		/// <summary>SEO Title</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		string SEotitle { get; }
+	}
+
+	/// <summary>SEO Metada</summary>
+	[PublishedModel("sEOMetada")]
+	public partial class SEometada : PublishedContentModel, ISEometada
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new const string ModelTypeAlias = "sEOMetada";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<SEometada, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public SEometada(IPublishedContent content)
+			: base(content)
+		{ }
+
+		// properties
+
+		///<summary>
+		/// SEO Description
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("sEODescription")]
+		public string SEodescription => GetSEodescription(this);
+
+		/// <summary>Static getter for SEO Description</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static string GetSEodescription(ISEometada that) => that.Value<string>("sEODescription");
+
+		///<summary>
+		/// SEO OG Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("sEOOGImage")]
+		public global::Umbraco.Core.Models.PublishedContent.IPublishedContent SEoogimage => GetSEoogimage(this);
+
+		/// <summary>Static getter for SEO OG Image</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static global::Umbraco.Core.Models.PublishedContent.IPublishedContent GetSEoogimage(ISEometada that) => that.Value<global::Umbraco.Core.Models.PublishedContent.IPublishedContent>("sEOOGImage");
+
+		///<summary>
+		/// SEO Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("sEOTitle")]
+		public string SEotitle => GetSEotitle(this);
+
+		/// <summary>Static getter for SEO Title</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static string GetSEotitle(ISEometada that) => that.Value<string>("sEOTitle");
+	}
+
+	/// <summary>Register</summary>
+	[PublishedModel("register")]
+	public partial class Register : PublishedContentModel
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new const string ModelTypeAlias = "register";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Register, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public Register(IPublishedContent content)
+			: base(content)
+		{ }
+
+		// properties
+	}
+
 	/// <summary>Folder</summary>
 	[PublishedModel("Folder")]
 	public partial class Folder : PublishedContentModel
@@ -1236,6 +1443,27 @@ namespace Umbraco.Web.PublishedModels
 		// properties
 
 		///<summary>
+		/// Email Verified: Flag to indicate the member has verified their email address
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("emailVerified")]
+		public bool EmailVerified => this.Value<bool>("emailVerified");
+
+		///<summary>
+		/// Email Verified Date: The date the member verified their email address
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("emailVerifiedDate")]
+		public global::System.DateTime EmailVerifiedDate => this.Value<global::System.DateTime>("emailVerifiedDate");
+
+		///<summary>
+		/// Email Verify Token: This is a GUID for the email verification token
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("emailVerifyToken")]
+		public string EmailVerifyToken => this.Value<string>("emailVerifyToken");
+
+		///<summary>
 		/// Is Approved
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
@@ -1289,14 +1517,14 @@ namespace Umbraco.Web.PublishedModels
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		[ImplementPropertyType("umbracoMemberPasswordRetrievalAnswer")]
-		public global::System.DateTime UmbracoMemberPasswordRetrievalAnswer => this.Value<global::System.DateTime>("umbracoMemberPasswordRetrievalAnswer");
+		public string UmbracoMemberPasswordRetrievalAnswer => this.Value<string>("umbracoMemberPasswordRetrievalAnswer");
 
 		///<summary>
 		/// Password Question
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		[ImplementPropertyType("umbracoMemberPasswordRetrievalQuestion")]
-		public global::System.DateTime UmbracoMemberPasswordRetrievalQuestion => this.Value<global::System.DateTime>("umbracoMemberPasswordRetrievalQuestion");
+		public string UmbracoMemberPasswordRetrievalQuestion => this.Value<string>("umbracoMemberPasswordRetrievalQuestion");
 	}
 
 }
