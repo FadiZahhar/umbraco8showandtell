@@ -30,6 +30,8 @@
         news = articles.Children.Where(w => w.Value<string[]>("newsCategories").Contains(Request.QueryString["cat"]));
     }
 
+
+<!--Page Size -->
     const int pageSize = 2;
     
     <!-- Calculate how may pages would be? -->

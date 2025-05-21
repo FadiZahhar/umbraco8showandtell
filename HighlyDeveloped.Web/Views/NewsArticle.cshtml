@@ -1,6 +1,11 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.NewsArticle>
 @using ContentModels = Umbraco.Web.PublishedModels;
 @using Umbraco.Core.PropertyEditors.ValueConverters; 
+
+
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<IPublishedContent>
+
+
 @{
 	Layout = "main.cshtml";
 
