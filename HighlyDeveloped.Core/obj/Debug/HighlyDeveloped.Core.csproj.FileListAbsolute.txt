@@ -168,3 +168,5 @@ C:\Users\Mohamad\Documents\GitHub\umbraco8showandtell\HighlyDeveloped.Core\obj\D
 C:\Users\Mohamad\Documents\GitHub\umbraco8showandtell\HighlyDeveloped.Core\obj\Debug\HighlyDeveloped.Core.csproj.CopyComplete
 C:\Users\Mohamad\Documents\GitHub\umbraco8showandtell\HighlyDeveloped.Core\obj\Debug\HighlyDeveloped.Core.dll
 C:\Users\Mohamad\Documents\GitHub\umbraco8showandtell\HighlyDeveloped.Core\obj\Debug\HighlyDeveloped.Core.pdb
+C:\Users\Mohamad\Documents\GitHub\umbraco8showandtell\HighlyDeveloped.Core\bin\Debug\HighlyDeveloped.Core.dll.config
+C:\Users\Mohamad\Documents\GitHub\umbraco8showandtell\HighlyDeveloped.Core\bin\Debug\DataAnnotationsExtensions.dll

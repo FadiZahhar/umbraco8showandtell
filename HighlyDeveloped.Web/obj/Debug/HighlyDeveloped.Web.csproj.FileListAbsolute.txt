@@ -406,3 +406,5 @@ C:\Users\Mohamad\Documents\GitHub\umbraco8showandtell\HighlyDeveloped.Web\obj\De
 C:\Users\Mohamad\Documents\GitHub\umbraco8showandtell\HighlyDeveloped.Web\obj\Debug\HighlyDeveloped.Web.pdb
 C:\Users\Mohamad\Documents\GitHub\umbraco8showandtell\HighlyDeveloped.Web\bin\HighlyDeveloped.Core.dll
 C:\Users\Mohamad\Documents\GitHub\umbraco8showandtell\HighlyDeveloped.Web\bin\HighlyDeveloped.Core.pdb
+C:\Users\Mohamad\Documents\GitHub\umbraco8showandtell\HighlyDeveloped.Web\bin\DataAnnotationsExtensions.dll
+C:\Users\Mohamad\Documents\GitHub\umbraco8showandtell\HighlyDeveloped.Web\bin\HighlyDeveloped.Core.dll.config
