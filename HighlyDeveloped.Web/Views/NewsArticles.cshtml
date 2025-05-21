@@ -21,18 +21,18 @@
 @{ 
     
     var articles = Umbraco.ContentAtRoot().DescendantsOrSelfOfType("newsArticles").FirstOrDefault();
+    
+    <!--Filter by Category-->
     var news = articles.Children;
     
     if(!string.IsNullOrEmpty(Request.QueryString["cat"]))
     {
         news = articles.Children.Where(w => w.Value<string[]>("newsCategories").Contains(Request.QueryString["cat"]));
     }
-    
-    <!-- Do we need to page -->
-    <!-- What is our page size? -->
+
     const int pageSize = 2;
     
-    <!-- Calculate how may pages would there be? -->
+    <!-- Calculate how may pages would be? -->
     var numPages = (int)Math.Ceiling((double)news.Count() / (double)pageSize);
     
     <!-- What is the currently selected page -->
