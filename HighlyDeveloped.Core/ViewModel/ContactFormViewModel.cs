@@ -24,5 +24,10 @@ namespace HighlyDeveloped.Core.ViewModel
 
         [MaxLength(255, ErrorMessage = "Please limit subject to 255 char")]
         public string Subject { get; set; }
+
+
+        //par for recaptcha
+        public string RecaptchaSiteKey { get; set; }
+
     }
 }
