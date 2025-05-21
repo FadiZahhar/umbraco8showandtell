@@ -8,6 +8,7 @@ using System.Web.Mvc;
 using Umbraco.Web;
 using Umbraco.Web.Mvc;
 using Umbraco.Core.Logging;
+using System.Net.Mail;
 namespace HighlyDeveloped.Core.Controllers
 {
     //this operations for cntact form
@@ -101,7 +102,26 @@ namespace HighlyDeveloped.Core.Controllers
 
             //read email from and to addressess
             //Construct the actual email
+            var emailSubject = "there has been a contact form submitted";
+            var emailBody = $"a new contact has been received from {vm.Name}. Their comments were {vm.Comment}";
+            var smtpMessage = new MailMessage();
+            smtpMessage.Subject = emailSubject;
+            smtpMessage.Body = emailBody;
+            smtpMessage.From = new MailAddress (fromAddress);
+            
+            var toList = toAddresses.Split(',');
+            foreach (var item in toList)
+            {
+                if(!string.IsNullOrEmpty(item))
+                    smtpMessage.To.Add(item);
+            }
+
+
+
             //Send via whatever email service
+            using (var smtp = new SmtpClient()) { 
+            smtp.Send(smtpMessage);
+            }
         }
     }
 }
