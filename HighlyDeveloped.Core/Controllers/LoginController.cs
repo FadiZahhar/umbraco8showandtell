@@ -22,6 +22,54 @@ namespace HighlyDeveloped.Core.Controllers
             return PartialView(PARTIAL_VIEW_FOLDER + "Login.cshtml", vm);
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult HandleLogin(LoginViewModel vm)
+        {
+            //Check if model is ok
+            if (!ModelState.IsValid)
+            {
+                return CurrentUmbracoPage();
+            }
+
+            //Check if the member exists with that username
+            var member = Services.MemberService.GetByUsername(vm.Username);
+            if (member == null)
+            {
+                ModelState.AddModelError("Login", "Cannot find that username in the system");
+                return CurrentUmbracoPage();
+            }
+
+            //Check if the member is locked out
+            if (member.IsLockedOut)
+            {
+                ModelState.AddModelError("Login", "The account is locked, please use forgotten password to reset");
+                return CurrentUmbracoPage();
+            }
+
+            //Check if they have validated their email address
+            var emailVerified = member.GetValue<bool>("emailVerified");
+            if (!emailVerified)
+            {
+                ModelState.AddModelError("Login", "Please verify your email before logging in.");
+                return CurrentUmbracoPage();
+            }
+
+            //Check if credentials are ok
+            //Log them in
+            if (!Members.Login(vm.Username, vm.Password))
+            {
+                ModelState.AddModelError("Login", "The username/password your provided is not correct.");
+                return CurrentUmbracoPage();
+            }
+
+            if (!string.IsNullOrEmpty(vm.RedirectUrl))
+            {
+                return Redirect(vm.RedirectUrl);
+            }
+            return RedirectToCurrentUmbracoPage();
+        }
+
 
     }
 }
