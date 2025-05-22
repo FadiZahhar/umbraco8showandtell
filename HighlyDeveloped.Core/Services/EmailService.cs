@@ -225,5 +225,64 @@ namespace HighlyDeveloped.Core.Services
 
             return template;
         }
+
+
+        /// <summary>
+        /// Send the reset password link to the user
+        /// </summary>
+        /// <param name="membersEmail"></param>
+        /// <param name="resetToken"></param>
+        public void SendResetPasswordNotification(string membersEmail, string resetToken)
+        {
+            //Get template
+            //Get Template - create a new template in umbraco
+            var emailTemplate = GetEmailTemplate("Reset Password");
+
+            if (emailTemplate == null)
+            {
+                throw new Exception("Template not found");
+            }
+
+            //Get the data
+            //Fields from template
+            //Get the template data
+            var subject = emailTemplate.Value<string>("emailTemplateSubjectLine");
+            var htmlContent = emailTemplate.Value<string>("emailTemplateHtmlContent");
+            var textContent = emailTemplate.Value<string>("emailTemplateTextContent");
+
+            //Mail merge
+            var url = HttpContext.Current.Request.Url.AbsoluteUri.Replace(HttpContext.Current.Request.Url.AbsolutePath, string.Empty);
+            url += $"/reset-password?token={resetToken}";
+            //##reset-url##
+            MailMerge("reset-url", url, ref htmlContent, ref textContent);
+
+            //Send
+            SendMail(membersEmail, subject, htmlContent, textContent);
+        }
+
+        /// <summary>
+        /// Send a note to the user telling them they have changed their password
+        /// </summary>
+        /// <param name="membersEmail"></param>
+        public void SendPasswordChangedNotification(string membersEmail)
+        {
+            //Get template
+            var emailTemplate = GetEmailTemplate("Password Changed");
+
+            if (emailTemplate == null)
+            {
+                throw new Exception("Template not found");
+            }
+
+            //Get the data out of the template
+            var subject = emailTemplate.Value<string>("emailTemplateSubjectLine");
+            var htmlContent = emailTemplate.Value<string>("emailTemplateHtmlContent");
+            var textContent = emailTemplate.Value<string>("emailTemplateTextContent");
+
+            //Mail merge
+            //-
+            //Send
+            SendMail(membersEmail, subject, htmlContent, textContent);
+        }
     }
 }

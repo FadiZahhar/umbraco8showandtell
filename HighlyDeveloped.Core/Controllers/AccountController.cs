@@ -1,4 +1,4 @@
-﻿﻿using HighlyDeveloped.Core.ViewModel;
+﻿using HighlyDeveloped.Core.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +15,7 @@ namespace HighlyDeveloped.Core.Controllers
     public class AccountController : SurfaceController
     {
         public const string PARTIAL_VIEW_FOLDER = "~/Views/Partials/MyAccount/";
-        
+
         public ActionResult RenderMyAccount()
         {
             var vm = new AccountViewModel();
@@ -59,7 +59,7 @@ namespace HighlyDeveloped.Core.Controllers
             }
 
             var member = Services.MemberService.GetByUsername(Membership.GetUser().UserName);
-            if(member == null)
+            if (member == null)
             {
                 ModelState.AddModelError("Error", "You are not logged on.");
                 return CurrentUmbracoPage();
@@ -92,7 +92,7 @@ namespace HighlyDeveloped.Core.Controllers
             }
             //Update the password
             var member = Services.MemberService.GetByUsername(Membership.GetUser().UserName);
-            if(member == null)
+            if (member == null)
             {
                 ModelState.AddModelError("Error", "You are not logged in");
                 return CurrentUmbracoPage();
@@ -101,7 +101,7 @@ namespace HighlyDeveloped.Core.Controllers
             {
                 Services.MemberService.SavePassword(member, vm.Password);
             }
-            catch(MembershipPasswordException exc)
+            catch (MembershipPasswordException exc)
             {
                 ModelState.AddModelError("Error", "There's a problem with your password " + exc.Message);
                 return CurrentUmbracoPage();
