@@ -9,6 +9,8 @@ using Umbraco.Core.Composing;
 using Umbraco.Core;
 
 namespace HighlyDeveloped.Core
+
+    //injection
 {
     internal class RegisterServicesComposer : IUserComposer
     {

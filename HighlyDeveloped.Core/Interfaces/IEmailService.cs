@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 
 namespace HighlyDeveloped.Core.Interfaces
 {
+
+    //handle all email operations
  
     public interface IEmailService
     {

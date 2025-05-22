@@ -84,6 +84,7 @@ namespace HighlyDeveloped.Core.Controllers
 
                 //Send out an email to site admin
                 //SendContactFormReceivedEmail(vm);
+
                 _emailService.SendContactNotificationToAdmin(vm);
 
                 //Return confirmation message to user
