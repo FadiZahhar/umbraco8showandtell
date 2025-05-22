@@ -6,10 +6,12 @@
     Html.EnableClientValidation();
     Html.EnableUnobtrusiveJavaScript();
 }
+
 @* Added check to see if we added the recaptcha to site settings *@
 @if (!string.IsNullOrEmpty(Model.RecaptchaSiteKey))
 {
     <script src="https://www.google.com/recaptcha/api.js?render=@Model.RecaptchaSiteKey"></script>
+
     <script>
     grecaptcha.ready(function () {
         grecaptcha.execute('@Model.RecaptchaSiteKey',
@@ -19,6 +21,14 @@
     });
     </script>
 }
+
+
+
+
+
+
+
+
 @if ((string)TempData["status"] == "OK")
 {
     @* show ok message *@
