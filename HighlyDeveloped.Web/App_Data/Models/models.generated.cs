@@ -17,7 +17,7 @@ using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 using Umbraco.ModelsBuilder.Embedded;
 
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "180dc458d78d7e28")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "368b23db450f9860")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
 
 namespace Umbraco.Web.PublishedModels
@@ -111,7 +111,7 @@ namespace Umbraco.Web.PublishedModels
 		public string SEodescription => global::Umbraco.Web.PublishedModels.SEometada.GetSEodescription(this);
 
 		///<summary>
-		/// SEO OG Image
+		/// SEO Image
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		[ImplementPropertyType("sEOOGImage")]
@@ -495,7 +495,7 @@ namespace Umbraco.Web.PublishedModels
 		public string SEodescription => global::Umbraco.Web.PublishedModels.SEometada.GetSEodescription(this);
 
 		///<summary>
-		/// SEO OG Image
+		/// SEO Image
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		[ImplementPropertyType("sEOOGImage")]
@@ -570,7 +570,7 @@ namespace Umbraco.Web.PublishedModels
 		public string SEodescription => global::Umbraco.Web.PublishedModels.SEometada.GetSEodescription(this);
 
 		///<summary>
-		/// SEO OG Image
+		/// SEO Image
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		[ImplementPropertyType("sEOOGImage")]
@@ -666,7 +666,7 @@ namespace Umbraco.Web.PublishedModels
 		public string SEodescription => global::Umbraco.Web.PublishedModels.SEometada.GetSEodescription(this);
 
 		///<summary>
-		/// SEO OG Image
+		/// SEO Image
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		[ImplementPropertyType("sEOOGImage")]
@@ -993,7 +993,7 @@ namespace Umbraco.Web.PublishedModels
 		public string SEodescription => global::Umbraco.Web.PublishedModels.SEometada.GetSEodescription(this);
 
 		///<summary>
-		/// SEO OG Image
+		/// SEO Image
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		[ImplementPropertyType("sEOOGImage")]
@@ -1189,7 +1189,7 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		string SEodescription { get; }
 
-		/// <summary>SEO OG Image</summary>
+		/// <summary>SEO Image</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		global::Umbraco.Core.Models.PublishedContent.IPublishedContent SEoogimage { get; }
 
@@ -1235,13 +1235,13 @@ namespace Umbraco.Web.PublishedModels
 		public static string GetSEodescription(ISEometada that) => that.Value<string>("sEODescription");
 
 		///<summary>
-		/// SEO OG Image
+		/// SEO Image
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		[ImplementPropertyType("sEOOGImage")]
 		public global::Umbraco.Core.Models.PublishedContent.IPublishedContent SEoogimage => GetSEoogimage(this);
 
-		/// <summary>Static getter for SEO OG Image</summary>
+		/// <summary>Static getter for SEO Image</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		public static global::Umbraco.Core.Models.PublishedContent.IPublishedContent GetSEoogimage(ISEometada that) => that.Value<global::Umbraco.Core.Models.PublishedContent.IPublishedContent>("sEOOGImage");
 

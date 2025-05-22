@@ -1,0 +1,37 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<IPublishedContent>
+@{
+    var seoTitle = Model.Value("sEOTitle") as string;
+    var metaDescription = Model.Value("sEODescription") as string;
+    var ogImage = Model.Value<IPublishedContent>("sEOOGImage");
+    var mediaUrl = ogImage?.Url();
+
+    var siteUrl = "@siteUrl@mediaUrl"; // Replace with actual or dynamic value
+    var pageUrl = siteUrl + Model.Url();
+    var twitterHandle = "@YourTwitterHandle"; // Replace with your handle
+}
+
+<!-- Basic SEO -->
+<meta name="title" content="@seoTitle" />
+<meta name="description" content="@metaDescription" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="@seoTitle" />
+<meta property="og:description" content="@metaDescription" />
+<meta property="og:url" content="@pageUrl" />
+@if (mediaUrl != null)
+{
+    <meta property="og:image" content="@siteUrl@mediaUrl" />
+    <meta property="og:image:secure_url" content="@siteUrl@mediaUrl" />
+}
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="@seoTitle" />
+<meta name="twitter:description" content="@metaDescription" />
+@if (mediaUrl != null)
+{
+    <meta name="twitter:image" content="@siteUrl@mediaUrl" />
+}
+<meta name="twitter:site" content="@twitterHandle" />
+<meta name="twitter:creator" content="@twitterHandle" />
