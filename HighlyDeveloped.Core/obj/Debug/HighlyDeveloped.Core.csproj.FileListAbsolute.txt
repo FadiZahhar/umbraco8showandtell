@@ -168,3 +168,5 @@ C:\Users\User\Documents\GitHub\umbraco8showandtell\HighlyDeveloped.Core\obj\Debu
 C:\Users\User\Documents\GitHub\umbraco8showandtell\HighlyDeveloped.Core\obj\Debug\HighlyDe.8B3AE04D.Up2Date
 C:\Users\User\Documents\GitHub\umbraco8showandtell\HighlyDeveloped.Core\obj\Debug\HighlyDeveloped.Core.dll
 C:\Users\User\Documents\GitHub\umbraco8showandtell\HighlyDeveloped.Core\obj\Debug\HighlyDeveloped.Core.pdb
+C:\Users\User\Documents\GitHub\umbraco8showandtell\HighlyDeveloped.Core\bin\Debug\HighlyDeveloped.Core.dll.config
+C:\Users\User\Documents\GitHub\umbraco8showandtell\HighlyDeveloped.Core\bin\Debug\DataAnnotationsExtensions.dll

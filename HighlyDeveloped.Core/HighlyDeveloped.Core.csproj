@@ -42,6 +42,9 @@
     <Reference Include="CSharpTest.Net.Collections, Version=14.906.1403.1082, Culture=neutral, PublicKeyToken=06aee00cce822474, processorArchitecture=MSIL">
       <HintPath>..\packages\CSharpTest.Net.Collections.14.906.1403.1082\lib\net40\CSharpTest.Net.Collections.dll</HintPath>
     </Reference>
+    <Reference Include="DataAnnotationsExtensions, Version=5.0.1.27, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DataAnnotationsExtensions.5.0.1.27\lib\NETFramework40\DataAnnotationsExtensions.dll</HintPath>
+    </Reference>
     <Reference Include="Examine, Version=1.2.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Examine.1.2.2\lib\net452\Examine.dll</HintPath>
     </Reference>
@@ -272,11 +275,13 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="Interfaces\IEmailService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegisterServicesComposer.cs" />
     <Compile Include="Services\EmailService.cs" />
     <Compile Include="ViewModel\ContactFormViewModel.cs" />
+    <Compile Include="ViewModel\RegisterViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="config\BackOfficeTours\getting-started.json" />
@@ -309,6 +314,7 @@
     <Content Include="config\serilog.user.config" />
     <Content Include="config\tinyMceConfig.config" />
     <Content Include="config\umbracoSettings.config" />
+    <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
