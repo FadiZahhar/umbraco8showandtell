@@ -285,6 +285,7 @@
     <Compile Include="Services\EmailService.cs" />
     <Compile Include="ViewModel\AccountViewModel.cs" />
     <Compile Include="ViewModel\ContactFormViewModel.cs" />
+    <Compile Include="ViewModel\ForgottenPasswordViewModel.cs" />
     <Compile Include="ViewModel\LoginViewModel.cs" />
     <Compile Include="ViewModel\RegisterViewModel.cs" />
   </ItemGroup>
