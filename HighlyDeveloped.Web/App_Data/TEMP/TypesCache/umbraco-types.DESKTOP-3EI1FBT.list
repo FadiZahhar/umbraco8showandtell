@@ -287,6 +287,7 @@ Umbraco.ModelsBuilder.Embedded.BackOffice.ModelsBuilderDashboardController, Umbr
 Umbraco.ModelsBuilder.Embedded.BackOffice.ContentTypeModelValidator, Umbraco.ModelsBuilder.Embedded, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 HighlyDeveloped.Core.RegisterServicesComposer, HighlyDeveloped.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 HighlyDeveloped.Core.Controllers.ContactController, HighlyDeveloped.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+HighlyDeveloped.Core.Controllers.LoginController, HighlyDeveloped.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 HighlyDeveloped.Core.Controllers.RegisterController, HighlyDeveloped.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 
 Umbraco.Core.Composing.IComposer
@@ -359,6 +360,7 @@ Umbraco.Web.Controllers.UmbLoginStatusController, Umbraco.Web, Version=8.0.0.0, 
 Umbraco.Web.Controllers.UmbRegisterController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Controllers.UmbLoginController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 HighlyDeveloped.Core.Controllers.ContactController, HighlyDeveloped.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+HighlyDeveloped.Core.Controllers.LoginController, HighlyDeveloped.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 HighlyDeveloped.Core.Controllers.RegisterController, HighlyDeveloped.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 
 Umbraco.Web.Mvc.IRenderMvcController
@@ -445,6 +447,7 @@ Umbraco.Web.Controllers.UmbLoginStatusController, Umbraco.Web, Version=8.0.0.0, 
 Umbraco.Web.Controllers.UmbRegisterController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Controllers.UmbLoginController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 HighlyDeveloped.Core.Controllers.ContactController, HighlyDeveloped.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+HighlyDeveloped.Core.Controllers.LoginController, HighlyDeveloped.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 HighlyDeveloped.Core.Controllers.RegisterController, HighlyDeveloped.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 
 Umbraco.Core.Dashboards.IDashboard
