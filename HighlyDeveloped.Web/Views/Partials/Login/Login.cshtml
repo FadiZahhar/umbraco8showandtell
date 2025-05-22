@@ -41,6 +41,7 @@ else
                             placeholder = "Password"
                         })
                     </div>
+                         @Html.HiddenFor(m => m.RedirectUrl)
                     <button name="login" type="submit">Login</button>
                 }
             </div>
