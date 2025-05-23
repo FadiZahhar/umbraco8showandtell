@@ -6,8 +6,8 @@ using  Umbraco.Core.Models;
 using  Umbraco.Core.Models.PublishedContent;
 using  Umbraco.Web;
 using  Umbraco.ModelsBuilder.Embedded;
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "c4508df57febd167")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "c1271629e4f2bee9")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
 
 
 // FILE: models.generated.cs
@@ -289,7 +289,7 @@ namespace Umbraco.Web.PublishedModels
 
 	/// <summary>News Article</summary>
 	[PublishedModel("newsArticle")]
-	public partial class NewsArticle : PublishedContentModel
+	public partial class NewsArticle : PublishedContentModel, ISEO
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -360,6 +360,27 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		[ImplementPropertyType("postDate")]
 		public global::System.DateTime PostDate => this.Value<global::System.DateTime>("postDate");
+
+		///<summary>
+		/// Meta Description
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("metaDescription")]
+		public string MetaDescription => global::Umbraco.Web.PublishedModels.SEO.GetMetaDescription(this);
+
+		///<summary>
+		/// Open Graph Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("openGraphImage")]
+		public global::Umbraco.Core.Models.PublishedContent.IPublishedContent OpenGraphImage => global::Umbraco.Web.PublishedModels.SEO.GetOpenGraphImage(this);
+
+		///<summary>
+		/// SEO Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("sEOTitle")]
+		public string SEotitle => global::Umbraco.Web.PublishedModels.SEO.GetSEotitle(this);
 	}
 
 	/// <summary>News Articles</summary>
@@ -1192,6 +1213,82 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		[ImplementPropertyType("umbracoNaviHide")]
 		public bool UmbracoNaviHide => global::Umbraco.Web.PublishedModels.Navigation.GetUmbracoNaviHide(this);
+	}
+
+	// Mixin Content Type with alias "sEO"
+	/// <summary>SEO</summary>
+	public partial interface ISEO : IPublishedContent
+	{
+		/// <summary>Meta Description</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		string MetaDescription { get; }
+
+		/// <summary>Open Graph Image</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		global::Umbraco.Core.Models.PublishedContent.IPublishedContent OpenGraphImage { get; }
+
+		/// <summary>SEO Title</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		string SEotitle { get; }
+	}
+
+	/// <summary>SEO</summary>
+	[PublishedModel("sEO")]
+	public partial class SEO : PublishedContentModel, ISEO
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new const string ModelTypeAlias = "sEO";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<SEO, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public SEO(IPublishedContent content)
+			: base(content)
+		{ }
+
+		// properties
+
+		///<summary>
+		/// Meta Description
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("metaDescription")]
+		public string MetaDescription => GetMetaDescription(this);
+
+		/// <summary>Static getter for Meta Description</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static string GetMetaDescription(ISEO that) => that.Value<string>("metaDescription");
+
+		///<summary>
+		/// Open Graph Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("openGraphImage")]
+		public global::Umbraco.Core.Models.PublishedContent.IPublishedContent OpenGraphImage => GetOpenGraphImage(this);
+
+		/// <summary>Static getter for Open Graph Image</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static global::Umbraco.Core.Models.PublishedContent.IPublishedContent GetOpenGraphImage(ISEO that) => that.Value<global::Umbraco.Core.Models.PublishedContent.IPublishedContent>("openGraphImage");
+
+		///<summary>
+		/// SEO Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("sEOTitle")]
+		public string SEotitle => GetSEotitle(this);
+
+		/// <summary>Static getter for SEO Title</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static string GetSEotitle(ISEO that) => that.Value<string>("sEOTitle");
 	}
 
 	/// <summary>Folder</summary>
