@@ -28,7 +28,9 @@
     Layout = null;
 
     var homePage = Model.AncestorOrSelf<Home>();
+    var siteUrl = Request.Url.GetLeftPart(UriPartial.Authority);
 }
+
 <html>
 <head>
     <!-- Scripts, css etc -->
@@ -64,10 +66,24 @@
             });
 
         Html.RequiresJs("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js");
+        Html.RequiresJs("https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js");
+        Html.RequiresJs("https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js");
         Html.RequiresJs("/scripts/CookieConsent.js");
     }
 
     @Html.RenderCssHere()
+    @RenderSection("head", false)
+    @{
+        var seoTitle = Model.Value("seoTitle");
+        var metaDescription = Model.Value("description");
+        var ogImage = Model.Value<IPublishedContent>("seoOGImage");
+        var mediaUrl = ogImage?.Url();
+}
+<title>@(seoTitle ?? Model.Name)</title>
+<meta name="description" content="@metaDescription" />
+@if(ogImage != null) {
+    <meta property="og:image" content="@siteUrl@mediaUrl" />
+}
 </head>
 <body>
 

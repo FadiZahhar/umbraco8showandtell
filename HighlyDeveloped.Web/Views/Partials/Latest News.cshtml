@@ -1,6 +1,6 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
 @using Umbraco.Core.PropertyEditors.ValueConverters;
-<h2>Latest News</h2>
+<h2 class="mt-5">Latest News</h2>
 <!-- News Articles -->
 @{
 	var latestNews = Umbraco.Content(Guid.Parse("c60ec1f1-a716-47d8-98df-bf53e4c05983"))
@@ -10,7 +10,7 @@
     .Take(3)
     ;
 }
-<div class="container">
+<div class="container py-5">
     <div class="row">
         <div class="col">
             <div class="card-deck">
