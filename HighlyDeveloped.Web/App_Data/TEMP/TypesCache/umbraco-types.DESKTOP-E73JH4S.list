@@ -83,6 +83,7 @@ Umbraco.Core.Migrations.Upgrade.V_8_0_0.VariantsMigration, Umbraco.Core, Version
 Umbraco.Core.Migrations.Upgrade.V_8_0_0.ContentVariationMigration, Umbraco.Core, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Core.Migrations.Upgrade.V_8_0_0.DataTypes.PreValueMigratorComposer, Umbraco.Core, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Core.Services.Implement.KeyValueService+InitializeMigration, Umbraco.Core, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Web.UI.MarkdownEditor, App_Code.9qezsmwd, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.ModelsBuilder.Embedded.ModelsBuilderDashboard, Umbraco.ModelsBuilder.Embedded, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.ModelsBuilder.Embedded.Compose.ModelsBuilderComposer, Umbraco.ModelsBuilder.Embedded, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.ModelsBuilder.Embedded.BackOffice.MediaTypeModelValidator, Umbraco.ModelsBuilder.Embedded, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -471,6 +472,7 @@ Umbraco.Web.Dashboards.SettingsDashboard, Umbraco.Web, Version=8.0.0.0, Culture=
 Umbraco.Core.PropertyEditors.IDataEditor
 
 Umbraco.Core.PropertyEditors.LabelPropertyEditor, Umbraco.Core, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Web.UI.MarkdownEditor, App_Code.9qezsmwd, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.PropertyEditors.MultiUrlPickerPropertyEditor, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.PropertyEditors.ContentPickerPropertyEditor, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.PropertyEditors.DropDownFlexiblePropertyEditor, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null

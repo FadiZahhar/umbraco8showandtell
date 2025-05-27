@@ -17,8 +17,8 @@ using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 using Umbraco.ModelsBuilder.Embedded;
 
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "368b23db450f9860")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "aea50c7afaabb7f4")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
 
 namespace Umbraco.Web.PublishedModels
 {
@@ -95,6 +95,13 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		[ImplementPropertyType("heroTitle")]
 		public string HeroTitle => global::Umbraco.Web.PublishedModels.Hero.GetHeroTitle(this);
+
+		///<summary>
+		/// markadown
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("markadown")]
+		public object Markadown => global::Umbraco.Web.PublishedModels.Hero.GetMarkadown(this);
 
 		///<summary>
 		/// Page Content Text: This will be the text message displayed on the screen
@@ -341,6 +348,10 @@ namespace Umbraco.Web.PublishedModels
 		/// <summary>Hero Title</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		string HeroTitle { get; }
+
+		/// <summary>markadown</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		object Markadown { get; }
 	}
 
 	/// <summary>Hero</summary>
@@ -411,6 +422,17 @@ namespace Umbraco.Web.PublishedModels
 		/// <summary>Static getter for Hero Title</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		public static string GetHeroTitle(IHero that) => that.Value<string>("heroTitle");
+
+		///<summary>
+		/// markadown
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("markadown")]
+		public object Markadown => GetMarkadown(this);
+
+		/// <summary>Static getter for markadown</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static object GetMarkadown(IHero that) => that.Value("markadown");
 	}
 
 	/// <summary>News Article</summary>
@@ -563,6 +585,13 @@ namespace Umbraco.Web.PublishedModels
 		public string HeroTitle => global::Umbraco.Web.PublishedModels.Hero.GetHeroTitle(this);
 
 		///<summary>
+		/// markadown
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("markadown")]
+		public object Markadown => global::Umbraco.Web.PublishedModels.Hero.GetMarkadown(this);
+
+		///<summary>
 		/// SEO Description
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
@@ -650,6 +679,13 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		[ImplementPropertyType("heroTitle")]
 		public string HeroTitle => global::Umbraco.Web.PublishedModels.Hero.GetHeroTitle(this);
+
+		///<summary>
+		/// markadown
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("markadown")]
+		public object Markadown => global::Umbraco.Web.PublishedModels.Hero.GetMarkadown(this);
 
 		///<summary>
 		/// Umbraco Navi Hide: if this is checked then the page won't appear in the menu
@@ -984,6 +1020,13 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		[ImplementPropertyType("heroTitle")]
 		public string HeroTitle => global::Umbraco.Web.PublishedModels.Hero.GetHeroTitle(this);
+
+		///<summary>
+		/// markadown
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("markadown")]
+		public object Markadown => global::Umbraco.Web.PublishedModels.Hero.GetMarkadown(this);
 
 		///<summary>
 		/// SEO Description
@@ -1486,6 +1529,39 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		[ImplementPropertyType("umbracoNaviHide")]
 		public bool UmbracoNaviHide => global::Umbraco.Web.PublishedModels.Navigation.GetUmbracoNaviHide(this);
+	}
+
+	/// <summary>XmlSiteMap</summary>
+	[PublishedModel("xmlSiteMap")]
+	public partial class XmlSiteMap : PublishedContentModel
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new const string ModelTypeAlias = "xmlSiteMap";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<XmlSiteMap, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public XmlSiteMap(IPublishedContent content)
+			: base(content)
+		{ }
+
+		// properties
+
+		///<summary>
+		/// Excluded Document Types
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("excludedDocumentTypes")]
+		public string ExcludedDocumentTypes => this.Value<string>("excludedDocumentTypes");
 	}
 
 	/// <summary>Folder</summary>
