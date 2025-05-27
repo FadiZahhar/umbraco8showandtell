@@ -42,21 +42,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "markdowneditor.html",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\MarkDownEditor\\lib\\markdowneditor.html",
-              "RelativeDocumentMoniker": "HighlyDeveloped.Web\\App_Plugins\\MarkDownEditor\\lib\\markdowneditor.html",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\MarkDownEditor\\lib\\markdowneditor.html",
-              "RelativeToolTip": "HighlyDeveloped.Web\\App_Plugins\\MarkDownEditor\\lib\\markdowneditor.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-05-27T08:05:49.209Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -91,9 +78,22 @@
               "RelativeDocumentMoniker": "HighlyDeveloped.Web\\App_Plugins\\MarkDownEditor\\package.manifest",
               "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\MarkDownEditor\\package.manifest",
               "RelativeToolTip": "HighlyDeveloped.Web\\App_Plugins\\MarkDownEditor\\package.manifest",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001203|",
               "WhenOpened": "2025-05-27T08:21:06.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "markdowneditor.html",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\MarkDownEditor\\lib\\markdowneditor.html",
+              "RelativeDocumentMoniker": "HighlyDeveloped.Web\\App_Plugins\\MarkDownEditor\\lib\\markdowneditor.html",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\MarkDownEditor\\lib\\markdowneditor.html",
+              "RelativeToolTip": "HighlyDeveloped.Web\\App_Plugins\\MarkDownEditor\\lib\\markdowneditor.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-05-27T08:05:49.209Z",
               "EditorCaption": ""
             },
             {

@@ -17,8 +17,8 @@ using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 using Umbraco.ModelsBuilder.Embedded;
 
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "6e72f7a3a6bc5315")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "ec8fd79069095f00")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.7")]
 
 namespace Umbraco.Web.PublishedModels
 {
@@ -81,6 +81,13 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		[ImplementPropertyType("hideFromXmlSitemap")]
 		public bool HideFromXmlSitemap => global::Umbraco.Web.PublishedModels.XmlSiteMapSettings.GetHideFromXmlSitemap(this);
+
+		///<summary>
+		/// maxSiteMapDepth
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("maxSiteMapDepth")]
+		public int MaxSiteMapDepth => global::Umbraco.Web.PublishedModels.XmlSiteMapSettings.GetMaxSiteMapDepth(this);
 
 		///<summary>
 		/// Search Engine Change Frequency
@@ -545,6 +552,13 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		[ImplementPropertyType("hideFromXmlSitemap")]
 		public bool HideFromXmlSitemap => global::Umbraco.Web.PublishedModels.XmlSiteMapSettings.GetHideFromXmlSitemap(this);
+
+		///<summary>
+		/// maxSiteMapDepth
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("maxSiteMapDepth")]
+		public int MaxSiteMapDepth => global::Umbraco.Web.PublishedModels.XmlSiteMapSettings.GetMaxSiteMapDepth(this);
 
 		///<summary>
 		/// Search Engine Change Frequency
@@ -1396,6 +1410,10 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		bool HideFromXmlSitemap { get; }
 
+		/// <summary>maxSiteMapDepth</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		int MaxSiteMapDepth { get; }
+
 		/// <summary>Search Engine Change Frequency</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		string SearchEngineChangeFrequency { get; }
@@ -1440,6 +1458,17 @@ namespace Umbraco.Web.PublishedModels
 		/// <summary>Static getter for Hide From Xml Sitemap</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		public static bool GetHideFromXmlSitemap(IXmlSiteMapSettings that) => that.Value<bool>("hideFromXmlSitemap");
+
+		///<summary>
+		/// maxSiteMapDepth
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("maxSiteMapDepth")]
+		public int MaxSiteMapDepth => GetMaxSiteMapDepth(this);
+
+		/// <summary>Static getter for maxSiteMapDepth</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static int GetMaxSiteMapDepth(IXmlSiteMapSettings that) => that.Value<int>("maxSiteMapDepth");
 
 		///<summary>
 		/// Search Engine Change Frequency
