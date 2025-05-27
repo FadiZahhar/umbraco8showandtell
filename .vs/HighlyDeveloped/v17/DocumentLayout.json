@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.web\\app_code\\recipes\\models\\pocos\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|solutionrelative:highlydeveloped.web\\app_code\\recipes\\models\\pocos\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.web\\app_code\\recipes\\petapocoapplicationeventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|solutionrelative:highlydeveloped.web\\app_code\\recipes\\petapocoapplicationeventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.web\\app_plugins\\markdowneditor\\package.manifest||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|solutionrelative:highlydeveloped.web\\app_plugins\\markdowneditor\\package.manifest||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -42,11 +50,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "PetaPocoApplicationEventHandler.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Code\\Recipes\\PetaPocoApplicationEventHandler.cs",
+              "RelativeDocumentMoniker": "HighlyDeveloped.Web\\App_Code\\Recipes\\PetaPocoApplicationEventHandler.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Code\\Recipes\\PetaPocoApplicationEventHandler.cs",
+              "RelativeToolTip": "HighlyDeveloped.Web\\App_Code\\Recipes\\PetaPocoApplicationEventHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T09:39:27.013Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Recipe.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Code\\Recipes\\Models\\pocos\\Recipe.cs",
+              "RelativeDocumentMoniker": "HighlyDeveloped.Web\\App_Code\\Recipes\\Models\\pocos\\Recipe.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Code\\Recipes\\Models\\pocos\\Recipe.cs",
+              "RelativeToolTip": "HighlyDeveloped.Web\\App_Code\\Recipes\\Models\\pocos\\Recipe.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T09:36:25.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "markdowneditor.controller.js",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\MarkDownEditor\\lib\\markdowneditor.controller.js",
               "RelativeDocumentMoniker": "HighlyDeveloped.Web\\App_Plugins\\MarkDownEditor\\lib\\markdowneditor.controller.js",
@@ -59,7 +93,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "MarkdownEditor.cs",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\MarkDownEditor\\App_Code\\MarkdownEditor.cs",
               "RelativeDocumentMoniker": "HighlyDeveloped.Web\\App_Plugins\\MarkDownEditor\\App_Code\\MarkdownEditor.cs",
@@ -72,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "package.manifest",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\MarkDownEditor\\package.manifest",
               "RelativeDocumentMoniker": "HighlyDeveloped.Web\\App_Plugins\\MarkDownEditor\\package.manifest",
@@ -85,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "markdowneditor.html",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\MarkDownEditor\\lib\\markdowneditor.html",
               "RelativeDocumentMoniker": "HighlyDeveloped.Web\\App_Plugins\\MarkDownEditor\\lib\\markdowneditor.html",
@@ -98,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "en-US.xml",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\Lang\\en-US.xml",
               "RelativeDocumentMoniker": "HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\Lang\\en-US.xml",
@@ -111,7 +145,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "WelcomeDashboard.html",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\WelcomeDashboard.html",
               "RelativeDocumentMoniker": "HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\WelcomeDashboard.html",
@@ -124,7 +158,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "customwelcomedashboard.controller.js",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\customwelcomedashboard.controller.js",
               "RelativeDocumentMoniker": "HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\customwelcomedashboard.controller.js",
@@ -137,7 +171,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "customwelcomedashboard.css",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\customwelcomedashboard.css",
               "RelativeDocumentMoniker": "HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\customwelcomedashboard.css",
