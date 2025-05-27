@@ -301,8 +301,8 @@
   <ItemGroup>
     <Content Include="App_Data\Umbraco.sdf" />
     <Content Include="App_Plugins\CustomWelcomeDashboard\customwelcomedashboard.css" />
-    <Content Include="App_Plugins\MarkDownEditor\lib\markdowneditor.controller.js" />
-    <Content Include="App_Plugins\MarkDownEditor\lib\markdowneditor.html" />
+    <Content Include="App_Plugins\MarkDownEditor\markdowneditor.controller.js" />
+    <Content Include="App_Plugins\MarkDownEditor\markdowneditor.html" />
     <Content Include="App_Plugins\WelcomeDashboard\welcomedashboard.controller.js" />
     <Content Include="App_Plugins\WelcomeDashboard\welcomedashboard.css" />
     <Content Include="App_Plugins\WelcomeDashboard\welcomedashboard.html" />
@@ -333,7 +333,6 @@
   <ItemGroup>
     <Content Include="App_Code\Recipes\Models\pocos\Recipe.cs" />
     <Content Include="App_Code\Recipes\PetaPocoApplicationEventHandler.cs" />
-    <Compile Include="App_Plugins\MarkDownEditor\App_Code\MarkdownEditor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -383,6 +382,7 @@
   <ItemGroup>
     <Folder Include="App_Code\optimization\" />
     <Folder Include="App_Code\Recipes\Controllers\" />
+    <Folder Include="App_Plugins\MarkDownEditor\lib\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

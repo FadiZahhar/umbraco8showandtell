@@ -6,8 +6,8 @@ using  Umbraco.Core.Models;
 using  Umbraco.Core.Models.PublishedContent;
 using  Umbraco.Web;
 using  Umbraco.ModelsBuilder.Embedded;
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "ec8fd79069095f00")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.7")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "387ae0201e022671")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
 
 
 // FILE: models.generated.cs
@@ -470,6 +470,13 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		[ImplementPropertyType("makrdown")]
 		public global::System.Web.IHtmlString Makrdown => global::Umbraco.Web.PublishedModels.Hero.GetMakrdown(this);
+
+		///<summary>
+		/// my markdown
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("myMarkdown")]
+		public object MyMarkdown => global::Umbraco.Web.PublishedModels.Hero.GetMyMarkdown(this);
 	}
 
 	/// <summary>Content Page</summary>
@@ -547,6 +554,13 @@ namespace Umbraco.Web.PublishedModels
 		public global::System.Web.IHtmlString Makrdown => global::Umbraco.Web.PublishedModels.Hero.GetMakrdown(this);
 
 		///<summary>
+		/// my markdown
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("myMarkdown")]
+		public object MyMarkdown => global::Umbraco.Web.PublishedModels.Hero.GetMyMarkdown(this);
+
+		///<summary>
 		/// Umbraco Navi Hide: if this is checked, page won't appear in menu
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
@@ -612,6 +626,10 @@ namespace Umbraco.Web.PublishedModels
 		/// <summary>makrdown</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		global::System.Web.IHtmlString Makrdown { get; }
+
+		/// <summary>my markdown</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		object MyMarkdown { get; }
 	}
 
 	/// <summary>Hero</summary>
@@ -693,6 +711,17 @@ namespace Umbraco.Web.PublishedModels
 		/// <summary>Static getter for makrdown</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		public static global::System.Web.IHtmlString GetMakrdown(IHero that) => that.Value<global::System.Web.IHtmlString>("makrdown");
+
+		///<summary>
+		/// my markdown
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("myMarkdown")]
+		public object MyMarkdown => GetMyMarkdown(this);
+
+		/// <summary>Static getter for my markdown</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static object GetMyMarkdown(IHero that) => that.Value("myMarkdown");
 	}
 
 	// Mixin Content Type with alias "navigation"
@@ -999,6 +1028,13 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		[ImplementPropertyType("makrdown")]
 		public global::System.Web.IHtmlString Makrdown => global::Umbraco.Web.PublishedModels.Hero.GetMakrdown(this);
+
+		///<summary>
+		/// my markdown
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("myMarkdown")]
+		public object MyMarkdown => global::Umbraco.Web.PublishedModels.Hero.GetMyMarkdown(this);
 	}
 
 	/// <summary>Email Template</summary>

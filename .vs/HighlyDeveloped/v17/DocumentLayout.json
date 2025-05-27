@@ -3,44 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.web\\app_code\\recipes\\models\\pocos\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|solutionrelative:highlydeveloped.web\\app_code\\recipes\\models\\pocos\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.web\\app_plugins\\markdowneditor\\markdowneditor.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|solutionrelative:highlydeveloped.web\\app_plugins\\markdowneditor\\markdowneditor.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.web\\app_code\\recipes\\petapocoapplicationeventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|solutionrelative:highlydeveloped.web\\app_code\\recipes\\petapocoapplicationeventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.web\\app_plugins\\markdowneditor\\markdowneditor.controller.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|solutionrelative:highlydeveloped.web\\app_plugins\\markdowneditor\\markdowneditor.controller.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.web\\app_plugins\\markdowneditor\\package.manifest||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|solutionrelative:highlydeveloped.web\\app_plugins\\markdowneditor\\package.manifest||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.web\\app_plugins\\markdowneditor\\lib\\markdowneditor.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|solutionrelative:highlydeveloped.web\\app_plugins\\markdowneditor\\lib\\markdowneditor.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.web\\app_plugins\\markdowneditor\\lib\\markdowneditor.controller.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|solutionrelative:highlydeveloped.web\\app_plugins\\markdowneditor\\lib\\markdowneditor.controller.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.web\\app_plugins\\markdowneditor\\app_code\\markdowneditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|solutionrelative:highlydeveloped.web\\app_plugins\\markdowneditor\\app_code\\markdowneditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.web\\app_plugins\\customwelcomedashboard\\welcomedashboard.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|solutionrelative:highlydeveloped.web\\app_plugins\\customwelcomedashboard\\welcomedashboard.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.web\\app_plugins\\customwelcomedashboard\\customwelcomedashboard.controller.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|solutionrelative:highlydeveloped.web\\app_plugins\\customwelcomedashboard\\customwelcomedashboard.controller.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.web\\app_plugins\\customwelcomedashboard\\lang\\en-us.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|solutionrelative:highlydeveloped.web\\app_plugins\\customwelcomedashboard\\lang\\en-us.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.web\\app_plugins\\customwelcomedashboard\\customwelcomedashboard.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|solutionrelative:highlydeveloped.web\\app_plugins\\customwelcomedashboard\\customwelcomedashboard.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.web\\app_code\\markdowneditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|solutionrelative:highlydeveloped.web\\app_code\\markdowneditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,58 +26,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PetaPocoApplicationEventHandler.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Code\\Recipes\\PetaPocoApplicationEventHandler.cs",
-              "RelativeDocumentMoniker": "HighlyDeveloped.Web\\App_Code\\Recipes\\PetaPocoApplicationEventHandler.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Code\\Recipes\\PetaPocoApplicationEventHandler.cs",
-              "RelativeToolTip": "HighlyDeveloped.Web\\App_Code\\Recipes\\PetaPocoApplicationEventHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T09:39:27.013Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Recipe.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Code\\Recipes\\Models\\pocos\\Recipe.cs",
-              "RelativeDocumentMoniker": "HighlyDeveloped.Web\\App_Code\\Recipes\\Models\\pocos\\Recipe.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Code\\Recipes\\Models\\pocos\\Recipe.cs",
-              "RelativeToolTip": "HighlyDeveloped.Web\\App_Code\\Recipes\\Models\\pocos\\Recipe.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T09:36:25.479Z",
+              "Title": "markdowneditor.html",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\MarkDownEditor\\markdowneditor.html",
+              "RelativeDocumentMoniker": "HighlyDeveloped.Web\\App_Plugins\\MarkDownEditor\\markdowneditor.html",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\MarkDownEditor\\markdowneditor.html",
+              "RelativeToolTip": "HighlyDeveloped.Web\\App_Plugins\\MarkDownEditor\\markdowneditor.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-05-27T14:28:45.59Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "markdowneditor.controller.js",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\MarkDownEditor\\lib\\markdowneditor.controller.js",
-              "RelativeDocumentMoniker": "HighlyDeveloped.Web\\App_Plugins\\MarkDownEditor\\lib\\markdowneditor.controller.js",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\MarkDownEditor\\lib\\markdowneditor.controller.js",
-              "RelativeToolTip": "HighlyDeveloped.Web\\App_Plugins\\MarkDownEditor\\lib\\markdowneditor.controller.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAALAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\MarkDownEditor\\markdowneditor.controller.js",
+              "RelativeDocumentMoniker": "HighlyDeveloped.Web\\App_Plugins\\MarkDownEditor\\markdowneditor.controller.js",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\MarkDownEditor\\markdowneditor.controller.js",
+              "RelativeToolTip": "HighlyDeveloped.Web\\App_Plugins\\MarkDownEditor\\markdowneditor.controller.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-05-27T08:06:03.536Z",
+              "WhenOpened": "2025-05-27T14:29:04.822Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "MarkdownEditor.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\MarkDownEditor\\App_Code\\MarkdownEditor.cs",
-              "RelativeDocumentMoniker": "HighlyDeveloped.Web\\App_Plugins\\MarkDownEditor\\App_Code\\MarkdownEditor.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\MarkDownEditor\\App_Code\\MarkdownEditor.cs",
-              "RelativeToolTip": "HighlyDeveloped.Web\\App_Plugins\\MarkDownEditor\\App_Code\\MarkdownEditor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAYAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Code\\MarkdownEditor.cs",
+              "RelativeDocumentMoniker": "HighlyDeveloped.Web\\App_Code\\MarkdownEditor.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Code\\MarkdownEditor.cs",
+              "RelativeToolTip": "HighlyDeveloped.Web\\App_Code\\MarkdownEditor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T08:04:22.957Z",
+              "WhenOpened": "2025-05-27T14:23:12.487Z",
               "EditorCaption": ""
             },
             {
@@ -112,74 +75,9 @@
               "RelativeDocumentMoniker": "HighlyDeveloped.Web\\App_Plugins\\MarkDownEditor\\package.manifest",
               "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\MarkDownEditor\\package.manifest",
               "RelativeToolTip": "HighlyDeveloped.Web\\App_Plugins\\MarkDownEditor\\package.manifest",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001203|",
-              "WhenOpened": "2025-05-27T08:21:06.975Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "markdowneditor.html",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\MarkDownEditor\\lib\\markdowneditor.html",
-              "RelativeDocumentMoniker": "HighlyDeveloped.Web\\App_Plugins\\MarkDownEditor\\lib\\markdowneditor.html",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\MarkDownEditor\\lib\\markdowneditor.html",
-              "RelativeToolTip": "HighlyDeveloped.Web\\App_Plugins\\MarkDownEditor\\lib\\markdowneditor.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-05-27T08:05:49.209Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "en-US.xml",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\Lang\\en-US.xml",
-              "RelativeDocumentMoniker": "HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\Lang\\en-US.xml",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\Lang\\en-US.xml",
-              "RelativeToolTip": "HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\Lang\\en-US.xml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-05-27T07:26:48.55Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "WelcomeDashboard.html",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\WelcomeDashboard.html",
-              "RelativeDocumentMoniker": "HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\WelcomeDashboard.html",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\WelcomeDashboard.html",
-              "RelativeToolTip": "HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\WelcomeDashboard.html",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAgwA4AAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-05-27T07:27:18.17Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "customwelcomedashboard.controller.js",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\customwelcomedashboard.controller.js",
-              "RelativeDocumentMoniker": "HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\customwelcomedashboard.controller.js",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\customwelcomedashboard.controller.js",
-              "RelativeToolTip": "HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\customwelcomedashboard.controller.js",
-              "ViewState": "AgIAADsAAAAAAAAAAAAmwEkAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-05-27T07:35:54.036Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "customwelcomedashboard.css",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\customwelcomedashboard.css",
-              "RelativeDocumentMoniker": "HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\customwelcomedashboard.css",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\customwelcomedashboard.css",
-              "RelativeToolTip": "HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\customwelcomedashboard.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-05-27T07:29:23.438Z",
+              "WhenOpened": "2025-05-27T14:16:40.907Z",
               "EditorCaption": ""
             }
           ]
