@@ -316,7 +316,10 @@
     <Content Include="config\serilog.user.config" />
     <Content Include="config\tinyMceConfig.config" />
     <Content Include="config\umbracoSettings.config" />
+    <Content Include="CustomWelcomeDashboard\Lang\en-US.xml" />
+    <Content Include="CustomWelcomeDashboard\WelcomeDashboard.html" />
     <None Include="app.config" />
+    <None Include="CustomWelcomeDashboard\package.manifest" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

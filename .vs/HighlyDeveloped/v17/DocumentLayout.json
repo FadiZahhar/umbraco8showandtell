@@ -3,48 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{34948984-1FC0-4ABC-B14B-AD9B1FD58603}|HighlyDeveloped.Core\\HighlyDeveloped.Core.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.core\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34948984-1FC0-4ABC-B14B-AD9B1FD58603}|HighlyDeveloped.Core\\HighlyDeveloped.Core.csproj|solutionrelative:highlydeveloped.core\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.web\\app_plugins\\customwelcomedashboard\\welcomedashboard.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|solutionrelative:highlydeveloped.web\\app_plugins\\customwelcomedashboard\\welcomedashboard.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{34948984-1FC0-4ABC-B14B-AD9B1FD58603}|HighlyDeveloped.Core\\HighlyDeveloped.Core.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.core\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34948984-1FC0-4ABC-B14B-AD9B1FD58603}|HighlyDeveloped.Core\\HighlyDeveloped.Core.csproj|solutionrelative:highlydeveloped.core\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.web\\app_plugins\\customwelcomedashboard\\customwelcomedashboard.controller.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|solutionrelative:highlydeveloped.web\\app_plugins\\customwelcomedashboard\\customwelcomedashboard.controller.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{34948984-1FC0-4ABC-B14B-AD9B1FD58603}|HighlyDeveloped.Core\\HighlyDeveloped.Core.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.core\\viewmodel\\contactformviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34948984-1FC0-4ABC-B14B-AD9B1FD58603}|HighlyDeveloped.Core\\HighlyDeveloped.Core.csproj|solutionrelative:highlydeveloped.core\\viewmodel\\contactformviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.web\\app_plugins\\customwelcomedashboard\\package.manifest||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|solutionrelative:highlydeveloped.web\\app_plugins\\customwelcomedashboard\\package.manifest||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.web\\views\\partials\\contact form.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|solutionrelative:highlydeveloped.web\\views\\partials\\contact form.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.web\\app_plugins\\customwelcomedashboard\\lang\\en-us.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|solutionrelative:highlydeveloped.web\\app_plugins\\customwelcomedashboard\\lang\\en-us.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.web\\views\\partials\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|solutionrelative:highlydeveloped.web\\views\\partials\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.web\\views\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|solutionrelative:highlydeveloped.web\\views\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.web\\views\\partials\\navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|solutionrelative:highlydeveloped.web\\views\\partials\\navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{34948984-1FC0-4ABC-B14B-AD9B1FD58603}|HighlyDeveloped.Core\\HighlyDeveloped.Core.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.core\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34948984-1FC0-4ABC-B14B-AD9B1FD58603}|HighlyDeveloped.Core\\HighlyDeveloped.Core.csproj|solutionrelative:highlydeveloped.core\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.web\\views\\partials\\emailverification.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|solutionrelative:highlydeveloped.web\\views\\partials\\emailverification.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.web\\views\\partials\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|solutionrelative:highlydeveloped.web\\views\\partials\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{34948984-1FC0-4ABC-B14B-AD9B1FD58603}|HighlyDeveloped.Core\\HighlyDeveloped.Core.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.core\\viewmodel\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34948984-1FC0-4ABC-B14B-AD9B1FD58603}|HighlyDeveloped.Core\\HighlyDeveloped.Core.csproj|solutionrelative:highlydeveloped.core\\viewmodel\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.web\\app_plugins\\customwelcomedashboard\\customwelcomedashboard.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|solutionrelative:highlydeveloped.web\\app_plugins\\customwelcomedashboard\\customwelcomedashboard.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,149 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EmailService.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Core\\Services\\EmailService.cs",
-              "RelativeDocumentMoniker": "HighlyDeveloped.Core\\Services\\EmailService.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Core\\Services\\EmailService.cs",
-              "RelativeToolTip": "HighlyDeveloped.Core\\Services\\EmailService.cs",
-              "ViewState": "AgIAAKsAAAAAAAAAAAAAALIAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T07:53:51.92Z",
+              "DocumentIndex": 2,
+              "Title": "package.manifest",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\package.manifest",
+              "RelativeDocumentMoniker": "HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\package.manifest",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\package.manifest",
+              "RelativeToolTip": "HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\package.manifest",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001203|",
+              "WhenOpened": "2025-05-27T07:28:28.15Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Contact Form.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\Views\\Partials\\Contact Form.cshtml",
-              "RelativeDocumentMoniker": "HighlyDeveloped.Web\\Views\\Partials\\Contact Form.cshtml",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\Views\\Partials\\Contact Form.cshtml",
-              "RelativeToolTip": "HighlyDeveloped.Web\\Views\\Partials\\Contact Form.cshtml",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAADQAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-22T12:24:34.325Z",
+              "Title": "en-US.xml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\Lang\\en-US.xml",
+              "RelativeDocumentMoniker": "HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\Lang\\en-US.xml",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\Lang\\en-US.xml",
+              "RelativeToolTip": "HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\Lang\\en-US.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-05-27T07:26:48.55Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ContactController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Core\\Controllers\\ContactController.cs",
-              "RelativeDocumentMoniker": "HighlyDeveloped.Core\\Controllers\\ContactController.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Core\\Controllers\\ContactController.cs",
-              "RelativeToolTip": "HighlyDeveloped.Core\\Controllers\\ContactController.cs",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAgwGoAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T12:23:38.626Z",
+              "Title": "customwelcomedashboard.controller.js",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\customwelcomedashboard.controller.js",
+              "RelativeDocumentMoniker": "HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\customwelcomedashboard.controller.js",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\customwelcomedashboard.controller.js",
+              "RelativeToolTip": "HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\customwelcomedashboard.controller.js",
+              "ViewState": "AgIAADsAAAAAAAAAAAAmwEkAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-27T07:35:54.036Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ContactFormViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Core\\ViewModel\\ContactFormViewModel.cs",
-              "RelativeDocumentMoniker": "HighlyDeveloped.Core\\ViewModel\\ContactFormViewModel.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Core\\ViewModel\\ContactFormViewModel.cs",
-              "RelativeToolTip": "HighlyDeveloped.Core\\ViewModel\\ContactFormViewModel.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwA4AAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T12:25:29.434Z",
+              "DocumentIndex": 0,
+              "Title": "WelcomeDashboard.html",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\WelcomeDashboard.html",
+              "RelativeDocumentMoniker": "HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\WelcomeDashboard.html",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\WelcomeDashboard.html",
+              "RelativeToolTip": "HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\WelcomeDashboard.html",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAgwA4AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-05-27T07:27:18.17Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\Views\\Partials\\Login\\Login.cshtml",
-              "RelativeDocumentMoniker": "HighlyDeveloped.Web\\Views\\Partials\\Login\\Login.cshtml",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\Views\\Partials\\Login\\Login.cshtml",
-              "RelativeToolTip": "HighlyDeveloped.Web\\Views\\Partials\\Login\\Login.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-22T10:54:31.936Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\Views\\Login.cshtml",
-              "RelativeDocumentMoniker": "HighlyDeveloped.Web\\Views\\Login.cshtml",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\Views\\Login.cshtml",
-              "RelativeToolTip": "HighlyDeveloped.Web\\Views\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-22T10:45:40.263Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "NavBar.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\Views\\Partials\\NavBar.cshtml",
-              "RelativeDocumentMoniker": "HighlyDeveloped.Web\\Views\\Partials\\NavBar.cshtml",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\Views\\Partials\\NavBar.cshtml",
-              "RelativeToolTip": "HighlyDeveloped.Web\\Views\\Partials\\NavBar.cshtml",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAcwBUAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-22T10:34:05.07Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\Views\\Partials\\Register.cshtml",
-              "RelativeDocumentMoniker": "HighlyDeveloped.Web\\Views\\Partials\\Register.cshtml",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\Views\\Partials\\Register.cshtml",
-              "RelativeToolTip": "HighlyDeveloped.Web\\Views\\Partials\\Register.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-22T07:45:32.275Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "EmailVerification.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\Views\\Partials\\EmailVerification.cshtml",
-              "RelativeDocumentMoniker": "HighlyDeveloped.Web\\Views\\Partials\\EmailVerification.cshtml",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\Views\\Partials\\EmailVerification.cshtml",
-              "RelativeToolTip": "HighlyDeveloped.Web\\Views\\Partials\\EmailVerification.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-22T10:02:51.173Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "RegisterController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Core\\Controllers\\RegisterController.cs",
-              "RelativeDocumentMoniker": "HighlyDeveloped.Core\\Controllers\\RegisterController.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Core\\Controllers\\RegisterController.cs",
-              "RelativeToolTip": "HighlyDeveloped.Core\\Controllers\\RegisterController.cs",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAmwIUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T07:43:25.989Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "RegisterViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Core\\ViewModel\\RegisterViewModel.cs",
-              "RelativeDocumentMoniker": "HighlyDeveloped.Core\\ViewModel\\RegisterViewModel.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Core\\ViewModel\\RegisterViewModel.cs",
-              "RelativeToolTip": "HighlyDeveloped.Core\\ViewModel\\RegisterViewModel.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAkwC4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T07:34:16.849Z",
+              "Title": "customwelcomedashboard.css",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\customwelcomedashboard.css",
+              "RelativeDocumentMoniker": "HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\customwelcomedashboard.css",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\customwelcomedashboard.css",
+              "RelativeToolTip": "HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\customwelcomedashboard.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-05-27T07:29:23.438Z",
               "EditorCaption": ""
             }
           ]
