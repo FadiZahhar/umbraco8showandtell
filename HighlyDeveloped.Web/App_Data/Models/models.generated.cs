@@ -17,14 +17,14 @@ using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 using Umbraco.ModelsBuilder.Embedded;
 
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "db848bb19d911273")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "d932d0b8bb30d293")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
 
 namespace Umbraco.Web.PublishedModels
 {
 	/// <summary>Home</summary>
 	[PublishedModel("home")]
-	public partial class Home : PublishedContentModel, ICallToAction, IHero, IPageContent, ISEometadata
+	public partial class Home : PublishedContentModel, ICallToAction, IHero, IPageContent, ISEometadata, IXmlSiteMapSettings
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -123,6 +123,34 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		[ImplementPropertyType("seoTitle")]
 		public string SeoTitle => global::Umbraco.Web.PublishedModels.SEometadata.GetSeoTitle(this);
+
+		///<summary>
+		/// Hide From Xml Sitemap
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("hideFromXmlSitemap")]
+		public bool HideFromXmlSitemap => global::Umbraco.Web.PublishedModels.XmlSiteMapSettings.GetHideFromXmlSitemap(this);
+
+		///<summary>
+		/// maxSiteMapDepth
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("maxSiteMapDepth")]
+		public int MaxSiteMapDepth => global::Umbraco.Web.PublishedModels.XmlSiteMapSettings.GetMaxSiteMapDepth(this);
+
+		///<summary>
+		/// Search Engine Change Frequency
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("searchEngineChangeFrequency")]
+		public string SearchEngineChangeFrequency => global::Umbraco.Web.PublishedModels.XmlSiteMapSettings.GetSearchEngineChangeFrequency(this);
+
+		///<summary>
+		/// Search Engine Relative Priority
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("searchEngineRelativePriority")]
+		public decimal SearchEngineRelativePriority => global::Umbraco.Web.PublishedModels.XmlSiteMapSettings.GetSearchEngineRelativePriority(this);
 	}
 
 	// Mixin Content Type with alias "pageContent"
@@ -453,7 +481,7 @@ namespace Umbraco.Web.PublishedModels
 
 	/// <summary>Content</summary>
 	[PublishedModel("content")]
-	public partial class Content : PublishedContentModel, IHero, INavigation, ISEometadata, IUsefulLinks
+	public partial class Content : PublishedContentModel, IHero, INavigation, ISEometadata, IUsefulLinks, IXmlSiteMapSettings
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -552,6 +580,34 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		[ImplementPropertyType("linkNestedContent")]
 		public global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.UsefulLink> LinkNestedContent => global::Umbraco.Web.PublishedModels.UsefulLinks.GetLinkNestedContent(this);
+
+		///<summary>
+		/// Hide From Xml Sitemap
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("hideFromXmlSitemap")]
+		public bool HideFromXmlSitemap => global::Umbraco.Web.PublishedModels.XmlSiteMapSettings.GetHideFromXmlSitemap(this);
+
+		///<summary>
+		/// maxSiteMapDepth
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("maxSiteMapDepth")]
+		public int MaxSiteMapDepth => global::Umbraco.Web.PublishedModels.XmlSiteMapSettings.GetMaxSiteMapDepth(this);
+
+		///<summary>
+		/// Search Engine Change Frequency
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("searchEngineChangeFrequency")]
+		public string SearchEngineChangeFrequency => global::Umbraco.Web.PublishedModels.XmlSiteMapSettings.GetSearchEngineChangeFrequency(this);
+
+		///<summary>
+		/// Search Engine Relative Priority
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("searchEngineRelativePriority")]
+		public decimal SearchEngineRelativePriority => global::Umbraco.Web.PublishedModels.XmlSiteMapSettings.GetSearchEngineRelativePriority(this);
 	}
 
 	// Mixin Content Type with alias "hero"
@@ -1357,6 +1413,130 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		[ImplementPropertyType("umbracoNaviHide")]
 		public bool UmbracoNaviHide => global::Umbraco.Web.PublishedModels.Navigation.GetUmbracoNaviHide(this);
+	}
+
+	/// <summary>XmlSiteMap</summary>
+	[PublishedModel("xmlSiteMap")]
+	public partial class XmlSiteMap : PublishedContentModel
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new const string ModelTypeAlias = "xmlSiteMap";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<XmlSiteMap, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public XmlSiteMap(IPublishedContent content)
+			: base(content)
+		{ }
+
+		// properties
+
+		///<summary>
+		/// Excluded Document Types
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("excludedDocumentTypes")]
+		public string ExcludedDocumentTypes => this.Value<string>("excludedDocumentTypes");
+	}
+
+	// Mixin Content Type with alias "xmlSiteMapSettings"
+	/// <summary>XmlSiteMapSettings</summary>
+	public partial interface IXmlSiteMapSettings : IPublishedContent
+	{
+		/// <summary>Hide From Xml Sitemap</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		bool HideFromXmlSitemap { get; }
+
+		/// <summary>maxSiteMapDepth</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		int MaxSiteMapDepth { get; }
+
+		/// <summary>Search Engine Change Frequency</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		string SearchEngineChangeFrequency { get; }
+
+		/// <summary>Search Engine Relative Priority</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		decimal SearchEngineRelativePriority { get; }
+	}
+
+	/// <summary>XmlSiteMapSettings</summary>
+	[PublishedModel("xmlSiteMapSettings")]
+	public partial class XmlSiteMapSettings : PublishedContentModel, IXmlSiteMapSettings
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new const string ModelTypeAlias = "xmlSiteMapSettings";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<XmlSiteMapSettings, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public XmlSiteMapSettings(IPublishedContent content)
+			: base(content)
+		{ }
+
+		// properties
+
+		///<summary>
+		/// Hide From Xml Sitemap
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("hideFromXmlSitemap")]
+		public bool HideFromXmlSitemap => GetHideFromXmlSitemap(this);
+
+		/// <summary>Static getter for Hide From Xml Sitemap</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static bool GetHideFromXmlSitemap(IXmlSiteMapSettings that) => that.Value<bool>("hideFromXmlSitemap");
+
+		///<summary>
+		/// maxSiteMapDepth
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("maxSiteMapDepth")]
+		public int MaxSiteMapDepth => GetMaxSiteMapDepth(this);
+
+		/// <summary>Static getter for maxSiteMapDepth</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static int GetMaxSiteMapDepth(IXmlSiteMapSettings that) => that.Value<int>("maxSiteMapDepth");
+
+		///<summary>
+		/// Search Engine Change Frequency
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("searchEngineChangeFrequency")]
+		public string SearchEngineChangeFrequency => GetSearchEngineChangeFrequency(this);
+
+		/// <summary>Static getter for Search Engine Change Frequency</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static string GetSearchEngineChangeFrequency(IXmlSiteMapSettings that) => that.Value<string>("searchEngineChangeFrequency");
+
+		///<summary>
+		/// Search Engine Relative Priority
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("searchEngineRelativePriority")]
+		public decimal SearchEngineRelativePriority => GetSearchEngineRelativePriority(this);
+
+		/// <summary>Static getter for Search Engine Relative Priority</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static decimal GetSearchEngineRelativePriority(IXmlSiteMapSettings that) => that.Value<decimal>("searchEngineRelativePriority");
 	}
 
 	/// <summary>Folder</summary>
