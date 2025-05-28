@@ -138,12 +138,12 @@
                        ng-required="true"
                        ng-pattern="/^\d{3}-\d{10}$/"
                        class="form-control w3-input w3-border-0 w3-border-bottom w3-round w3-transparent" />
-                <span ng-show="(bookForm.ISBN.$touched || bookForm.$submitted) && bookForm.ISBN.$error.required" class="text-danger">
+                <!--<span ng-show="(bookForm.ISBN.$touched || bookForm.$submitted) && bookForm.ISBN.$error.required" class="text-danger">
                     ISBN is required.
                 </span>
                 <span ng-show="bookForm.ISBN.$error.pattern" class="text-danger">
                     ISBN must be in the format 123-1234567890.
-                </span>
+                </span>-->
             </div>
 
             <!-- Server-side validation errors -->
