@@ -1,4 +1,5 @@
-﻿<div ng-controller="BookManagerDashboardController as bookManager">
+﻿<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+<div ng-controller="BookManagerDashboardController as bookManager">
     <div class="w3-container">
         <h2>Book Manager</h2>
         <div class="w3-flex w3-margin-bottom" style="justify-content:space-between" ng-if="!bookManager.editing">
@@ -89,8 +90,8 @@
                        ng-maxlength="150"
                        required
                        class="form-control w3-input w3-border-0 w3-border-bottom w3-round w3-transparent" />
-                        <span ng-show="bookForm.Title.$touched && bookForm.Title.$invalid">Required!</span>
-                
+                <span ng-show="(bookForm.Title.$touched || bookForm.$submitted) && bookForm.Title.$error.required">
+                    title required </span>
             </div>
 
             <!-- Author -->
@@ -102,7 +103,7 @@
                        ng-required="true"
                        ng-maxlength="100"
                        class="form-control w3-input w3-border-0 w3-border-bottom w3-round w3-transparent" />
-                <span ng-show="(bookForm.Author.$touched || bookForm.$submitted) && bookForm.Author.$error.required" class="text-danger">
+                <span ng-show="(bookForm.Author.$touched) && bookForm.Author.$error.required" class="text-danger">
                     Author is required.
                 </span>
                 <span ng-show="bookForm.Author.$error.maxlength" class="text-danger">
@@ -156,7 +157,7 @@
             <button type="button"
                     class="btn w3-green"
                     ng-click="bookManager.saveBook(bookManager)"
-                    ng-disabled="bookForm.$invalid">
+                    >
                 Save
             </button>
             <button type="button"
