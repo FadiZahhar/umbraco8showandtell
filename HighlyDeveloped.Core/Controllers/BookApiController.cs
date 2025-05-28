@@ -24,7 +24,7 @@ namespace HighlyDeveloped.Core.Controllers
         public Book GetById(int id) => _service.GetById(id);
 
         [HttpPost]
-        public void PostSave(Book book)
+        public void PostSave([FromBody] Book book)
         {
             if (book.Id == 0)
                 _service.Add(book);

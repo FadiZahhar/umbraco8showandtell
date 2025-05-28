@@ -18,7 +18,8 @@ namespace HighlyDeveloped.Core.Repositories
         {
             using (var scope = _scopeProvider.CreateScope())
             {
-                return scope.Database.Fetch<Book>("SELECT * FROM Books");
+                var books = scope.Database.Fetch<Book>("SELECT * FROM Books");
+                return books;
             }
         }
 

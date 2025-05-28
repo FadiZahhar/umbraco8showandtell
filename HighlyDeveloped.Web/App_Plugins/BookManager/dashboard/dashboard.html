@@ -2,34 +2,73 @@
     <h2>Book Manager</h2>
     <button class="btn" ng-click="vm.newBook()">Add Book</button>
     <table class="table">
-        <tr>
-            <th>Title</th>
-            <th>Author</th>
-            <th>Year</th>
-            <th>ISBN</th>
-            <th>Actions</th>
+        <tr style="width: 100%; border-collapse: collapse;">
+            <th style="padding: 10px; background-color: #f1f1f1; text-align: left;">Title</th>
+            <th style="padding: 10px; background-color: #f1f1f1; text-align: left;">Author</th>
+            <th style="padding: 10px; background-color: #f1f1f1; text-align: left;">Year</th>
+            <th style="padding: 10px; background-color: #f1f1f1; text-align: left;">ISBN</th>
+            <th style="padding: 10px; background-color: #f1f1f1; text-align: left;">Actions</th>
         </tr>
-        <tr ng-repeat="book in vm.books">
-            <td>{{book.title}}</td>
-            <td>{{book.author}}</td>
-            <td>{{book.year}}</td>
-            <td>{{book.isbn}}</td>
+        <tr ng-repeat="book in vm.books" style="background-color: #f9f9f9; border-bottom: 1px solid #ddd;"
+            onmouseover="this.style.backgroundColor='#eef'"
+            onmouseout="this.style.backgroundColor='#f9f9f9'">
+            <td style="padding: 10px; text-align: left;">{{book.Title}}</td>
+            <td style="padding: 10px; text-align: left;">{{book.Author}}</td>
+            <td style="padding: 10px; text-align: left;">{{book.Year}}</td>
+            <td style="padding: 10px; text-align: left;">{{book.ISBN}}</td>
             <td>
-                <button class="btn btn-link" ng-click="vm.editBook(book)">Edit</button>
-                <button class="btn btn-link" ng-click="vm.deleteBook(book.id)">Delete</button>
+                <button  style="background-color: #2196F3; color: white; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer;" class="btn btn-link" ng-click="vm.editBook(book)">Edit</button>
+                <button  style="background-color: red; color: white; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer;" class="btn btn-link" ng-click="vm.deleteBook(book.Id)">Delete</button>
             </td>
         </tr>
     </table>
 
-    <!-- Add/Edit Form -->
-    <div ng-if="vm.editing">
+    <!--Add/Edit Form-->
+    <!--<div ng-if="vm.editing">
         <form   ng-submit="vm.saveBook()">
-            <label>Title: <input ng-model="vm.currentBook.title" required /></label><br>
-            <label>Author: <input ng-model="vm.currentBook.author" required /></label><br>
-            <label>Year: <input ng-model="vm.currentBook.year" type="number" required /></label><br>
-            <label>ISBN: <input ng-model="vm.currentBook.isbn" required /></label><br>
+            <label>Title: <input ng-model="vm.currentBook.Title" required /></label><br>
+            <label>Author: <input ng-model="vm.currentBook.Author" required /></label><br>
+            <label>Year: <input ng-model="vm.currentBook.Year" type="number" required /></label><br>
+            <label>ISBN: <input ng-model="vm.currentBook.ISBN" required /></label><br>
             <button type="button" ng-click="vm.saveBook()" class="btn btn-success">Save</button>
             <button type="button" class="btn" ng-click="vm.cancel()">Cancel</button>
         </form>
+    </div>-->
+
+    <div ng-if="vm.editing">
+        <form ng-submit="vm.saveBook()" style="margin-top: 20px; max-width: 400px;">
+            <label style="display: block; margin-bottom: 10px;">
+                Title:
+                <input ng-model="vm.currentBook.Title" required
+                       style="width: 100%; padding: 6px; margin-top: 4px; box-sizing: border-box;" />
+            </label>
+            <label style="display: block; margin-bottom: 10px;">
+                Author:
+                <input ng-model="vm.currentBook.Author" required
+                       style="width: 100%; padding: 6px; margin-top: 4px; box-sizing: border-box;" />
+            </label>
+            <label style="display: block; margin-bottom: 10px;">
+                Year:
+                <input ng-model="vm.currentBook.Year" type="number" required
+                       style="width: 100%; padding: 6px; margin-top: 4px; box-sizing: border-box;" />
+            </label>
+            <label style="display: block; margin-bottom: 10px;">
+                ISBN:
+                <input ng-model="vm.currentBook.ISBN" required
+                       style="width: 100%; padding: 6px; margin-top: 4px; box-sizing: border-box;" />
+            </label>
+
+            <button type="submit" ng-click="vm.saveBook()"
+                    style="background-color: green; color: white; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer;">
+                Save
+            </button>
+
+            <button type="button" ng-click="vm.cancel()"
+                    style="background-color: #ccc; color: black; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; margin-left: 10px;">
+                Cancel
+            </button>
+        </form>
     </div>
+
 </div>
+

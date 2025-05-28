@@ -3,56 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{34948984-1FC0-4ABC-B14B-AD9B1FD58603}|HighlyDeveloped.Core\\HighlyDeveloped.Core.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.core\\migrations\\booktablemigrationcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34948984-1FC0-4ABC-B14B-AD9B1FD58603}|HighlyDeveloped.Core\\HighlyDeveloped.Core.csproj|solutionrelative:highlydeveloped.core\\migrations\\booktablemigrationcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{34948984-1FC0-4ABC-B14B-AD9B1FD58603}|HighlyDeveloped.Core\\HighlyDeveloped.Core.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.core\\composers\\booktablemigrationcomposer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34948984-1FC0-4ABC-B14B-AD9B1FD58603}|HighlyDeveloped.Core\\HighlyDeveloped.Core.csproj|solutionrelative:highlydeveloped.core\\composers\\booktablemigrationcomposer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{34948984-1FC0-4ABC-B14B-AD9B1FD58603}|HighlyDeveloped.Core\\HighlyDeveloped.Core.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.core\\composers\\bookservicecomposer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34948984-1FC0-4ABC-B14B-AD9B1FD58603}|HighlyDeveloped.Core\\HighlyDeveloped.Core.csproj|solutionrelative:highlydeveloped.core\\composers\\bookservicecomposer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{34948984-1FC0-4ABC-B14B-AD9B1FD58603}|HighlyDeveloped.Core\\HighlyDeveloped.Core.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.core\\controllers\\bookapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34948984-1FC0-4ABC-B14B-AD9B1FD58603}|HighlyDeveloped.Core\\HighlyDeveloped.Core.csproj|solutionrelative:highlydeveloped.core\\controllers\\bookapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{34948984-1FC0-4ABC-B14B-AD9B1FD58603}|HighlyDeveloped.Core\\HighlyDeveloped.Core.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.core\\controllers\\bookspubliccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34948984-1FC0-4ABC-B14B-AD9B1FD58603}|HighlyDeveloped.Core\\HighlyDeveloped.Core.csproj|solutionrelative:highlydeveloped.core\\controllers\\bookspubliccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{34948984-1FC0-4ABC-B14B-AD9B1FD58603}|HighlyDeveloped.Core\\HighlyDeveloped.Core.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.core\\repositories\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34948984-1FC0-4ABC-B14B-AD9B1FD58603}|HighlyDeveloped.Core\\HighlyDeveloped.Core.csproj|solutionrelative:highlydeveloped.core\\repositories\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.web\\app_plugins\\bookmanager\\dashboard\\dashboard.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|solutionrelative:highlydeveloped.web\\app_plugins\\bookmanager\\dashboard\\dashboard.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{34948984-1FC0-4ABC-B14B-AD9B1FD58603}|HighlyDeveloped.Core\\HighlyDeveloped.Core.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.core\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34948984-1FC0-4ABC-B14B-AD9B1FD58603}|HighlyDeveloped.Core\\HighlyDeveloped.Core.csproj|solutionrelative:highlydeveloped.core\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.web\\app_plugins\\bookmanager\\dashboard\\dashboard.controller.js||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|solutionrelative:highlydeveloped.web\\app_plugins\\bookmanager\\dashboard\\dashboard.controller.js||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.web\\app_plugins\\bookmanager\\package.manifest||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|solutionrelative:highlydeveloped.web\\app_plugins\\bookmanager\\package.manifest||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.web\\app_plugins\\customwelcomedashboard\\package.manifest||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|solutionrelative:highlydeveloped.web\\app_plugins\\customwelcomedashboard\\package.manifest||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.web\\app_plugins\\bookmanager\\dashboard\\dashboard.controller.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|solutionrelative:highlydeveloped.web\\app_plugins\\bookmanager\\dashboard\\dashboard.controller.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{34948984-1FC0-4ABC-B14B-AD9B1FD58603}|HighlyDeveloped.Core\\HighlyDeveloped.Core.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.core\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{34948984-1FC0-4ABC-B14B-AD9B1FD58603}|HighlyDeveloped.Core\\HighlyDeveloped.Core.csproj|solutionrelative:highlydeveloped.core\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{34948984-1FC0-4ABC-B14B-AD9B1FD58603}|HighlyDeveloped.Core\\HighlyDeveloped.Core.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.core\\migrations\\createbooktablemigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34948984-1FC0-4ABC-B14B-AD9B1FD58603}|HighlyDeveloped.Core\\HighlyDeveloped.Core.csproj|solutionrelative:highlydeveloped.core\\migrations\\createbooktablemigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{34948984-1FC0-4ABC-B14B-AD9B1FD58603}|HighlyDeveloped.Core\\HighlyDeveloped.Core.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.core\\repositories\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34948984-1FC0-4ABC-B14B-AD9B1FD58603}|HighlyDeveloped.Core\\HighlyDeveloped.Core.csproj|solutionrelative:highlydeveloped.core\\repositories\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34948984-1FC0-4ABC-B14B-AD9B1FD58603}|HighlyDeveloped.Core\\HighlyDeveloped.Core.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.core\\controllers\\bookapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34948984-1FC0-4ABC-B14B-AD9B1FD58603}|HighlyDeveloped.Core\\HighlyDeveloped.Core.csproj|solutionrelative:highlydeveloped.core\\controllers\\bookapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.web\\app_plugins\\bookmanager\\dashboard\\dashboard.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|solutionrelative:highlydeveloped.web\\app_plugins\\bookmanager\\dashboard\\dashboard.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -67,92 +35,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BookTableMigrationComposer.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Core\\Composers\\BookTableMigrationComposer.cs",
-              "RelativeDocumentMoniker": "HighlyDeveloped.Core\\Composers\\BookTableMigrationComposer.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Core\\Composers\\BookTableMigrationComposer.cs",
-              "RelativeToolTip": "HighlyDeveloped.Core\\Composers\\BookTableMigrationComposer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "Title": "BookService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Core\\Services\\BookService.cs",
+              "RelativeDocumentMoniker": "HighlyDeveloped.Core\\Services\\BookService.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Core\\Services\\BookService.cs",
+              "RelativeToolTip": "HighlyDeveloped.Core\\Services\\BookService.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAxwBAAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T07:45:14.291Z",
+              "WhenOpened": "2025-05-28T08:21:13.933Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "BookTableMigrationComponent.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Core\\Migrations\\BookTableMigrationComponent.cs",
-              "RelativeDocumentMoniker": "HighlyDeveloped.Core\\Migrations\\BookTableMigrationComponent.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Core\\Migrations\\BookTableMigrationComponent.cs",
-              "RelativeToolTip": "HighlyDeveloped.Core\\Migrations\\BookTableMigrationComponent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T07:10:58.812Z",
+              "Title": "dashboard.controller.js",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\BookManager\\dashboard\\dashboard.controller.js",
+              "RelativeDocumentMoniker": "HighlyDeveloped.Web\\App_Plugins\\BookManager\\dashboard\\dashboard.controller.js",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\BookManager\\dashboard\\dashboard.controller.js",
+              "RelativeToolTip": "HighlyDeveloped.Web\\App_Plugins\\BookManager\\dashboard\\dashboard.controller.js",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAmwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-28T08:17:02.781Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "BookServiceComposer.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Core\\Composers\\BookServiceComposer.cs",
-              "RelativeDocumentMoniker": "HighlyDeveloped.Core\\Composers\\BookServiceComposer.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Core\\Composers\\BookServiceComposer.cs",
-              "RelativeToolTip": "HighlyDeveloped.Core\\Composers\\BookServiceComposer.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
+              "Title": "BookRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Core\\Repositories\\BookRepository.cs",
+              "RelativeDocumentMoniker": "HighlyDeveloped.Core\\Repositories\\BookRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Core\\Repositories\\BookRepository.cs",
+              "RelativeToolTip": "HighlyDeveloped.Core\\Repositories\\BookRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T07:43:49.57Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BooksPublicController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Core\\Controllers\\BooksPublicController.cs",
-              "RelativeDocumentMoniker": "HighlyDeveloped.Core\\Controllers\\BooksPublicController.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Core\\Controllers\\BooksPublicController.cs",
-              "RelativeToolTip": "HighlyDeveloped.Core\\Controllers\\BooksPublicController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T07:42:29.076Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "dashboard.html",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\BookManager\\dashboard\\dashboard.html",
-              "RelativeDocumentMoniker": "HighlyDeveloped.Web\\App_Plugins\\BookManager\\dashboard\\dashboard.html",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\BookManager\\dashboard\\dashboard.html",
-              "RelativeToolTip": "HighlyDeveloped.Web\\App_Plugins\\BookManager\\dashboard\\dashboard.html",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAABkAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-05-28T07:28:26.545Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Book.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Core\\Models\\Book.cs",
-              "RelativeDocumentMoniker": "HighlyDeveloped.Core\\Models\\Book.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Core\\Models\\Book.cs",
-              "RelativeToolTip": "HighlyDeveloped.Core\\Models\\Book.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T07:08:21.319Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "package.manifest",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\BookManager\\package.manifest",
-              "RelativeDocumentMoniker": "HighlyDeveloped.Web\\App_Plugins\\BookManager\\package.manifest",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\BookManager\\package.manifest",
-              "RelativeToolTip": "HighlyDeveloped.Web\\App_Plugins\\BookManager\\package.manifest",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001203|",
-              "WhenOpened": "2025-05-28T07:24:19.836Z",
+              "WhenOpened": "2025-05-28T08:21:23.657Z",
               "EditorCaption": ""
             },
             {
@@ -163,74 +79,22 @@
               "RelativeDocumentMoniker": "HighlyDeveloped.Core\\Controllers\\BookApiController.cs",
               "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Core\\Controllers\\BookApiController.cs",
               "RelativeToolTip": "HighlyDeveloped.Core\\Controllers\\BookApiController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T07:19:58.773Z",
+              "WhenOpened": "2025-05-28T08:20:59.59Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "package.manifest",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\package.manifest",
-              "RelativeDocumentMoniker": "HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\package.manifest",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\package.manifest",
-              "RelativeToolTip": "HighlyDeveloped.Web\\App_Plugins\\CustomWelcomeDashboard\\package.manifest",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001203|",
-              "WhenOpened": "2025-05-28T07:24:16.715Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BookRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Core\\Repositories\\BookRepository.cs",
-              "RelativeDocumentMoniker": "HighlyDeveloped.Core\\Repositories\\BookRepository.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Core\\Repositories\\BookRepository.cs",
-              "RelativeToolTip": "HighlyDeveloped.Core\\Repositories\\BookRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T07:13:20.662Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "dashboard.controller.js",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\BookManager\\dashboard\\dashboard.controller.js",
-              "RelativeDocumentMoniker": "HighlyDeveloped.Web\\App_Plugins\\BookManager\\dashboard\\dashboard.controller.js",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\BookManager\\dashboard\\dashboard.controller.js",
-              "RelativeToolTip": "HighlyDeveloped.Web\\App_Plugins\\BookManager\\dashboard\\dashboard.controller.js",
-              "ViewState": "AgIAABIAAAAAAAAAAADwvyQAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-05-28T07:30:20.46Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "BookService.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Core\\Services\\BookService.cs",
-              "RelativeDocumentMoniker": "HighlyDeveloped.Core\\Services\\BookService.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Core\\Services\\BookService.cs",
-              "RelativeToolTip": "HighlyDeveloped.Core\\Services\\BookService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T07:17:59.821Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CreateBookTableMigration.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Core\\Migrations\\CreateBookTableMigration.cs",
-              "RelativeDocumentMoniker": "HighlyDeveloped.Core\\Migrations\\CreateBookTableMigration.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Core\\Migrations\\CreateBookTableMigration.cs",
-              "RelativeToolTip": "HighlyDeveloped.Core\\Migrations\\CreateBookTableMigration.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T07:10:04.423Z",
+              "DocumentIndex": 4,
+              "Title": "dashboard.html",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\BookManager\\dashboard\\dashboard.html",
+              "RelativeDocumentMoniker": "HighlyDeveloped.Web\\App_Plugins\\BookManager\\dashboard\\dashboard.html",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\BookManager\\dashboard\\dashboard.html",
+              "RelativeToolTip": "HighlyDeveloped.Web\\App_Plugins\\BookManager\\dashboard\\dashboard.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-05-28T08:16:47.891Z",
               "EditorCaption": ""
             }
           ]
