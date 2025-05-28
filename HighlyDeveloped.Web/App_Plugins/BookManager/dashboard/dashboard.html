@@ -1,74 +1,122 @@
-﻿<div ng-controller="BookManagerDashboardController as vm">
+﻿<div ng-controller="BookManagerDashboardController as bookManager">
+
     <h2>Book Manager</h2>
-    <button class="btn" ng-click="vm.newBook()">Add Book</button>
-    <table class="table">
-        <tr style="width: 100%; border-collapse: collapse;">
-            <th style="padding: 10px; background-color: #f1f1f1; text-align: left;">Title</th>
-            <th style="padding: 10px; background-color: #f1f1f1; text-align: left;">Author</th>
-            <th style="padding: 10px; background-color: #f1f1f1; text-align: left;">Year</th>
-            <th style="padding: 10px; background-color: #f1f1f1; text-align: left;">ISBN</th>
-            <th style="padding: 10px; background-color: #f1f1f1; text-align: left;">Actions</th>
-        </tr>
-        <tr ng-repeat="book in vm.books" style="background-color: #f9f9f9; border-bottom: 1px solid #ddd;"
-            onmouseover="this.style.backgroundColor='#eef'"
-            onmouseout="this.style.backgroundColor='#f9f9f9'">
-            <td style="padding: 10px; text-align: left;">{{book.Title}}</td>
-            <td style="padding: 10px; text-align: left;">{{book.Author}}</td>
-            <td style="padding: 10px; text-align: left;">{{book.Year}}</td>
-            <td style="padding: 10px; text-align: left;">{{book.ISBN}}</td>
-            <td>
-                <button  style="background-color: #2196F3; color: white; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer;" class="btn btn-link" ng-click="vm.editBook(book)">Edit</button>
-                <button  style="background-color: red; color: white; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer;" class="btn btn-link" ng-click="vm.deleteBook(book.Id)">Delete</button>
-            </td>
-        </tr>
+
+    <button class="btn btn-success mb-3" ng-click="bookManager.newBook()">Add New Book</button>
+
+    <!-- Book List -->
+    <table class="table table-striped" ng-if="!bookManager.editing">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Year</th>
+                <th>ISBN</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="book in bookManager.books track by book.Id">
+                <td>{{book.Title}}</td>
+                <td>{{book.Author}}</td>
+                <td>{{book.Year}}</td>
+                <td>{{book.ISBN}}</td>
+                <td>
+                    <button class="btn btn-primary btn-sm" ng-click="bookManager.editBook(book)">Edit</button>
+                    <button class="btn btn-danger btn-sm" ng-click="bookManager.deleteBook(book.Id)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
     </table>
 
-    <!--Add/Edit Form-->
-    <!--<div ng-if="vm.editing">
-        <form   ng-submit="vm.saveBook()">
-            <label>Title: <input ng-model="vm.currentBook.Title" required /></label><br>
-            <label>Author: <input ng-model="vm.currentBook.Author" required /></label><br>
-            <label>Year: <input ng-model="vm.currentBook.Year" type="number" required /></label><br>
-            <label>ISBN: <input ng-model="vm.currentBook.ISBN" required /></label><br>
-            <button type="button" ng-click="vm.saveBook()" class="btn btn-success">Save</button>
-            <button type="button" class="btn" ng-click="vm.cancel()">Cancel</button>
-        </form>
-    </div>-->
+    <!-- Book Edit/Create Form -->
+    <form name="bookForm"
+          novalidate
+          ng-submit="bookManager.saveBook(bookForm)"
+          ng-if="bookManager.editing"
+          class="mb-4">
 
-    <div ng-if="vm.editing">
-        <form ng-submit="vm.saveBook()" style="margin-top: 20px; max-width: 400px;">
-            <label style="display: block; margin-bottom: 10px;">
-                Title:
-                <input ng-model="vm.currentBook.Title" required
-                       style="width: 100%; padding: 6px; margin-top: 4px; box-sizing: border-box;" />
-            </label>
-            <label style="display: block; margin-bottom: 10px;">
-                Author:
-                <input ng-model="vm.currentBook.Author" required
-                       style="width: 100%; padding: 6px; margin-top: 4px; box-sizing: border-box;" />
-            </label>
-            <label style="display: block; margin-bottom: 10px;">
-                Year:
-                <input ng-model="vm.currentBook.Year" type="number" required
-                       style="width: 100%; padding: 6px; margin-top: 4px; box-sizing: border-box;" />
-            </label>
-            <label style="display: block; margin-bottom: 10px;">
-                ISBN:
-                <input ng-model="vm.currentBook.ISBN" required
-                       style="width: 100%; padding: 6px; margin-top: 4px; box-sizing: border-box;" />
-            </label>
+        <h4 ng-if="!bookManager.currentBook.Id">Add Book</h4>
+        <h4 ng-if="bookManager.currentBook.Id">Edit Book</h4>
 
-            <button type="submit" ng-click="vm.saveBook()"
-                    style="background-color: green; color: white; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer;">
-                Save
-            </button>
+        <div class="form-group mb-2">
+            <label>Title:</label>
+            <input type="text"
+                   name="title"
+                   ng-model="bookManager.currentBook.Title"
+                   ng-required="true"
+                   ng-maxlength="150"
+                   class="form-control" />
+            <span ng-show="bookForm.title.$touched && bookForm.title.$error.required" class="text-danger">
+                Title is required.
+            </span>
+            <span ng-show="bookForm.title.$error.maxlength" class="text-danger">
+                Title is too long (max 150).
+            </span>
+        </div>
 
-            <button type="button" ng-click="vm.cancel()"
-                    style="background-color: #ccc; color: black; padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; margin-left: 10px;">
-                Cancel
-            </button>
-        </form>
-    </div>
+        <div class="form-group mb-2">
+            <label>Author:</label>
+            <input type="text"
+                   name="author"
+                   ng-model="bookManager.currentBook.Author"
+                   ng-required="true"
+                   ng-maxlength="100"
+                   class="form-control" />
+            <span ng-show="bookForm.author.$touched && bookForm.author.$error.required" class="text-danger">
+                Author is required.
+            </span>
+            <span ng-show="bookForm.author.$error.maxlength" class="text-danger">
+                Author is too long (max 100).
+            </span>
+        </div>
+
+        <div class="form-group mb-2">
+            <label>Year:</label>
+            <input type="number"
+                   name="year"
+                   ng-model="bookManager.currentBook.Year"
+                   ng-required="true"
+                   min="1450"
+                   max="2100"
+                   class="form-control" />
+            <span ng-show="bookForm.year.$touched && bookForm.year.$error.required" class="text-danger">
+                Year is required.
+            </span>
+            <span ng-show="bookForm.year.$error.min || bookForm.year.$error.max" class="text-danger">
+                Year must be between 1450 and 2100.
+            </span>
+        </div>
+
+        <div class="form-group mb-2">
+            <label>ISBN:</label>
+            <input type="text"
+                   name="ISBN"
+                   ng-model="bookManager.currentBook.ISBN"
+                   ng-required="true"
+                   ng-pattern="/^\d{3}-\d{10}$/"
+                   class="form-control" />
+            <span ng-show="bookForm.ISBN.$touched && bookForm.ISBN.$error.required" class="text-danger">
+                ISBN is required.
+            </span>
+            <span ng-show="bookForm.ISBN.$error.pattern" class="text-danger">
+                ISBN must be in the format 123-1234567890.
+            </span>
+        </div>
+
+        <!-- Display server-side (API) validation errors -->
+        <div ng-if="bookManager.validationErrors && bookManager.validationErrors.length > 0" class="alert alert-danger">
+            <ul>
+                <li ng-repeat="error in bookManager.validationErrors track by $index">{{ error }}</li>
+            </ul>
+        </div>
+
+        <button type="button" ng-click="bookManager.saveBook(bookManager)"
+                class="btn btn-primary"
+               >
+            Save
+        </button>
+        <button type="button" class="btn btn-secondary" ng-click="bookManager.cancel()">Cancel</button>
+    </form>
 
 </div>
-

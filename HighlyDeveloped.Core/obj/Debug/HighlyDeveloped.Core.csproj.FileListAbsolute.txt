@@ -170,3 +170,5 @@ C:\Users\User\Documents\GitHub\umbraco8showandtell\HighlyDeveloped.Core\obj\Debu
 C:\Users\User\Documents\GitHub\umbraco8showandtell\HighlyDeveloped.Core\obj\Debug\HighlyDeveloped.Core.pdb
 C:\Users\User\Documents\GitHub\umbraco8showandtell\HighlyDeveloped.Core\bin\Debug\HighlyDeveloped.Core.dll.config
 C:\Users\User\Documents\GitHub\umbraco8showandtell\HighlyDeveloped.Core\bin\Debug\DataAnnotationsExtensions.dll
+C:\Users\User\Documents\GitHub\umbraco8showandtell\HighlyDeveloped.Core\bin\Debug\CsQuery.dll
+C:\Users\User\Documents\GitHub\umbraco8showandtell\HighlyDeveloped.Core\bin\Debug\CsQuery.xml

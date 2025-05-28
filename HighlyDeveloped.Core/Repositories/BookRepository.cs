@@ -1,6 +1,7 @@
 ﻿using HighlyDeveloped.Core.Models;
 using NPoco;
 using System.Collections.Generic;
+using System.Linq;
 using Umbraco.Core.Scoping;
 
 namespace HighlyDeveloped.Core.Repositories
@@ -55,6 +56,26 @@ namespace HighlyDeveloped.Core.Repositories
             {
                 scope.Database.Execute("DELETE FROM Books WHERE Id = @0", id);
                 scope.Complete();
+            }
+        }
+
+
+        public (IEnumerable<Book> Books, int TotalCount) Search(string term, int page, int pageSize)
+        {
+            using (var scope = _scopeProvider.CreateScope())
+            {
+                var where = string.IsNullOrWhiteSpace(term)
+                    ? ""
+                    : "WHERE Title LIKE @0 OR Author LIKE @0 OR ISBN LIKE @0";
+                var query = $"SELECT * FROM Books {where} ORDER BY Id DESC OFFSET @1 ROWS FETCH NEXT @2 ROWS ONLY";
+                var countQuery = $"SELECT COUNT(*) FROM Books {where}";
+
+                var param = string.IsNullOrWhiteSpace(term) ? new object[] { } : new object[] { $"%{term}%" };
+
+                var books = scope.Database.Fetch<Book>(query, param.Append((page - 1) * pageSize).Append(pageSize).ToArray());
+                var count = scope.Database.ExecuteScalar<int>(countQuery, param);
+
+                return (books, count);
             }
         }
     }
