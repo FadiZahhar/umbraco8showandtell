@@ -14,3 +14,7 @@
 .fa-search {
     cursor: pointer
 }
+
+span.text-danger {
+    color: red !important;
+}

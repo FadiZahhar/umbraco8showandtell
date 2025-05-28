@@ -73,7 +73,7 @@
     <!-- Book Edit/Create Form -->
     <div class="w3-container" ng-if="bookManager.editing">
         <form name="bookForm"
-             ng-app="formApp"
+            
               ng-submit="bookManager.saveBook(bookForm)"
               class="mb-4">
 
@@ -156,7 +156,7 @@
             <!-- Buttons -->
             <button type="button"
                     class="btn w3-green"
-                    ng-click="bookManager.saveBook(bookManager)"
+                    ng-click="bookManager.saveBook(bookForm)"
                     >
                 Save
             </button>
