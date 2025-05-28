@@ -300,6 +300,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\Umbraco.sdf" />
+    <Content Include="App_Plugins\BookManager\dashboard\dashboard.controller.js" />
+    <Content Include="App_Plugins\BookManager\dashboard\dashboard.html" />
     <Content Include="App_Plugins\CustomWelcomeDashboard\customwelcomedashboard.controller.js" />
     <Content Include="App_Plugins\CustomWelcomeDashboard\customwelcomedashboard.css" />
     <Content Include="App_Plugins\CustomWelcomeDashboard\Lang\en-US.xml" />
@@ -586,6 +588,7 @@
     <Content Include="App_Plugins\MarkDownEditor\lib\demo\browser\demo.less" />
     <Content Include="App_Plugins\MarkDownEditor\lib\Markdown.Editor.less" />
     <Content Include="App_Plugins\MarkDownEditor\lib\README.md" />
+    <Content Include="App_Plugins\BookManager\package.manifest" />
     <None Include="packages.config" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
