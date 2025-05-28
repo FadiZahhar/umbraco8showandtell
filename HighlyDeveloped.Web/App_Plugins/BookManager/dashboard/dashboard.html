@@ -4,6 +4,9 @@
 
     <button class="btn btn-success mb-3" ng-click="bookManager.newBook()">Add New Book</button>
 
+
+    <input ng-model="bookManager.searchTerm" ng-change="bookManager.searchBooks()" placeholder="Search books..." class="umb-search" />
+   
     <!-- Book List -->
     <table class="table table-striped" ng-if="!bookManager.editing">
         <thead>
@@ -112,11 +115,24 @@
         </div>
 
         <button type="button" ng-click="bookManager.saveBook(bookManager)"
-                class="btn btn-primary"
-               >
+                class="btn btn-primary">
             Save
         </button>
         <button type="button" class="btn btn-secondary" ng-click="bookManager.cancel()">Cancel</button>
     </form>
+
+
+    <ul class="pagination">
+        <li ng-class="{disabled: bookManager.page === 1}">
+            <a href ng-click="bookManager.goToPage(bookManager.page-1)">&laquo;</a>
+        </li>
+        <li ng-repeat="p in [].constructor(bookManager.totalPages) track by $index"
+            ng-class="{active: $index+1 === bookManager.page}">
+            <a href ng-click="bookManager.goToPage($index+1)">{{$index+1}}</a>
+        </li>
+        <li ng-class="{disabled: bookManager.page === bookManager.totalPages}">
+            <a href ng-click="bookManager.goToPage(bookManager.page+1)">&raquo;</a>
+        </li>
+    </ul>
 
 </div>

@@ -19,8 +19,7 @@ namespace HighlyDeveloped.Core.Repositories
         {
             using (var scope = _scopeProvider.CreateScope())
             {
-                var books = scope.Database.Fetch<Book>("SELECT * FROM Books");
-                return books;
+                return scope.Database.Fetch<Book>("SELECT * FROM Books");
             }
         }
 
@@ -59,24 +58,28 @@ namespace HighlyDeveloped.Core.Repositories
             }
         }
 
-
         public (IEnumerable<Book> Books, int TotalCount) Search(string term, int page, int pageSize)
         {
             using (var scope = _scopeProvider.CreateScope())
             {
-                var where = string.IsNullOrWhiteSpace(term)
-                    ? ""
-                    : "WHERE Title LIKE @0 OR Author LIKE @0 OR ISBN LIKE @0";
-                var query = $"SELECT * FROM Books {where} ORDER BY Id DESC OFFSET @1 ROWS FETCH NEXT @2 ROWS ONLY";
+                var hasTerm = !string.IsNullOrWhiteSpace(term);
+                var where = hasTerm
+                    ? "WHERE Title LIKE @0 OR Author LIKE @0 OR ISBN LIKE @0"
+                    : "";
+
+                var query = $"SELECT * FROM Books {where} ORDER BY Id DESC OFFSET @{(hasTerm ? 1 : 0)} ROWS FETCH NEXT @{(hasTerm ? 2 : 1)} ROWS ONLY";
                 var countQuery = $"SELECT COUNT(*) FROM Books {where}";
 
-                var param = string.IsNullOrWhiteSpace(term) ? new object[] { } : new object[] { $"%{term}%" };
+                var parameters = hasTerm
+                    ? new object[] { $"%{term}%", (page - 1) * pageSize, pageSize }
+                    : new object[] { (page - 1) * pageSize, pageSize };
 
-                var books = scope.Database.Fetch<Book>(query, param.Append((page - 1) * pageSize).Append(pageSize).ToArray());
-                var count = scope.Database.ExecuteScalar<int>(countQuery, param);
+                var books = scope.Database.Fetch<Book>(query, parameters);
+                var count = scope.Database.ExecuteScalar<int>(countQuery, hasTerm ? new object[] { $"%{term}%" } : null);
 
                 return (books, count);
             }
         }
+
     }
 }
