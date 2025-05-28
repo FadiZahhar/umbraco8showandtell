@@ -274,12 +274,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Composers\BookServiceComposer.cs" />
+    <Compile Include="Composers\BookTableMigrationComposer.cs" />
+    <Compile Include="Controllers\BookApiController.cs" />
+    <Compile Include="Controllers\BooksPublicController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="Interfaces\IEmailService.cs" />
+    <Compile Include="Migrations\BookTableMigrationComponent.cs" />
+    <Compile Include="Migrations\CreateBookTableMigration.cs" />
+    <Compile Include="Models\Book.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegisterServicesComposer.cs" />
+    <Compile Include="Repositories\BookRepository.cs" />
+    <Compile Include="Services\BookService.cs" />
     <Compile Include="Services\EmailService.cs" />
     <Compile Include="ViewModel\ContactFormViewModel.cs" />
     <Compile Include="ViewModel\LoginViewModel.cs" />

@@ -1,0 +1,35 @@
+﻿<div ng-controller="BookManagerDashboardController as vm">
+    <h2>Book Manager</h2>
+    <button class="btn" ng-click="vm.newBook()">Add Book</button>
+    <table class="table">
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Year</th>
+            <th>ISBN</th>
+            <th>Actions</th>
+        </tr>
+        <tr ng-repeat="book in vm.books">
+            <td>{{book.title}}</td>
+            <td>{{book.author}}</td>
+            <td>{{book.year}}</td>
+            <td>{{book.isbn}}</td>
+            <td>
+                <button class="btn btn-link" ng-click="vm.editBook(book)">Edit</button>
+                <button class="btn btn-link" ng-click="vm.deleteBook(book.id)">Delete</button>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Add/Edit Form -->
+    <div ng-if="vm.editing">
+        <form   ng-submit="vm.saveBook()">
+            <label>Title: <input ng-model="vm.currentBook.title" required /></label><br>
+            <label>Author: <input ng-model="vm.currentBook.author" required /></label><br>
+            <label>Year: <input ng-model="vm.currentBook.year" type="number" required /></label><br>
+            <label>ISBN: <input ng-model="vm.currentBook.isbn" required /></label><br>
+            <button type="button" ng-click="vm.saveBook()" class="btn btn-success">Save</button>
+            <button type="button" class="btn" ng-click="vm.cancel()">Cancel</button>
+        </form>
+    </div>
+</div>

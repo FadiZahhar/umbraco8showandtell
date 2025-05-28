@@ -1,0 +1,17 @@
+{
+  "dashboards": [
+    {
+      "alias": "bookManagerDashboard",
+      "view": "/App_Plugins/BookManager/dashboard/dashboard.html",
+      "sections": [ "content" ],
+      "weight": 10,
+      "label": "Book Manager"
+    }
+  ],
+  "javascript": [
+    "~/App_Plugins/BookManager/dashboard/dashboard.controller.js"
+  ],
+  "css": [
+    "https://www.w3schools.com/w3css/5/w3.css"
+  ]
+}
