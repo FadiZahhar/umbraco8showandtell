@@ -300,6 +300,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\Umbraco.sdf" />
+    <Content Include="App_Plugins\BookManager\dashboard\dashboard.css" />
     <Content Include="App_Plugins\BookManager\dashboard\dashboard.html" />
     <Content Include="App_Plugins\BookManager\Lang\en-US.xml" />
     <Content Include="App_Plugins\CustomWelcomeDashboard\customwelcomedashboard.css" />

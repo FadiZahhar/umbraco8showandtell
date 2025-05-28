@@ -10,6 +10,11 @@
         vm.pageSize = 2;
         vm.totalCount = 0;
         vm.totalPages = 1;
+        vm.submitted = false;
+
+        var vm = this;
+        vm.submitted = false;
+        vm.currentBook = {};
 
         vm.searchBooks = function () {
             $http.get("/umbraco/backoffice/api/BookApi/Search", {
@@ -52,6 +57,7 @@
 
         // Accept the form as a parameter so we can touch all fields if needed
         vm.saveBook = function (form) {
+            vm.submitted = true;
             // Touch all fields if invalid (shows validation errors)
             if (form.$invalid) {
                 angular.forEach(form.$error, function (fields) {
@@ -101,4 +107,13 @@
             var url = "/umbraco/backoffice/api/BookApi/ExportCsv";
             window.open(url, '_blank');
         };
+
+        $scope.showSearch = false;
+
+        $scope.toggleSearch = function () {
+            $scope.showSearch = !$scope.showSearch;
+        };
+
+      
     });
+    
