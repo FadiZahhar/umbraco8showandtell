@@ -1,11 +1,12 @@
 {
   "dashboards": [
     {
+      
       "alias": "bookManagerDashboard",
       "view": "/App_Plugins/BookManager/dashboard/dashboard.html",
       "sections": [ "content" ],
-      "weight": 10,
-      "label": "Book Manager"
+      "weight": 10
+
     }
   ],
   "javascript": [

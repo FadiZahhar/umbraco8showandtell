@@ -294,7 +294,7 @@ Umbraco.Web.Cache.MemberGroupCacheRefresher, Umbraco.Web, Version=8.0.0.0, Cultu
 Umbraco.Web.Cache.PublicAccessCacheRefresher, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Cache.TemplateCacheRefresher, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Cache.UserCacheRefresher, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Web.UI.MarkdownEditor, App_Code.vkirkb2t, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Web.UI.MarkdownEditor, App_Code.edz4gqqh, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 
 Umbraco.Core.Composing.IComposer
 
@@ -514,7 +514,7 @@ Umbraco.Web.PropertyEditors.ParameterEditors.MultiplePropertyGroupParameterEdito
 Umbraco.Web.PropertyEditors.ParameterEditors.MultiplePropertyTypeParameterEditor, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.PropertyEditors.ParameterEditors.PropertyGroupParameterEditor, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.PropertyEditors.ParameterEditors.PropertyTypeParameterEditor, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Web.UI.MarkdownEditor, App_Code.vkirkb2t, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Web.UI.MarkdownEditor, App_Code.edz4gqqh, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 
 Umbraco.Core.Cache.ICacheRefresher
 
