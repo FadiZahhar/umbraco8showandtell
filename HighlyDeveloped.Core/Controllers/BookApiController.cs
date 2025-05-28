@@ -1,8 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using HighlyDeveloped.Core.Models;
+using HighlyDeveloped.Core.Services;
+using System.Collections.Generic;
+using System.Net;
+using System.Net.Http;
+using System.Text;
 using System.Web.Http;
 using Umbraco.Web.WebApi;
-using HighlyDeveloped.Core.Models;
-using HighlyDeveloped.Core.Services;
 
 namespace HighlyDeveloped.Core.Controllers
 {
@@ -51,6 +54,28 @@ namespace HighlyDeveloped.Core.Controllers
                 totalCount = result.TotalCount
             };
         }
+
+
+        [HttpGet]
+        public HttpResponseMessage ExportCsv()
+        {
+            var books = _service.GetAll();
+            var sb = new StringBuilder();
+            sb.AppendLine("Id,Title,Author,Year,ISBN");
+            foreach (var book in books)
+                sb.AppendLine($"{book.Id},\"{book.Title}\",\"{book.Author}\",{book.Year},\"{book.ISBN}\"");
+
+            var result = new HttpResponseMessage(HttpStatusCode.OK)
+            {
+                Content = new StringContent(sb.ToString(), Encoding.UTF8, "text/csv")
+            };
+            result.Content.Headers.ContentDisposition = new System.Net.Http.Headers.ContentDispositionHeaderValue("attachment")
+            {
+                FileName = "books-export.csv"
+            };
+            return result;
+        }
+
     }
 
 }

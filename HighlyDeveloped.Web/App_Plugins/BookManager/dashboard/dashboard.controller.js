@@ -96,4 +96,9 @@
         };
 
         vm.loadBooks();
+
+        vm.exportBooks = function () {
+            var url = "/umbraco/backoffice/api/BookApi/ExportCsv";
+            window.open(url, '_blank');
+        };
     });

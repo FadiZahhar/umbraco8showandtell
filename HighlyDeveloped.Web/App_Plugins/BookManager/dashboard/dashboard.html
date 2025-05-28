@@ -6,7 +6,7 @@
 
 
     <input ng-model="bookManager.searchTerm" ng-change="bookManager.searchBooks()" placeholder="Search books..." class="umb-search" />
-   
+
     <!-- Book List -->
     <table class="table table-striped" ng-if="!bookManager.editing">
         <thead>
@@ -134,5 +134,7 @@
             <a href ng-click="bookManager.goToPage(bookManager.page+1)">&raquo;</a>
         </li>
     </ul>
+
+    <button class="btn" ng-click="bookManager.exportBooks()">Export CSV</button>
 
 </div>
