@@ -90,82 +90,82 @@
                        ng-maxlength="150"
                        required
                        class="form-control w3-input w3-border-0 w3-border-bottom w3-round w3-transparent" />
-                <span ng-show="(bookForm.Title.$touched || bookForm.$submitted) && bookForm.Title.$error.required" class="text-danger">
-                    title required
-                </span>
+                <!--  <span ng-show="(bookForm.Title.$touched || bookForm.$submitted) && bookForm.Title.$error.required" class="text-danger">
+        title required
+    </span>-->
             </div>
 
-            <!-- Author -->
-            <div class="form-group mb-2">
-                <label class="w3-text-grey">Author:</label>
-                <input type="text"
-                       name="Author"
-                       ng-model="bookManager.currentBook.Author"
-                       ng-required="true"
-                       ng-maxlength="100"
-                       class="form-control w3-input w3-border-0 w3-border-bottom w3-round w3-transparent" />
-                <span ng-show="(bookForm.Author.$touched) && bookForm.Author.$error.required" class="text-danger">
-                    Author is required.
-                </span>
-                <span ng-show="bookForm.Author.$error.maxlength" class="text-danger">
-                    Author is too long (max 100).
-                </span>
-            </div>
+    <!-- Author -->
+                <div class="form-group mb-2">
+                    <label class="w3-text-grey">Author:</label>
+                    <input type="text"
+                           name="Author"
+                           ng-model="bookManager.currentBook.Author"
+                           ng-required="true"
+                           ng-maxlength="100"
+                           class="form-control w3-input w3-border-0 w3-border-bottom w3-round w3-transparent" />
+                    <span ng-show="(bookForm.Author.$touched) && bookForm.Author.$error.required" class="text-danger">
+                        Author is required.
+                    </span>
+                    <span ng-show="bookForm.Author.$error.maxlength" class="text-danger">
+                        Author is too long (max 100).
+                    </span>
+                </div>
 
-            <!-- Year -->
-            <div class="form-group mb-2">
-                <label class="w3-text-grey">Year:</label>
-                <input type="number"
-                       name="Year"
-                       ng-model="bookManager.currentBook.Year"
-                       ng-required="true"
-                       min="1450"
-                       max="2100"
-                       class="form-control w3-input w3-border-0 w3-border-bottom w3-round w3-transparent" />
-                <span ng-show="(bookForm.Year.$touched || bookForm.$submitted) && bookForm.Year.$error.required" class="text-danger">
-                    Year is required.
-                </span>
-                <span ng-show="bookForm.Year.$error.min || bookForm.Year.$error.max" class="text-danger">
-                    Year must be between 1450 and 2100.
-                </span>
-            </div>
+                <!-- Year -->
+                <div class="form-group mb-2">
+                    <label class="w3-text-grey">Year:</label>
+                    <input type="number"
+                           name="Year"
+                           ng-model="bookManager.currentBook.Year"
+                           ng-required="true"
+                           min="1450"
+                           max="2100"
+                           class="form-control w3-input w3-border-0 w3-border-bottom w3-round w3-transparent" />
+                    <span ng-show="(bookForm.Year.$touched || bookForm.$submitted) && bookForm.Year.$error.required" class="text-danger">
+                        Year is required.
+                    </span>
+                    <span ng-show="bookForm.Year.$error.min || bookForm.Year.$error.max" class="text-danger">
+                        Year must be between 1450 and 2100.
+                    </span>
+                </div>
 
-            <!-- ISBN -->
-            <div class="form-group w3-margin-bottom">
-                <label class="w3-text-grey">ISBN:</label>
-                <input type="text"
-                       name="ISBN"
-                       ng-model="bookManager.currentBook.ISBN"
-                       ng-required="true"
-                       ng-pattern="/^\d{3}-\d{10}$/"
-                       class="form-control w3-input w3-border-0 w3-border-bottom w3-round w3-transparent" />
-                <span ng-show="(bookForm.ISBN.$touched || bookForm.$submitted) && bookForm.ISBN.$error.required" class="text-danger">
-                    ISBN is required.
-                </span>
-                <span ng-show="bookForm.ISBN.$error.pattern" class="text-danger">
-                    ISBN must be in the format 123-1234567890.
-                </span>
-            </div>
+                <!-- ISBN -->
+                <div class="form-group w3-margin-bottom">
+                    <label class="w3-text-grey">ISBN:</label>
+                    <input type="text"
+                           name="ISBN"
+                           ng-model="bookManager.currentBook.ISBN"
+                           ng-required="true"
+                           ng-pattern="/^\d{3}-\d{10}$/"
+                           class="form-control w3-input w3-border-0 w3-border-bottom w3-round w3-transparent" />
+                    <span ng-show="(bookForm.ISBN.$touched || bookForm.$submitted) && bookForm.ISBN.$error.required" class="text-danger">
+                        ISBN is required.
+                    </span>
+                    <span ng-show="bookForm.ISBN.$error.pattern" class="text-danger">
+                        ISBN must be in the format 123-1234567890.
+                    </span>
+                </div>
 
-            <!-- Server-side validation errors -->
-            <div ng-if="bookManager.validationErrors && bookManager.validationErrors.length > 0" class="alert alert-danger">
-                <ul>
-                    <li ng-repeat="error in bookManager.validationErrors track by $index">{{ error }}</li>
-                </ul>
-            </div>
+                <!-- Server-side validation errors -->
+                <div ng-if="bookManager.validationErrors && bookManager.validationErrors.length > 0" class="alert alert-danger">
+                    <ul>
+                        <li ng-repeat="error in bookManager.validationErrors track by $index">{{ error }}</li>
+                    </ul>
+                </div>
 
-            <!-- Buttons -->
-            <button type="button"
-                    class="btn w3-green"
-                    ng-click="bookManager.saveBook(bookForm)">
-                Save
-            </button>
-            <button type="button"
-                    class="btn btn-secondary"
-                    ng-click="bookManager.cancel()">
-                Cancel
-            </button>
-        </form>
+                <!-- Buttons -->
+                <button type="button"
+                        class="btn w3-green"
+                        ng-click="bookManager.saveBook(bookManager)">
+                    Save
+                </button>
+                <button type="button"
+                        class="btn btn-secondary"
+                        ng-click="bookManager.cancel()">
+                    Cancel
+                </button>
+</form>
     </div>
 
 </div>

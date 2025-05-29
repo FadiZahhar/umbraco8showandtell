@@ -295,7 +295,7 @@ Umbraco.ModelsBuilder.Embedded.BackOffice.MediaTypeModelValidator, Umbraco.Model
 Umbraco.ModelsBuilder.Embedded.BackOffice.MemberTypeModelValidator, Umbraco.ModelsBuilder.Embedded, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.ModelsBuilder.Embedded.BackOffice.ModelsBuilderDashboardController, Umbraco.ModelsBuilder.Embedded, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.ModelsBuilder.Embedded.BackOffice.ContentTypeModelValidator, Umbraco.ModelsBuilder.Embedded, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Web.UI.MarkdownEditor, App_Code.zyri_d_f, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Web.UI.MarkdownEditor, App_Code.dbft1vcr, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 
 Umbraco.Core.Composing.IComposer
 
@@ -517,7 +517,7 @@ Umbraco.Web.PropertyEditors.ParameterEditors.MultiplePropertyGroupParameterEdito
 Umbraco.Web.PropertyEditors.ParameterEditors.MultiplePropertyTypeParameterEditor, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.PropertyEditors.ParameterEditors.PropertyGroupParameterEditor, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.PropertyEditors.ParameterEditors.PropertyTypeParameterEditor, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
-Umbraco.Web.UI.MarkdownEditor, App_Code.zyri_d_f, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+Umbraco.Web.UI.MarkdownEditor, App_Code.dbft1vcr, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 
 Umbraco.Core.Cache.ICacheRefresher
 
@@ -600,7 +600,4 @@ Umbraco.Web.HealthCheck.Checks.Security.HttpsCheck, Umbraco.Web, Version=8.0.0.0
 Umbraco.Web.HealthCheck.NotificationMethods.IHealthCheckNotificationMethod
 
 Umbraco.Web.HealthCheck.NotificationMethods.EmailNotificationMethod, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
-
-Umbraco.Core.Deploy.IServiceConnector
-
 
