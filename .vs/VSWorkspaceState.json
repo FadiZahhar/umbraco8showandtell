@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\HighlyDeveloped.Core\\Controllers",
+    "\\HighlyDeveloped.Web",
+    "\\HighlyDeveloped.Web\\App_Plugins",
+    "\\HighlyDeveloped.Web\\App_Plugins\\BookManager\\dashboard"
+  ],
+  "SelectedNode": "\\HighlyDeveloped.Web\\App_Plugins\\BookManager",
+  "PreviewInSolutionExplorer": false
+}
