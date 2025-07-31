@@ -8,3 +8,7 @@
 @if(Model.HasValue("pageContent")) {
     @Model.Value("pageContent")
 }
+
+@if(Model.HasValue("linkNestedContent")) {
+    @Umbraco.RenderMacro("usefulLinks")
+}
