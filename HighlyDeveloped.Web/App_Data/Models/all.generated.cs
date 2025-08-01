@@ -6,8 +6,8 @@ using  Umbraco.Core.Models;
 using  Umbraco.Core.Models.PublishedContent;
 using  Umbraco.Web;
 using  Umbraco.ModelsBuilder.Embedded;
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "fece2977925f78d7")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.5")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "cbd5899004a87ba9")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.7")]
 
 
 // FILE: models.generated.cs
@@ -322,11 +322,11 @@ namespace Umbraco.Web.PublishedModels
 		public string OldPrice => this.Value<string>("oldPrice");
 
 		///<summary>
-		/// Ratings
+		/// Ratings Image
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
-		[ImplementPropertyType("ratings")]
-		public string Ratings => this.Value<string>("ratings");
+		[ImplementPropertyType("ratingsImage")]
+		public global::Umbraco.Core.Models.PublishedContent.IPublishedContent RatingsImage => this.Value<global::Umbraco.Core.Models.PublishedContent.IPublishedContent>("ratingsImage");
 
 		///<summary>
 		/// Size
