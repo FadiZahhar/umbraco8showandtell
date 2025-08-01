@@ -6,25 +6,7 @@
     var dealCards = Model.Content.Value<IEnumerable<IPublishedElement>>("dealCardsNestedContent");
 }
 
-@{
-    // Get the image ID from the macro parameter (media picker)
-    var mediaIdObj = Model.MacroParameters["ratingsImage"];
-    var image = Umbraco.Media(mediaIdObj as int?);
 
-    // Or if you use string ID
-    // int mediaId = 0;
-    // int.TryParse(mediaIdObj?.ToString(), out mediaId);
-    // var image = Umbraco.Media(mediaId);
-}
-
-@if (image != null)
-{
-    <img src="@ratingsImage.Url" alt="@ratingsImage.Name" />
-}
-else
-{
-    <p>No image selected.</p>
-}
 
 
 @if (dealCards != null && dealCards.Any())
@@ -67,7 +49,7 @@ else
                         
                         var title = item.Value<string>("title");
                         var rating = item.Value<decimal?>("rating") ?? 0;
-                        var sizes = item.Value<string>("sizes");
+                        var sizes = item.Value<string>("size");
                         var oldPrice = item.Value<decimal?>("oldPrice");
                         var newPrice = item.Value<decimal?>("newPrice");
 
