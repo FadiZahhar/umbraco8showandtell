@@ -6,8 +6,8 @@ using  Umbraco.Core.Models;
 using  Umbraco.Core.Models.PublishedContent;
 using  Umbraco.Web;
 using  Umbraco.ModelsBuilder.Embedded;
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "8c99b2e20c36ed9c")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.4")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "fece2977925f78d7")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.5")]
 
 
 // FILE: models.generated.cs
@@ -144,7 +144,7 @@ namespace Umbraco.Web.PublishedModels
 
 	/// <summary>Content Page</summary>
 	[PublishedModel("contentPage")]
-	public partial class ContentPage : PublishedContentModel, IUsefulLinks
+	public partial class ContentPage : PublishedContentModel, IDealCards, IUsefulLinks
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -173,6 +173,13 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		[ImplementPropertyType("pageContent")]
 		public global::System.Web.IHtmlString PageContent => this.Value<global::System.Web.IHtmlString>("pageContent");
+
+		///<summary>
+		/// Deal Cards Nested Content
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("dealCardsNestedContent")]
+		public global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.DealCard> DealCardsNestedContent => global::Umbraco.Web.PublishedModels.DealCards.GetDealCardsNestedContent(this);
 
 		///<summary>
 		/// Link Nested Content
@@ -273,6 +280,113 @@ namespace Umbraco.Web.PublishedModels
 		/// <summary>Static getter for Link Nested Content</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		public static global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.UsefulLink> GetLinkNestedContent(IUsefulLinks that) => that.Value<global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.UsefulLink>>("linkNestedContent");
+	}
+
+	/// <summary>Deal Card</summary>
+	[PublishedModel("dealCard")]
+	public partial class DealCard : PublishedElementModel
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new const string ModelTypeAlias = "dealCard";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<DealCard, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public DealCard(IPublishedElement content)
+			: base(content)
+		{ }
+
+		// properties
+
+		///<summary>
+		/// New Price
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("newPrice")]
+		public string NewPrice => this.Value<string>("newPrice");
+
+		///<summary>
+		/// Old Price
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("oldPrice")]
+		public string OldPrice => this.Value<string>("oldPrice");
+
+		///<summary>
+		/// Ratings
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("ratings")]
+		public string Ratings => this.Value<string>("ratings");
+
+		///<summary>
+		/// Size
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("size")]
+		public string Size => this.Value<string>("size");
+
+		///<summary>
+		/// Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("title")]
+		public string Title => this.Value<string>("title");
+	}
+
+	// Mixin Content Type with alias "dealCards"
+	/// <summary>Deal Cards</summary>
+	public partial interface IDealCards : IPublishedContent
+	{
+		/// <summary>Deal Cards Nested Content</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.DealCard> DealCardsNestedContent { get; }
+	}
+
+	/// <summary>Deal Cards</summary>
+	[PublishedModel("dealCards")]
+	public partial class DealCards : PublishedContentModel, IDealCards
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new const string ModelTypeAlias = "dealCards";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<DealCards, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public DealCards(IPublishedContent content)
+			: base(content)
+		{ }
+
+		// properties
+
+		///<summary>
+		/// Deal Cards Nested Content
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("dealCardsNestedContent")]
+		public global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.DealCard> DealCardsNestedContent => GetDealCardsNestedContent(this);
+
+		/// <summary>Static getter for Deal Cards Nested Content</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.DealCard> GetDealCardsNestedContent(IDealCards that) => that.Value<global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.DealCard>>("dealCardsNestedContent");
 	}
 
 	/// <summary>Folder</summary>
