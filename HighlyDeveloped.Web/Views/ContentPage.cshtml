@@ -1,0 +1,23 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.ContentPage>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+    Layout = "main.cshtml";
+}
+
+<h1>@Model.Name</h1>
+
+@if (Model.HasValue("pageContent"))
+{
+    @Model.Value("pageContent")
+}
+
+@if (Model.HasValue("linkNestedContent"))
+{
+    @Umbraco.RenderMacro("usefulLinks")
+}
+
+
+@if (Model.HasValue("dealCardsNestedContent"))
+{
+    @Umbraco.RenderMacro("dealCards")
+}

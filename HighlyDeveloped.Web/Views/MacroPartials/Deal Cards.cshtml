@@ -1,0 +1,126 @@
+﻿@inherits Umbraco.Web.Macros.PartialViewMacroPage
+@using Umbraco.Web.PublishedModels
+@using Umbraco.Core.Models.PublishedContent
+
+@{
+    var dealCards = Model.Content.Value<IEnumerable<IPublishedElement>>("dealCardsNestedContent");
+}
+
+
+
+
+@if (dealCards != null && dealCards.Any())
+{
+    <section id="hot-deals" class="hot-deals section">
+        <div class="container hot-deals__head">
+            <div class="row">
+                <div class="col text-start">
+                    <h1>Hot Deals</h1>
+                </div>
+                <div class="col text-end">
+                    <a href="/ecommerce">View All</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper init-swiper">
+                <script type="application/json" class="swiper-config">
+                    {
+                        "loop": true,
+                        "speed": 600,
+                        "autoplay": { "delay": 5000 },
+                        "spaceBetween": 16,
+                        "slidesPerView": 1,
+                        "breakpoints": {
+                            "480": { "slidesPerView": 1.2 },
+                            "768": { "slidesPerView": 2 },
+                            "992": { "slidesPerView": 3 },
+                            "1200": { "slidesPerView": 3.5 }
+                        },
+                        "pagination": { "el": ".swiper-pagination", "type": "bullets", "clickable": true },
+                        "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" }
+                    }
+                </script>
+
+                <div class="swiper-wrapper">
+                    @foreach (var item in dealCards)
+                    {
+                        
+                        var title = item.Value<string>("title");
+                        var rating = item.Value<decimal?>("rating") ?? 0;
+                        var sizes = item.Value<string>("size");
+                        var oldPrice = item.Value<decimal?>("oldPrice");
+                        var newPrice = item.Value<decimal?>("newPrice");
+
+                        <div class="swiper-slide">
+                            <article class="deal-card">
+                                <div class="card">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png" class="card-img" alt="@title" />
+                                    <div class="card-img-overlay card-text-style">
+                                        <div class="row mb-1">
+                                            <div class="col text-start">
+                                                <h5>@title</h5>
+                                            </div>
+                                            <div class="col text-end">
+                                                <div class="rating">
+                                                  
+                                                                <img src="" alt="" />
+                                                            
+                                                           
+                                                    <span>@rating.ToString("0.0")</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-1">
+                                            <div class="col text-start">
+                                                <p>@sizes</p>
+                                            </div>
+                                            <div class="col text-end old-price">
+                                                <p>$@oldPrice</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col text-start colors">
+                                                <!-- Optional: Loop through color images if it's a list -->
+                                                <img src="https://en.wikipedia.org/wiki/File:Image_created_with_a_mobile_phone.png" alt="" />
+                                                <img src="https://en.wikipedia.org/wiki/File:Image_created_with_a_mobile_phone.png" alt="" />
+                                            </div>
+                                            <div class="col new-price text-end">
+                                                <span>$@newPrice</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    }
+                </div>
+
+                <div class="hot-deals__controls">
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".init-swiper").forEach(function (swiperEl) {
+        const configScript = swiperEl.querySelector(".swiper-config");
+        if (!configScript) return;
+
+        try {
+            const config = JSON.parse(configScript.textContent);
+            new Swiper(swiperEl, config);
+        } catch (e) {
+            console.error("Failed to parse Swiper config:", e);
+        }
+    });
+});
+</script>
+
+}

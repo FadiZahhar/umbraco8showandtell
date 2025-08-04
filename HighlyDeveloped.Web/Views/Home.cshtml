@@ -1,8 +1,43 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.Home>
 @using ContentModels = Umbraco.Web.PublishedModels;
+@using Umbraco.Core.PropertyEditors.ValueConverters;
+
 @{
 	Layout = "main.cshtml";
 }
 
-<h1>@Model.Value("pageContentText")</h1>
-<h2>@Model.PageContentText</h2>
+<style>
+    .home-hero{
+        background: no-repeat center center;
+        background-attachment: scroll;
+        position: relative;
+        background-size: cover;
+        color: white;
+    }
+    
+    .home-hero > .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba();
+        z-index: 1;
+    }
+    
+    .home-hero > .inner{
+        position: relative;
+        z-index: 2;
+    }
+    
+    
+</style>
+
+
+<!--Hot Deals Articles Card-->
+@Html.Partial("Partials/HotDealsSection")
+
+
+
+
+
+
