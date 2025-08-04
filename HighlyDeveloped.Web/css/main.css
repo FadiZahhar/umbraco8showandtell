@@ -3692,3 +3692,5 @@ section,
 }
 .input-group-append .btn{background-color:transparent}
 .input-group-append .btn svg{color:#a9a9a9; font-size:14px}
+.dropdown.login-dropdown .dropdown-toggle::after{content:none}
+.dropdown.login-dropdown .dropdown-menu{transform:none!important;top:30px!important}

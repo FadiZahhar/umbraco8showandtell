@@ -27,13 +27,84 @@
                             <h5 class="mb-0 ms-3">ShopBazar</h5>
                         </div>
                     </div>
-                    <div class="col-lg-5 mt-4 mt-lg-0 d-flex align-items-center">
-                        <div class="input-group py-1"> <input type="text" class="form-control">
-                            <div class="input-group-append"> <button class="btn" type="button"> <i class="fas fa-search"></i> </button> </div>
+                     <div class="col-lg-5 mt-4 mt-lg-0 d-flex align-items-center">
+                      <form method="get" action="/search" class="w-100 mb-0">
+                        <div class="input-group py-1">
+                          <input type="text" class="form-control" name="q" placeholder="Search..." aria-label="Search" required>
+                          <div class="input-group-append">
+                            <button class="btn" type="submit">
+                              <i class="fas fa-search"></i>
+                            </button>
+                          </div>
                         </div>
+                      </form>
                     </div>
                     <div class="col-lg-3 mt-4 mt-lg-0 d-flex align-items-center justify-content-lg-end">
-                        <div class="d-flex align-items-center"> <a href="/account" class="text-dark mx-2" aria-label="icon"> <img src="/media/qtpjw5th/user.svg" alt="" width="30" height="30"> </a><a href="/cart" class="text-dark mx-2" aria-label="icon"> <img src="/media/ublpvxtc/cart.svg" alt="" width="30" height="30"> </a><a href="/wishlist" class="text-dark mx-2" aria-label="icon"> <img src="/media/gibhdl5i/heart.svg" alt="" width="30" height="30"> </a><a href="/support" class="text-dark mx-2" aria-label="icon"> <img src="/media/4esna0pq/headphones.svg" alt="" width="30" height="30"> </a><a href="/language" class="text-dark mx-2" aria-label="icon"> <img src="/media/dszac2j3/globe.svg" alt="" width="30" height="30"> </a> </div>
+                        <div class="d-flex align-items-center"> 
+                        <!-- User icon with dropdown login form -->
+            <div class="dropdown login-dropdown mx-2">
+              <a
+                class="dropdown-toggle text-dark"
+                href="#"
+                id="loginDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <img
+                  src="/media/qtpjw5th/user.svg"
+                  alt="User"
+                  width="30"
+                  height="30"
+                />
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-right p-3"
+                aria-labelledby="loginDropdown"
+                style="min-width: 250px;"
+              >
+                @if (Umbraco.MemberIsLoggedOn())
+                {
+                  var member = Members.GetCurrentMember();
+                  <p class="mb-2">Welcome, <strong>@member.Name</strong></p>
+                  <a href="/logout" class="btn btn-danger btn-block">Log out</a>
+                }
+                else
+                {
+                  <form method="post" action="/umbraco/Surface/Login/HandleLogin">
+                    @Html.AntiForgeryToken()
+                    <input
+                      type="text"
+                      name="Username"
+                      class="form-control mb-2"
+                      placeholder="Username"
+                      required
+                    />
+                    <input
+                      type="password"
+                      name="Password"
+                      class="form-control mb-2"
+                      placeholder="Password"
+                      required
+                    />
+                    <input type="hidden" name="RedirectUrl" value="/" />
+                    <button
+                      type="submit"
+                      class="btn btn-primary btn-block"
+                    >
+                      Login
+                    </button>
+                  </form>
+                  <div class="mt-2 text-center small">
+                    <a href="/forgotten-password/">Forgot password?</a><br />
+                    <a href="/register/">Register</a>
+                  </div>
+                }
+              </div>
+            </div>
+
+                   <a href="@(Umbraco.MemberIsLoggedOn() ? "/cart" : "/login?redirect=/cart")" class="text-dark mx-2" aria-label="icon"> <img src="/media/ublpvxtc/cart.svg" alt="" width="30" height="30"> </a><a href="@(Umbraco.MemberIsLoggedOn() ? "/wishlist" : "/login?redirect=/wishlist")" class="text-dark mx-2" aria-label="icon"> <img src="/media/gibhdl5i/heart.svg" alt="" width="30" height="30"> </a><a href="/support" class="text-dark mx-2" aria-label="icon"> <img src="/media/4esna0pq/headphones.svg" alt="" width="30" height="30"> </a><a href="/language" class="text-dark mx-2" aria-label="icon"> <img src="/media/dszac2j3/globe.svg" alt="" width="30" height="30"> </a> </div>
                     </div> <!-- Nav Links and Dropdown -->
                     <nav class="mt-3 mb-4 w-100">
                         <div class="d-flex align-items-center py-2 justify-content-xl-between flex-wrap"> <!-- Category Dropdown -->

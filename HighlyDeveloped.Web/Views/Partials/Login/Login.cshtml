@@ -1,50 +1,47 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<HighlyDeveloped.Core.ViewModel.LoginViewModel>
-    @{
+@{
     Html.EnableClientValidation();
     Html.EnableUnobtrusiveJavaScript();
 
+    var redirectUrl = Request.QueryString["redirect"] ?? "/";
     var myUser = System.Web.Security.Membership.GetUser();
-    }
-    <!-- Are we alraeady logged in? -->
-    @if (Umbraco.MemberIsLoggedOn())
-    {
-    <!-- If, yes - show logout-->
+}
+
+<!-- Are we already logged in? -->
+@if (Umbraco.MemberIsLoggedOn())
+{
+    // If yes, show logout
     if (myUser != null)
     {
-    <p><strong>Logged in as</strong> @myUser.UserName</p>
-    <a href="/logout" class="btn btn-danger">Log out</a> <i class="fa fa-arrow-right"></i>
+        <p><strong>Logged in as</strong> @myUser.UserName</p>
+        <a href="/logout" class="btn btn-danger">Log out</a> <i class="fa fa-arrow-right"></i>
     }
-    }
-    else
-    {
-    <!-- If not, show the login form -->
+}
+else
+{
+    @* If not, show the login form *@
     <div class="container">
         <div class="row">
             <div class="col">
-                @using (Html.BeginUmbracoForm<HighlyDeveloped.Core.Controllers.LoginController>
-                    ("HandleLogin"))
-                    {
+                @using (Html.BeginUmbracoForm<HighlyDeveloped.Core.Controllers.LoginController>("HandleLogin"))
+                {
                     @Html.AntiForgeryToken()
                     @Html.ValidationSummary()
 
                     <div class="form-group">
                         @Html.LabelFor(m => m.Username)
-                        @Html.TextBoxFor(m => m.Username, new
-                        {
-                        placeholder = "Username"
-                        })
+                        @Html.TextBoxFor(m => m.Username, new { placeholder = "Username" })
                     </div>
 
                     <div class="form-group">
                         @Html.LabelFor(m => m.Password)
-                        @Html.PasswordFor(m => m.Password, new
-                        {
-                        placeholder = "Password"
-                        })
+                        @Html.PasswordFor(m => m.Password, new { placeholder = "Password" })
                     </div>
-                    @Html.HiddenFor(m => m.RedirectUrl)
+
+                    <input type="hidden" name="RedirectUrl" value="@redirectUrl" />
+
                     <button name="login" type="submit">Login</button>
-                    }
+                }
             </div>
         </div>
         <div class="row">
@@ -54,4 +51,4 @@
             </div>
         </div>
     </div>
-    }
+}  @* <-- This closes the else block *@
