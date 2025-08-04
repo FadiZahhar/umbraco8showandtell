@@ -9,9 +9,10 @@
     }
   ],
   "javascript": [
-    "~/App_Plugins/BookManager/dashboard/dashboard.controller.js"
+    "~/App_Plugins/BookManager/dashboard/dashboard.controller.js",
   ],
-   "css": [
-        "https://www.w3schools.com/w3css/5/w3.css"
-    ]
+  "css": [
+    "https://www.w3schools.com/w3css/5/w3.css",
+    "~/App_Plugins/BookManager/dashboard/dashboard.css"
+  ]
 }

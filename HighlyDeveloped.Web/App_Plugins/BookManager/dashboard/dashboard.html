@@ -1,35 +1,171 @@
-<div ng-controller="BookManagerDashboardController as vm">
-    <h2>Book Manager</h2>
-    <button class="btn" ng-click="vm.newBook()">Add Book</button>
-    <table class="table">
-        <tr>
-            <th>Title</th>
-            <th>Author</th>
-            <th>Year</th>
-            <th>ISBN</th>
-            <th>Actions</th>
-        </tr>
-        <tr ng-repeat="book in vm.books">
-            <td>{{book.title}}</td>
-            <td>{{book.author}}</td>
-            <td>{{book.year}}</td>
-            <td>{{book.isbn}}</td>
-            <td>
-                <button class="btn btn-link" ng-click="vm.editBook(book)">Edit</button>
-                <button class="btn btn-link" ng-click="vm.deleteBook(book.id)">Delete</button>
-            </td>
-        </tr>
-    </table>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>-->
+<div ng-controller="BookManagerDashboardController as bookManager">
+    <div class="w3-container">
+        <h2>Book Manager</h2>
+        <div class="w3-flex w3-margin-bottom" style="justify-content:space-between" ng-if="!bookManager.editing">
+            <button class="btn mb-3" ng-click="bookManager.newBook()">Add New Book</button>
+            <div class="w3-flex" style="align-items: center;gap:16px">
+                <input ng-model="bookManager.searchTerm" ng-change="bookManager.searchBooks()" ng-show="showSearch" placeholder="Search books..." class="umb-search" />
+                <i class="fa fa-search" ng-click="toggleSearch()"></i>
+                <button class="btn" ng-click="bookManager.exportBooks()">Export CSV</button>
+            </div>
+        </div>
+    </div>
 
-    <!-- Add/Edit Form -->
-    <div ng-if="vm.editing">
-        <form novalidate>
-            <label>Title: <input ng-model="vm.currentBook.title" required /></label><br>
-            <label>Author: <input ng-model="vm.currentBook.author" required /></label><br>
-            <label>Year: <input ng-model="vm.currentBook.year" type="number" required /></label><br>
-            <label>ISBN: <input ng-model="vm.currentBook.isbn" required /></label><br>
-            <button type="button" ng-click="vm.saveBook()" class="btn btn-success">Save</button>
-            <button type="button" class="btn" ng-click="vm.cancel()">Cancel</button>
+    <div class="w3-container">
+        <!-- Book List -->
+        <table class="table table-bordered w3-transparent w3-striped" ng-if="!bookManager.editing">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Year</th>
+                    <th>ISBN</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="book in bookManager.books track by book.Id">
+                    <td>{{book.Title}}</td>
+                    <td>{{book.Author}}</td>
+                    <td>{{book.Year}}</td>
+                    <td>{{book.ISBN}}</td>
+                    <td>
+                        <button class="btn w3-green btn-sm" ng-click="bookManager.editBook(book)">Edit</button>
+                        <button class="btn btn-danger btn-sm" ng-click="bookManager.deleteBook(book.Id)">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="w3-center w3-margin-top" ng-if="!bookManager.editing">
+            <div class="w3-bar w3-round-large w3-padding-small w3-display-inline-block">
+
+                <!-- Prev Button -->
+                <button class="w3-button w3-green w3-hover-dark-grey w3-round-large"
+                        ng-class="{'w3-disabled': bookManager.page === 1}"
+                        ng-click="bookManager.goToPage(bookManager.page - 1)">
+                    &#x25C0; Prev
+                </button>
+
+                <!-- Page Numbers -->
+                <span ng-repeat="p in [].constructor(bookManager.totalPages) track by $index">
+                    <button class="w3-button w3-round-large w3-margin-right"
+                            ng-class="{
+                 'w3-green': $index + 1 === bookManager.page,
+                 'w3-hover-green': $index + 1 !== bookManager.page
+             }"
+                            ng-click="bookManager.goToPage($index + 1)">
+                        {{$index + 1}}
+                    </button>
+                </span>
+
+                <!-- Next Button -->
+                <button class="w3-button w3-green w3-hover-dark-grey w3-round-large"
+                        ng-class="{'w3-disabled': bookManager.page === bookManager.totalPages}"
+                        ng-click="bookManager.goToPage(bookManager.page + 1)">
+                    Next &#x25B6;
+                </button>
+
+            </div>
+        </div>
+    </div>
+    <!-- Book Edit/Create Form -->
+    <div class="w3-container" ng-if="bookManager.editing">
+        <form name="bookForm"
+              ng-app="formApp"
+              ng-submit="bookManager.saveBook(bookForm)"
+              class="mb-4">
+
+            <h4 class="w3-margin-bottom" ng-if="!bookManager.currentBook.Id">Add Book</h4>
+            <h4 class="w3-margin-bottom" ng-if="bookManager.currentBook.Id">Edit Book</h4>
+
+            <!-- Title -->
+            <div class="form-group mb-2">
+                <label class="w3-text-grey">Title:</label>
+                <input type="text"
+                       name="Title"
+                       ng-model="bookManager.currentBook.Title"
+                       ng-required="true"
+                       ng-maxlength="150"
+                       required
+                       class="form-control w3-input w3-border-0 w3-border-bottom w3-round w3-transparent" />
+                <span ng-show="(bookForm.Title.$touched || bookForm.$submitted) && bookForm.Title.$error.required" class="text-danger">
+                    title required
+                </span>
+            </div>
+
+            <!-- Author -->
+            <div class="form-group mb-2">
+                <label class="w3-text-grey">Author:</label>
+                <input type="text"
+                       name="Author"
+                       ng-model="bookManager.currentBook.Author"
+                       ng-required="true"
+                       ng-maxlength="100"
+                       class="form-control w3-input w3-border-0 w3-border-bottom w3-round w3-transparent" />
+                <span ng-show="(bookForm.Author.$touched) && bookForm.Author.$error.required" class="text-danger">
+                    Author is required.
+                </span>
+                <span ng-show="bookForm.Author.$error.maxlength" class="text-danger">
+                    Author is too long (max 100).
+                </span>
+            </div>
+
+            <!-- Year -->
+            <div class="form-group mb-2">
+                <label class="w3-text-grey">Year:</label>
+                <input type="number"
+                       name="Year"
+                       ng-model="bookManager.currentBook.Year"
+                       ng-required="true"
+                       min="1450"
+                       max="2100"
+                       class="form-control w3-input w3-border-0 w3-border-bottom w3-round w3-transparent" />
+                <span ng-show="(bookForm.Year.$touched || bookForm.$submitted) && bookForm.Year.$error.required" class="text-danger">
+                    Year is required.
+                </span>
+                <span ng-show="bookForm.Year.$error.min || bookForm.Year.$error.max" class="text-danger">
+                    Year must be between 1450 and 2100.
+                </span>
+            </div>
+
+            <!-- ISBN -->
+            <div class="form-group w3-margin-bottom">
+                <label class="w3-text-grey">ISBN:</label>
+                <input type="text"
+                       name="ISBN"
+                       ng-model="bookManager.currentBook.ISBN"
+                       ng-required="true"
+                       ng-pattern="/^\d{3}-\d{10}$/"
+                       class="form-control w3-input w3-border-0 w3-border-bottom w3-round w3-transparent" />
+                <span ng-show="(bookForm.ISBN.$touched || bookForm.$submitted) && bookForm.ISBN.$error.required" class="text-danger">
+                    ISBN is required.
+                </span>
+                <span ng-show="bookForm.ISBN.$error.pattern" class="text-danger">
+                    ISBN must be in the format 123-1234567890.
+                </span>
+            </div>
+
+            <!-- Server-side validation errors -->
+            <div ng-if="bookManager.validationErrors && bookManager.validationErrors.length> 0" class="alert alert-danger">
+                <ul>
+                    <li ng-repeat="error in bookManager.validationErrors track by $index">{{ error }}</li>
+                </ul>
+            </div>
+
+            <!-- Buttons -->
+            <button type="button"
+                    class="btn w3-green"
+                    ng-click="bookManager.saveBook(bookForm)">
+                Save
+            </button>
+            <button type="button"
+                    class="btn btn-secondary"
+                    ng-click="bookManager.cancel()">
+                Cancel
+            </button>
         </form>
     </div>
+
 </div>

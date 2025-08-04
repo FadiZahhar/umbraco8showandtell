@@ -14,5 +14,7 @@ namespace HighlyDeveloped.Core.Services
         public void Add(Book book) => _repo.Insert(book);
         public void Update(Book book) => _repo.Update(book);
         public void Delete(int id) => _repo.Delete(id);
+        public (IEnumerable<Book> Books, int TotalCount) Search(string term, int page, int pageSize)
+    => _repo.Search(term, page, pageSize);
     }
 }

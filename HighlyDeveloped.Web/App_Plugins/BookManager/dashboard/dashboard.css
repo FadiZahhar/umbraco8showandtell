@@ -1,0 +1,19 @@
+.umb-search {
+    width: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    box-shadow: none;
+    border: 0;
+    border-bottom: 1px solid black;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.fa-search{
+    cursor:pointer
+}
+span.text-danger {
+    color: red !important;
+}
