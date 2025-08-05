@@ -3,7 +3,27 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.web\\app_plugins\\bookmanager\\dashboard\\dashboard.controller.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{4C634FD6-B651-46E5-B844-70572A1B15FF}|HighlyDeveloped.Core\\HighlyDeveloped.Core.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.core\\controllers\\newslettercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C634FD6-B651-46E5-B844-70572A1B15FF}|HighlyDeveloped.Core\\HighlyDeveloped.Core.csproj|solutionrelative:highlydeveloped.core\\controllers\\newslettercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C634FD6-B651-46E5-B844-70572A1B15FF}|HighlyDeveloped.Core\\HighlyDeveloped.Core.csproj|c:\\users\\user\\documents\\github\\umbraco8showandtell\\highlydeveloped.core\\viewmodel\\newslettermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C634FD6-B651-46E5-B844-70572A1B15FF}|HighlyDeveloped.Core\\HighlyDeveloped.Core.csproj|solutionrelative:highlydeveloped.core\\viewmodel\\newslettermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\Views\\Login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:HighlyDeveloped.Web\\Views\\Login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\highlydeveloped.web\\views\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|solutionrelative:highlydeveloped.web\\views\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\highlydeveloped.web\\css\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|solutionrelative:highlydeveloped.web\\css\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\highlydeveloped.web\\app_plugins\\bookmanager\\dashboard\\dashboard.controller.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{1FB28D3B-24E0-438B-907C-8358E218A7B9}|HighlyDeveloped.Web\\HighlyDeveloped.Web.csproj|solutionrelative:highlydeveloped.web\\app_plugins\\bookmanager\\dashboard\\dashboard.controller.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
@@ -26,11 +46,74 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NewsletterController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Core\\Controllers\\NewsletterController.cs",
+              "RelativeDocumentMoniker": "HighlyDeveloped.Core\\Controllers\\NewsletterController.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Core\\Controllers\\NewsletterController.cs",
+              "RelativeToolTip": "HighlyDeveloped.Core\\Controllers\\NewsletterController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T09:01:00.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "NewsletterModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Core\\ViewModel\\NewsletterModel.cs",
+              "RelativeDocumentMoniker": "HighlyDeveloped.Core\\ViewModel\\NewsletterModel.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Core\\ViewModel\\NewsletterModel.cs",
+              "RelativeToolTip": "HighlyDeveloped.Core\\ViewModel\\NewsletterModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T09:00:25.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\Views\\Login.cshtml",
+              "RelativeDocumentMoniker": "HighlyDeveloped.Web\\Views\\Login.cshtml",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\Views\\Login.cshtml",
+              "RelativeToolTip": "HighlyDeveloped.Web\\Views\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-04T08:59:51.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Search.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\Views\\Search.cshtml",
+              "RelativeDocumentMoniker": "HighlyDeveloped.Web\\Views\\Search.cshtml",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\Views\\Search.cshtml",
+              "RelativeToolTip": "HighlyDeveloped.Web\\Views\\Search.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAowEsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-04T08:08:51.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "main.css",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\css\\main.css",
+              "RelativeDocumentMoniker": "HighlyDeveloped.Web\\css\\main.css",
+              "ToolTip": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\css\\main.css",
+              "RelativeToolTip": "HighlyDeveloped.Web\\css\\main.css",
+              "ViewState": "AgIAAGEGAAAAAAAAAAAcwG8OAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-08-04T06:45:28.179Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "dashboard.css",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\BookManager\\dashboard\\dashboard.css",
               "RelativeDocumentMoniker": "HighlyDeveloped.Web\\App_Plugins\\BookManager\\dashboard\\dashboard.css",
@@ -42,7 +125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "dashboard.controller.js",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\BookManager\\dashboard\\dashboard.controller.js",
               "RelativeDocumentMoniker": "HighlyDeveloped.Web\\App_Plugins\\BookManager\\dashboard\\dashboard.controller.js",
@@ -50,12 +133,11 @@
               "RelativeToolTip": "HighlyDeveloped.Web\\App_Plugins\\BookManager\\dashboard\\dashboard.controller.js",
               "ViewState": "AgIAAFAAAAAAAAAAAAAUwG0AAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-05-28T11:37:49.791Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T11:37:49.791Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "dashboard.html",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\BookManager\\dashboard\\dashboard.html",
               "RelativeDocumentMoniker": "HighlyDeveloped.Web\\App_Plugins\\BookManager\\dashboard\\dashboard.html",
@@ -67,7 +149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "package.manifest",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\GitHub\\umbraco8showandtell\\HighlyDeveloped.Web\\App_Plugins\\BookManager\\package.manifest",
               "RelativeDocumentMoniker": "HighlyDeveloped.Web\\App_Plugins\\BookManager\\package.manifest",

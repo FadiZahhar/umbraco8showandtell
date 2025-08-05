@@ -1,0 +1,11 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@using (Html.BeginUmbracoForm("SubmitNewsletter", "Newsletter"))
+{
+    <div class="form-group mb-2">
+        <input type="email" name="email" class="form-control" placeholder="Your Email" required />
+    </div>
+    <div class="form-group mb-2">
+        <input type="text" name="phoneNumber" class="form-control" placeholder="Your Phone number" />
+    </div>
+    <button type="submit" class="btn btn-warning btn-sm">Subscribe</button>
+}
