@@ -17,8 +17,8 @@ using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 using Umbraco.ModelsBuilder.Embedded;
 
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "ee0a2391ab068423")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "a7e78f099ae75f45")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.3")]
 
 namespace Umbraco.Web.PublishedModels
 {
@@ -1579,6 +1579,27 @@ namespace Umbraco.Web.PublishedModels
 		public global::System.Collections.Generic.IEnumerable<global::Umbraco.Core.Models.PublishedContent.IPublishedContent> Colors => this.Value<global::System.Collections.Generic.IEnumerable<global::Umbraco.Core.Models.PublishedContent.IPublishedContent>>("colors");
 
 		///<summary>
+		/// Description
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("description")]
+		public global::System.Web.IHtmlString Description => this.Value<global::System.Web.IHtmlString>("description");
+
+		///<summary>
+		/// MadeIn
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("madeIn")]
+		public string MadeIn => this.Value<string>("madeIn");
+
+		///<summary>
+		/// Material
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("material")]
+		public string Material => this.Value<string>("material");
+
+		///<summary>
 		/// New Price
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
@@ -1591,6 +1612,20 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		[ImplementPropertyType("oldPrice")]
 		public string OldPrice => this.Value<string>("oldPrice");
+
+		///<summary>
+		/// Pieces Left
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("piecesLeft")]
+		public string PiecesLeft => this.Value<string>("piecesLeft");
+
+		///<summary>
+		/// Product Extra Images
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("productExtraImages")]
+		public global::System.Collections.Generic.IEnumerable<global::Umbraco.Core.Models.PublishedContent.IPublishedContent> ProductExtraImages => this.Value<global::System.Collections.Generic.IEnumerable<global::Umbraco.Core.Models.PublishedContent.IPublishedContent>>("productExtraImages");
 
 		///<summary>
 		/// Product Image
@@ -1612,6 +1647,13 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		[ImplementPropertyType("title")]
 		public string Title => this.Value<string>("title");
+
+		///<summary>
+		/// Washing Method
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("washingMethod")]
+		public string WashingMethod => this.Value<string>("washingMethod");
 
 		///<summary>
 		/// Product Sizes Nested Content

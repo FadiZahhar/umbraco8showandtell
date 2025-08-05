@@ -8,8 +8,21 @@
 
 
 @{
-    var titleProduct = Model.Value<string>("title");
-   
+    var maintitleProduct = Model.Value<string>("title");
+    var mainImageProduct = Model.Value<ImageCropperValue>("productImage");
+    var mainthumbUrl = mainImageProduct.Src + mainImageProduct.GetCropUrl("Main");
+    var mainrating = Model.Value<decimal?>("ratings") ?? 0;
+    var mainsizes = Model.Value<string>("size");
+    var mainoldPrice = Model.Value<decimal?>("oldPrice");
+    var mainnewPrice = Model.Value<decimal?>("newPrice");
+
+                                    
+    var mainproductSizes = Model.Value<IEnumerable<IPublishedElement>>("productSizesNestedContent");
+    var mainsizeLabels = mainproductSizes?.Select(x => x.Value<string>("size")) ?? Enumerable.Empty<string>();
+
+
+    var mainColorsimages = Model.Value<IEnumerable<IPublishedContent>>("colors");
+
     
     
     var relatedArticles = Model.Value<IList<IPublishedContent>>("articleRelatedContent");
@@ -24,12 +37,15 @@
             <div class="row"> <!-- Image Section -->
                 <div class="col-md-6">
                     <div class="row">
-                        <div class="col-3 p-0"> <img src="assets/img/tshirt-1.jpg" class="img-thumbnail thumb-img" alt="T-shirt 1"><img src="assets/img/tshirt-2.jpg" class="img-thumbnail thumb-img" alt="T-shirt 2"><img src="assets/img/tshirt-3.jpg" class="img-thumbnail thumb-img" alt="T-shirt 3"> </div>
-                        <div class="col-9 ps-0"> <img id="mainImage" src="assets/img/tshirt-main.jpg" class="product-img mb-3" alt="Main T-shirt"> </div>
+                        <div class="col-3 p-0"> 
+                        <img src="@mainImageProduct" class="img-thumbnail thumb-img" alt="T-shirt 1">
+                        <img src="@mainImageProduct" class="img-thumbnail thumb-img" alt="T-shirt 2">
+                        <img src="@mainImageProduct" class="img-thumbnail thumb-img" alt="T-shirt 3"> </div>
+                        <div class="col-9 ps-0"> <img id="mainImage" src="@mainImageProduct" class="product-img mb-3" alt="Main T-shirt"> </div>
                     </div>
                 </div> <!-- Product Info Section -->
                 <div class="col-md-6">
-                    <h4>@titleProduct</h4>
+                    <h4>@maintitleProduct</h4>
                     <div class="d-flex justify-content-between">
                         <p class="text-muted">By Essence Company</p>
                         <p><span class="rating-star">★</span> 4.5</p>
@@ -37,7 +53,15 @@
                     <p class="color-title"><strong>Color:</strong></p>
                     <div class="mb-3"> <span class="color-circle" style="background-color: #ffffff"></span><span class="color-circle" style="background-color: #4a4a4a"></span><span class="color-circle" style="background-color: #f5c242"></span><span class="color-circle" style="background-color: #c1442c"></span> </div>
                     <p><strong>Size:</strong></p>
-                    <div class="btn-group mb-3 size"> <button type="button" class="btn btn-outline-secondary btn-sm">L</button>
+                    <div class="btn-group mb-3 size">
+                         @if (mainsizeLabels != null && mainsizeLabels.Any())
+                        {
+                            foreach (var sizeItem in mainproductSizes)
+                            {
+                                var sizeLabel = sizeItem.Value<string>("size");
+                                <button type="button" class="btn btn-outline-secondary btn-sm">@sizeLabel</button>
+                            }
+                        }
                     </div>
                     <div class="row align-items-center">
                         <div class="col-6">
@@ -83,8 +107,8 @@
                                 "breakpoints": {
                                     "480": { "slidesPerView": 1.2 },
                                     "768": { "slidesPerView": 2 },
-                                    "992": { "slidesPerView": 3 },
-                                    "1200": { "slidesPerView": 3.5 }
+                                    "992": { "slidesPerView": 4 },
+                                    "1200": { "slidesPerView": 5 }
                                 },
                                 "pagination": { "el": ".swiper-pagination", "type": "bullets", "clickable": true },
                                 "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" }
