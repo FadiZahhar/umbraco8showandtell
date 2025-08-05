@@ -1,0 +1,25 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@{
+    var icons = Model.Value<IEnumerable<IPublishedElement>>("categoryIcons");
+}
+@if (icons != null && icons.Any())
+{
+    <section class="category-icons-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                @foreach (var icon in icons)
+                {
+                    var image = icon.Value<IPublishedContent>("iconImage");
+                    var imageUrl = image?.Url();
+                    var altText = icon.Value<string>("altText");
+
+                    <div class="col-4 col-sm-3 col-md-2 text-center mb-4">
+                        <div class="category-icon">
+                            <img src="@imageUrl" alt="@altText" class="img-fluid rounded-circle" />
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </section>
+}
