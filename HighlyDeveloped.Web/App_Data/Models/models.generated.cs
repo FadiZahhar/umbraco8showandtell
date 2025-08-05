@@ -17,8 +17,8 @@ using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 using Umbraco.ModelsBuilder.Embedded;
 
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "d932d0b8bb30d293")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "6238b9012b36d384")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.3")]
 
 namespace Umbraco.Web.PublishedModels
 {
@@ -1537,6 +1537,186 @@ namespace Umbraco.Web.PublishedModels
 		/// <summary>Static getter for Search Engine Relative Priority</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		public static decimal GetSearchEngineRelativePriority(IXmlSiteMapSettings that) => that.Value<decimal>("searchEngineRelativePriority");
+	}
+
+	/// <summary>Hot Deal Article</summary>
+	[PublishedModel("hotDealArticle")]
+	public partial class HotDealArticle : PublishedContentModel, IProductSizes
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new const string ModelTypeAlias = "hotDealArticle";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<HotDealArticle, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public HotDealArticle(IPublishedContent content)
+			: base(content)
+		{ }
+
+		// properties
+
+		///<summary>
+		/// Colors
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("colors")]
+		public global::System.Collections.Generic.IEnumerable<global::Umbraco.Core.Models.PublishedContent.IPublishedContent> Colors => this.Value<global::System.Collections.Generic.IEnumerable<global::Umbraco.Core.Models.PublishedContent.IPublishedContent>>("colors");
+
+		///<summary>
+		/// New Price
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("newPrice")]
+		public string NewPrice => this.Value<string>("newPrice");
+
+		///<summary>
+		/// Old Price
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("oldPrice")]
+		public string OldPrice => this.Value<string>("oldPrice");
+
+		///<summary>
+		/// Product Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("productImage")]
+		public global::Umbraco.Core.PropertyEditors.ValueConverters.ImageCropperValue ProductImage => this.Value<global::Umbraco.Core.PropertyEditors.ValueConverters.ImageCropperValue>("productImage");
+
+		///<summary>
+		/// Ratings
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("ratings")]
+		public string Ratings => this.Value<string>("ratings");
+
+		///<summary>
+		/// Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("title")]
+		public string Title => this.Value<string>("title");
+
+		///<summary>
+		/// Product Sizes Nested Content
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("productSizesNestedContent")]
+		public global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.ProductSize> ProductSizesNestedContent => global::Umbraco.Web.PublishedModels.ProductSizes.GetProductSizesNestedContent(this);
+	}
+
+	/// <summary>Hot Deals Articles</summary>
+	[PublishedModel("hotDealsArticles")]
+	public partial class HotDealsArticles : PublishedContentModel
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new const string ModelTypeAlias = "hotDealsArticles";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<HotDealsArticles, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public HotDealsArticles(IPublishedContent content)
+			: base(content)
+		{ }
+
+		// properties
+	}
+
+	/// <summary>Product Size</summary>
+	[PublishedModel("productSize")]
+	public partial class ProductSize : PublishedElementModel
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new const string ModelTypeAlias = "productSize";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<ProductSize, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public ProductSize(IPublishedElement content)
+			: base(content)
+		{ }
+
+		// properties
+
+		///<summary>
+		/// Size
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("size")]
+		public string Size => this.Value<string>("size");
+	}
+
+	// Mixin Content Type with alias "productSizes"
+	/// <summary>Product Sizes</summary>
+	public partial interface IProductSizes : IPublishedContent
+	{
+		/// <summary>Product Sizes Nested Content</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.ProductSize> ProductSizesNestedContent { get; }
+	}
+
+	/// <summary>Product Sizes</summary>
+	[PublishedModel("productSizes")]
+	public partial class ProductSizes : PublishedContentModel, IProductSizes
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new const string ModelTypeAlias = "productSizes";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<ProductSizes, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public ProductSizes(IPublishedContent content)
+			: base(content)
+		{ }
+
+		// properties
+
+		///<summary>
+		/// Product Sizes Nested Content
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("productSizesNestedContent")]
+		public global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.ProductSize> ProductSizesNestedContent => GetProductSizesNestedContent(this);
+
+		/// <summary>Static getter for Product Sizes Nested Content</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.ProductSize> GetProductSizesNestedContent(IProductSizes that) => that.Value<global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.ProductSize>>("productSizesNestedContent");
 	}
 
 	/// <summary>Folder</summary>
