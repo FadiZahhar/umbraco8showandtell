@@ -8,15 +8,11 @@
 
 
 @{
-    var title = Model.Value<string>("title");
-    var image = Model.Value<ImageCropperValue>("productImage");
-    var imageUrl = image?.Src;
-    var rating = Model.Value<decimal?>("ratings") ?? 0;
-    var sizes = Model.Value<string>("size");
-    var oldPrice = Model.Value<decimal?>("oldPrice");
-    var newPrice = Model.Value<decimal?>("newPrice");
-    var colors = Model.Value<IEnumerable<IPublishedContent>>("colors");
-    var description = Model.Value<string>("description");
+    var titleProduct = Model.Value<string>("title");
+   
+    
+    
+    var relatedArticles = Model.Value<IList<IPublishedContent>>("articleRelatedContent");
 }
 
 
@@ -33,7 +29,7 @@
                     </div>
                 </div> <!-- Product Info Section -->
                 <div class="col-md-6">
-                    <h4>@title</h4>
+                    <h4>@titleProduct</h4>
                     <div class="d-flex justify-content-between">
                         <p class="text-muted">By Essence Company</p>
                         <p><span class="rating-star">★</span> 4.5</p>
@@ -41,7 +37,7 @@
                     <p class="color-title"><strong>Color:</strong></p>
                     <div class="mb-3"> <span class="color-circle" style="background-color: #ffffff"></span><span class="color-circle" style="background-color: #4a4a4a"></span><span class="color-circle" style="background-color: #f5c242"></span><span class="color-circle" style="background-color: #c1442c"></span> </div>
                     <p><strong>Size:</strong></p>
-                    <div class="btn-group mb-3 size"> <button type="button" class="btn btn-outline-secondary btn-sm">@sizes</button>
+                    <div class="btn-group mb-3 size"> <button type="button" class="btn btn-outline-secondary btn-sm">L</button>
                     </div>
                     <div class="row align-items-center">
                         <div class="col-6">
@@ -63,3 +59,146 @@
                 </div>
             </div>
         </div>
+        
+        
+        <!--RELATED PRODUCTS--->
+        @if(relatedArticles != null && relatedArticles.Count > 0){
+        <section id="hot-deals" class="hot-deals section">
+            <div class="container hot-deals__head">
+                <div class="row">
+                    <div class="col text-center">
+                        <h1>Related Products</h1>
+                    </div>
+                </div>
+            </div>
+             <div class="container" data-aos="fade-up" data-aos-delay="100">
+                    <div class="swiper init-swiper">
+                        <script type="application/json" class="swiper-config">
+                            {
+                                "loop": true,
+                                "speed": 600,
+                                "autoplay": { "delay": 5000 },
+                                "spaceBetween": 16,
+                                "slidesPerView": 1,
+                                "breakpoints": {
+                                    "480": { "slidesPerView": 1.2 },
+                                    "768": { "slidesPerView": 2 },
+                                    "992": { "slidesPerView": 3 },
+                                    "1200": { "slidesPerView": 3.5 }
+                                },
+                                "pagination": { "el": ".swiper-pagination", "type": "bullets", "clickable": true },
+                                "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" }
+                            }
+                        </script>
+    
+                        <div class="swiper-wrapper">
+                            @foreach (var item in relatedArticles)
+                            {
+                        var image = item.Value<ImageCropperValue>("productImage");
+                        var thumbUrl = image.Src + image.GetCropUrl("Thumb");
+
+                        var title = item.Value("title");
+                        var rating = item.Value("ratings") ?? 0;
+                        var sizes = item.Value<string>("size");
+                        var oldPrice = item.Value<decimal?>("oldPrice");
+                        var newPrice = item.Value<decimal?>("newPrice");
+
+                        <!--SIZES NESTED CONTENT-->
+                        <!--var productSizes = item.Value<IEnumerable<IPublishedElement>>("productSizesNestedContent");-->
+                        var productSizes = item.Value<IEnumerable<IPublishedElement>>("productSizesNestedContent");
+                        var sizeLabels = productSizes?.Select(x => x.Value<string>("size")) ?? Enumerable.Empty<string>();
+
+
+
+                        <!--PRODUCTS COLOR -->
+                        var images = item.Value<IEnumerable<IPublishedContent>>("colors");
+
+
+                        <div class="swiper-slide">
+                            <a href="@item.Url" style="text-decoration:none; color:inherit;">
+                            <article class="deal-card">
+                                <div class="card">
+                                    <img src="@thumbUrl" class="card-img" alt="@title" />
+                                    <div class="card-img-overlay card-text-style">
+                                        <div class="row mb-1">
+                                            <div class="col text-start">
+                                                <h5>@title</h5>
+                                            </div>
+                                            <div class="col text-end">
+                                                <div class="rating">
+
+                                                                <img src="/media/xaxj1pgm/ratings.png" alt="" />
+
+
+                                                    <span>@rating</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-1">
+                                            <div class="col text-start">
+                                                   @if (productSizes != null && productSizes.Any())
+                                                   {
+                                                     <p>@string.Join(" - ", sizeLabels)</p>
+                                                   }
+                                            </div>
+                                            <div class="col text-end old-price">
+                                                <p>$@oldPrice</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+
+                                                @if (images != null)
+                                                    {
+
+                                                            <div class="col text-start colors">
+
+                                                                @foreach (var img in images)
+                                                                {
+
+                                                                        <img src="@img.Url()" alt="@img.Name" />
+
+                                                                }
+
+
+                                                        </div>
+                                                    }
+                                                <div class="col new-price text-end">
+                                                    <span>$@newPrice</span>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            </a>
+                        </div>
+                    }
+                        </div>
+    
+                        <div class="hot-deals__controls">
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".init-swiper").forEach(function (swiperEl) {
+            const configScript = swiperEl.querySelector(".swiper-config");
+            if (!configScript) return;
+
+            try {
+                const config = JSON.parse(configScript.textContent);
+                new Swiper(swiperEl, config);
+            } catch (e) {
+                console.error("Failed to parse Swiper config:", e);
+            }
+        });
+    });
+</script>
+
+        }
+        
