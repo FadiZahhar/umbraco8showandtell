@@ -6,7 +6,7 @@ using  Umbraco.Core.Models;
 using  Umbraco.Core.Models.PublishedContent;
 using  Umbraco.Web;
 using  Umbraco.ModelsBuilder.Embedded;
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "ab29e4bf57a85523")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "d932d0b8bb30d293")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
 
 
@@ -60,13 +60,6 @@ namespace Umbraco.Web.PublishedModels
 		{ }
 
 		// properties
-
-		///<summary>
-		/// Category Icons
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
-		[ImplementPropertyType("categoryIcons")]
-		public global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.CategoryIcon> CategoryIcons => this.Value<global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.CategoryIcon>>("categoryIcons");
 
 		///<summary>
 		/// Call To Action Link
@@ -1558,194 +1551,6 @@ namespace Umbraco.Web.PublishedModels
 		/// <summary>Static getter for Search Engine Relative Priority</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		public static decimal GetSearchEngineRelativePriority(IXmlSiteMapSettings that) => that.Value<decimal>("searchEngineRelativePriority");
-	}
-
-	/// <summary>NewsletterSubmission</summary>
-	[PublishedModel("newsletterSubmission")]
-	public partial class NewsletterSubmission : PublishedContentModel
-	{
-		// helpers
-#pragma warning disable 0109 // new is redundant
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
-		public new const string ModelTypeAlias = "newsletterSubmission";
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
-		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
-		public new static IPublishedContentType GetModelContentType()
-			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
-		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<NewsletterSubmission, TValue>> selector)
-			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
-#pragma warning restore 0109
-
-		// ctor
-		public NewsletterSubmission(IPublishedContent content)
-			: base(content)
-		{ }
-
-		// properties
-
-		///<summary>
-		/// Email
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
-		[ImplementPropertyType("email")]
-		public string Email => this.Value<string>("email");
-
-		///<summary>
-		/// Phone Number
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
-		[ImplementPropertyType("phoneNumber")]
-		public string PhoneNumber => this.Value<string>("phoneNumber");
-	}
-
-	/// <summary>NewsletterSubmissionsFolder</summary>
-	[PublishedModel("newsletterSubmissionsFolder")]
-	public partial class NewsletterSubmissionsFolder : PublishedContentModel
-	{
-		// helpers
-#pragma warning disable 0109 // new is redundant
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
-		public new const string ModelTypeAlias = "newsletterSubmissionsFolder";
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
-		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
-		public new static IPublishedContentType GetModelContentType()
-			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
-		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<NewsletterSubmissionsFolder, TValue>> selector)
-			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
-#pragma warning restore 0109
-
-		// ctor
-		public NewsletterSubmissionsFolder(IPublishedContent content)
-			: base(content)
-		{ }
-
-		// properties
-	}
-
-	/// <summary>Hero Section</summary>
-	[PublishedModel("heroSection")]
-	public partial class HeroSection : PublishedContentModel
-	{
-		// helpers
-#pragma warning disable 0109 // new is redundant
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
-		public new const string ModelTypeAlias = "heroSection";
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
-		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
-		public new static IPublishedContentType GetModelContentType()
-			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
-		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<HeroSection, TValue>> selector)
-			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
-#pragma warning restore 0109
-
-		// ctor
-		public HeroSection(IPublishedContent content)
-			: base(content)
-		{ }
-
-		// properties
-
-		///<summary>
-		/// BottomOverlayText
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
-		[ImplementPropertyType("bottomOverlayText")]
-		public string BottomOverlayText => this.Value<string>("bottomOverlayText");
-
-		///<summary>
-		/// BottomOverlayTitle
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
-		[ImplementPropertyType("bottomOverlayTitle")]
-		public string BottomOverlayTitle => this.Value<string>("bottomOverlayTitle");
-
-		///<summary>
-		/// BottomRightImage
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
-		[ImplementPropertyType("bottomRightImage")]
-		public global::Umbraco.Core.Models.PublishedContent.IPublishedContent BottomRightImage => this.Value<global::Umbraco.Core.Models.PublishedContent.IPublishedContent>("bottomRightImage");
-
-		///<summary>
-		/// ButtonText
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
-		[ImplementPropertyType("buttonText")]
-		public string ButtonText => this.Value<string>("buttonText");
-
-		///<summary>
-		/// MainBannerImage
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
-		[ImplementPropertyType("mainBannerImage")]
-		public global::Umbraco.Core.Models.PublishedContent.IPublishedContent MainBannerImage => this.Value<global::Umbraco.Core.Models.PublishedContent.IPublishedContent>("mainBannerImage");
-
-		///<summary>
-		/// TitleLine1
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
-		[ImplementPropertyType("titleLine1")]
-		public string TitleLine1 => this.Value<string>("titleLine1");
-
-		///<summary>
-		/// TitleLine2
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
-		[ImplementPropertyType("titleLine2")]
-		public string TitleLine2 => this.Value<string>("titleLine2");
-
-		///<summary>
-		/// TopRightImage
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
-		[ImplementPropertyType("topRightImage")]
-		public global::Umbraco.Core.Models.PublishedContent.IPublishedContent TopRightImage => this.Value<global::Umbraco.Core.Models.PublishedContent.IPublishedContent>("topRightImage");
-	}
-
-	/// <summary>Category Icon</summary>
-	[PublishedModel("categoryIcon")]
-	public partial class CategoryIcon : PublishedElementModel
-	{
-		// helpers
-#pragma warning disable 0109 // new is redundant
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
-		public new const string ModelTypeAlias = "categoryIcon";
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
-		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
-		public new static IPublishedContentType GetModelContentType()
-			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
-		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<CategoryIcon, TValue>> selector)
-			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
-#pragma warning restore 0109
-
-		// ctor
-		public CategoryIcon(IPublishedElement content)
-			: base(content)
-		{ }
-
-		// properties
-
-		///<summary>
-		/// Alt Text
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
-		[ImplementPropertyType("altText")]
-		public string AltText => this.Value<string>("altText");
-
-		///<summary>
-		/// Image
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
-		[ImplementPropertyType("iconImage")]
-		public global::Umbraco.Core.Models.PublishedContent.IPublishedContent IconImage => this.Value<global::Umbraco.Core.Models.PublishedContent.IPublishedContent>("iconImage");
 	}
 
 	/// <summary>Folder</summary>
