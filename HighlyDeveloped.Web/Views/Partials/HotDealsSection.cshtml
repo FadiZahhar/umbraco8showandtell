@@ -5,10 +5,11 @@
 
 
 @{
-	var dealCards = Umbraco.Content(Guid.Parse("19cc5eee-e050-41e6-87c2-6acc96bdd0ed"))
-    .ChildrenOfType("hotDealArticle")
+	var dealCards = Umbraco.Content(Guid.Parse("1e3ebdf5-71d9-4889-96b0-ebf6a819f08c"))
+    .ChildrenOfType("newsArticle")
     .Where(x => x.IsVisible());
 }
+
 
 
 <section id="hot-deals" class="hot-deals section">
@@ -157,6 +158,4 @@
         });
     });
 </script>
-
-
 
