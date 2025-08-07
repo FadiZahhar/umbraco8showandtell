@@ -24,7 +24,7 @@
 
     var mainColorsimages = Model.Value<IEnumerable<IPublishedContent>>("colors");
     
-    var mainDescription = Model.Value<string>("description");
+    var mainDescription = Model.Value<string>("description").StripHtml();
     var washingMethod = Model.Value<string>("washingMethod");
     var material = Model.Value<string>("material");
     var madeIn = Model.Value<string>("madeIn");
@@ -84,7 +84,7 @@
                 <div class="col-12 pt-5">
                     <h4>Description</h4>
                     <p> @mainDescription </p>
-                    <p><strong>Material: </strong> @material</p>
+                    <p><strong>Material: .StripHtml()</strong> @material</p>
                     <p><strong>Washing Method: </strong>@washingMethod</p>
                     <p class="text-muted">@madeIn</p>
                 </div>
