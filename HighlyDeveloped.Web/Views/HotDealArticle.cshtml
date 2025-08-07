@@ -22,7 +22,13 @@
 
 
     var mainColorsimages = Model.Value<IEnumerable<IPublishedContent>>("colors");
-
+    
+    var mainDescription = Model.Value<string>("description");
+    var washingMethod = Model.Value<string>("washingMethod");
+    var material = Model.Value<string>("material");
+    var madeIn = Model.Value<string>("madeIn");
+    var piecesLeft = Model.Value<string>("piecesLeft");
+    
     
     
     var relatedArticles = Model.Value<IList<IPublishedContent>>("articleRelatedContent");
@@ -76,10 +82,10 @@
                 </div>
                 <div class="col-12 pt-5">
                     <h4>Description</h4>
-                    <p>Elevate your casual style with the Denim Essence Men&#39;s 4-Piece Solid Color Basic Textured Stretch T-Shirt set. Designed for comfort and versatility, these premium textured stretch tees offer a sleek fit and timeless appeal. The Denim Essence Men&#39;s 4-Piece T-Shirt set has garnered over 5,000 glowing reviews, making it a top-rated choice among casual wear enthusiasts. Available in bold red, classic black, neutral gray, and trendy mustard yellow.</p>
-                    <p><strong>Material:</strong> 100% Denim Cotton</p>
-                    <p><strong>Washing Method:</strong> Dry/Steam Wash Only</p>
-                    <p class="text-muted">Made in U.A.E</p>
+                    <p> @mainDescription </p>
+                    <p><strong>Material: </strong> @material</p>
+                    <p><strong>Washing Method: </strong>@washingMethod</p>
+                    <p class="text-muted">@madeIn</p>
                 </div>
             </div>
         </div>
