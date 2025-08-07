@@ -848,101 +848,228 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-.hero {
-    width: 100%;
-    min-height: 80vh;
+/*.hero {*/
+/*    width: 100%;*/
+/*    min-height: 80vh;*/
+/*    position: relative;*/
+/*    padding: 120px 0 60px 0;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*}*/
+
+/*    .hero h1 {*/
+/*        margin: 0;*/
+/*        font-size: 48px;*/
+/*        font-weight: 700;*/
+/*        line-height: 56px;*/
+/*    }*/
+
+/*    .hero p {*/
+/*        color: color-mix(in srgb, var(--default-color), transparent 30%);*/
+/*        margin: 5px 0 30px 0;*/
+/*        font-size: 22px;*/
+/*        line-height: 1.3;*/
+/*        font-weight: 600;*/
+/*    }*/
+
+/*    .hero .btn-get-started {*/
+/*        color: var(--contrast-color);*/
+/*        background: var(--accent-color);*/
+/*        font-family: var(--heading-font);*/
+/*        font-weight: 500;*/
+/*        font-size: 15px;*/
+/*        letter-spacing: 1px;*/
+/*        display: inline-block;*/
+/*        padding: 10px 28px 12px 28px;*/
+/*        border-radius: 50px;*/
+/*        transition: 0.5s;*/
+/*    }*/
+
+/*        .hero .btn-get-started:hover {*/
+/*            color: var(--contrast-color);*/
+/*            background: color-mix(in srgb, var(--accent-color), transparent 15%);*/
+/*        }*/
+
+/*    .hero .btn-watch-video {*/
+/*        font-size: 16px;*/
+/*        transition: 0.5s;*/
+/*        margin-left: 25px;*/
+/*        color: var(--default-color);*/
+/*        font-weight: 600;*/
+/*    }*/
+
+/*        .hero .btn-watch-video i {*/
+/*            color: var(--contrast-color);*/
+/*            font-size: 32px;*/
+/*            transition: 0.3s;*/
+/*            line-height: 0;*/
+/*            margin-right: 8px;*/
+/*        }*/
+
+/*        .hero .btn-watch-video:hover {*/
+/*            color: var(--accent-color);*/
+/*        }*/
+
+/*            .hero .btn-watch-video:hover i {*/
+/*                color: color-mix(in srgb, var(--accent-color), transparent 15%);*/
+/*            }*/
+
+/*    .hero .animated {*/
+/*        animation: up-down 2s ease-in-out infinite alternate-reverse both;*/
+/*    }*/
+
+/*@media (max-width: 640px) {*/
+/*    .hero h1 {*/
+/*        font-size: 28px;*/
+/*        line-height: 36px;*/
+/*    }*/
+
+/*    .hero p {*/
+/*        font-size: 18px;*/
+/*        line-height: 24px;*/
+/*        margin-bottom: 30px;*/
+/*    }*/
+
+/*    .hero .btn-get-started,*/
+/*    .hero .btn-watch-video {*/
+/*        font-size: 13px;*/
+/*    }*/
+/*}*/
+
+/*@keyframes up-down {*/
+/*    0% {*/
+/*        transform: translateY(10px);*/
+/*    }*/
+
+/*    100% {*/
+/*        transform: translateY(-10px);*/
+/*    }*/
+/*}*/
+@charset "UTF-8";.hero-section {
+    padding-top: 0;
+    padding-bottom: 40px
+}
+
+.hero-section .container {
+    max-width: 100%;
+    padding-left:0;
+      padding-right:0;
+}
+
+.hero-section .row {
+    min-height: 700px
+}
+
+.hero-section .col-lg-8.mb-lg-0,.hero-section .col-lg-4.d-flex.flex-column {
+    padding: 0
+}
+
+.hero-section .main-banner {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
     position: relative;
-    padding: 120px 0 60px 0;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 60px
 }
 
-    .hero h1 {
-        margin: 0;
-        font-size: 48px;
-        font-weight: 700;
-        line-height: 56px;
+.hero-section .main-banner .main-banner-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem
+}
+
+.hero-section .main-banner .main-banner-content {
+    color: #fff;
+    padding: 40px 30px
+}
+
+.hero-section .main-banner .main-banner-content p {
+    font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;
+    font-size: 2rem;
+    margin-bottom: 0
+}
+
+.hero-section .main-banner .main-banner-content p .highlight {
+    color: #f7b500
+}
+
+.hero-section .main-banner .main-banner-content .btn {
+    font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;
+    background-color: #f7b500;
+    color: #fff;
+    border: 1px solid white;
+    padding: 12px 35px;
+    font-size: 1.5rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px #f7b5004d
+}
+
+.hero-section .banner {
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden
+}
+
+.hero-section .banner.top-banner {
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.hero-section .banner.bottom-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.hero-section .banner.bottom-banner .overlay-box {
+    background-color: #f7b500;
+    padding: 16px 24px;
+    text-align: center;
+    opacity: .8
+}
+
+.hero-section .banner.bottom-banner .overlay-box h4 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #000;
+    margin: 0;
+    font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif
+}
+
+.hero-section .banner.bottom-banner .overlay-box p {
+    font-family: Lexend Exa,Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;
+    font-size: 1.25rem;
+    color: #000;
+    margin-top: 6px
+}
+
+@media (max-width: 991px) {
+    .hero-section .row {
+        flex-direction:column
     }
 
-    .hero p {
-        color: color-mix(in srgb, var(--default-color), transparent 30%);
-        margin: 5px 0 30px 0;
-        font-size: 22px;
-        line-height: 1.3;
-        font-weight: 600;
+    .hero-section .main-banner .main-banner-content {
+        padding: 20px
     }
 
-    .hero .btn-get-started {
-        color: var(--contrast-color);
-        background: var(--accent-color);
-        font-family: var(--heading-font);
-        font-weight: 500;
-        font-size: 15px;
-        letter-spacing: 1px;
-        display: inline-block;
-        padding: 10px 28px 12px 28px;
-        border-radius: 50px;
-        transition: 0.5s;
-    }
-
-        .hero .btn-get-started:hover {
-            color: var(--contrast-color);
-            background: color-mix(in srgb, var(--accent-color), transparent 15%);
-        }
-
-    .hero .btn-watch-video {
-        font-size: 16px;
-        transition: 0.5s;
-        margin-left: 25px;
-        color: var(--default-color);
-        font-weight: 600;
-    }
-
-        .hero .btn-watch-video i {
-            color: var(--contrast-color);
-            font-size: 32px;
-            transition: 0.3s;
-            line-height: 0;
-            margin-right: 8px;
-        }
-
-        .hero .btn-watch-video:hover {
-            color: var(--accent-color);
-        }
-
-            .hero .btn-watch-video:hover i {
-                color: color-mix(in srgb, var(--accent-color), transparent 15%);
-            }
-
-    .hero .animated {
-        animation: up-down 2s ease-in-out infinite alternate-reverse both;
-    }
-
-@media (max-width: 640px) {
-    .hero h1 {
-        font-size: 28px;
-        line-height: 36px;
-    }
-
-    .hero p {
-        font-size: 18px;
-        line-height: 24px;
-        margin-bottom: 30px;
-    }
-
-    .hero .btn-get-started,
-    .hero .btn-watch-video {
-        font-size: 13px;
+    .hero-section .banner {
+        height: 300px
     }
 }
 
-@keyframes up-down {
-    0% {
-        transform: translateY(10px);
+@media (min-width: 500px) and (max-width: 991px) {
+    .hero-section .col-lg-4.d-flex.flex-column {
+        flex-direction:row!important
     }
 
-    100% {
-        transform: translateY(-10px);
+    .hero-section .banner.top-banner,.hero-section .banner.bottom-banner {
+        width: 50%;
+        height: 400px
     }
 }
 

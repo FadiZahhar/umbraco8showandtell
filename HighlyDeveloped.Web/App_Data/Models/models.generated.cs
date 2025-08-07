@@ -17,14 +17,14 @@ using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 using Umbraco.ModelsBuilder.Embedded;
 
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "aa6e78f79eac4741")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "c17dfd937a39f649")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
 
 namespace Umbraco.Web.PublishedModels
 {
 	/// <summary>Home</summary>
 	[PublishedModel("home")]
-	public partial class Home : PublishedContentModel, ICallToAction, IHero, IPageContent, ISEometadata, IXmlSiteMapSettings
+	public partial class Home : PublishedContentModel, ICallToAction, IHero, IHeroSection, IPageContent, ISEometadata, IXmlSiteMapSettings
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -46,6 +46,13 @@ namespace Umbraco.Web.PublishedModels
 		{ }
 
 		// properties
+
+		///<summary>
+		/// Category Icons
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("categoryIcons")]
+		public global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.CategoryIcon> CategoryIcons => this.Value<global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.CategoryIcon>>("categoryIcons");
 
 		///<summary>
 		/// Call To Action Link
@@ -95,6 +102,62 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		[ImplementPropertyType("heroTitle")]
 		public string HeroTitle => global::Umbraco.Web.PublishedModels.Hero.GetHeroTitle(this);
+
+		///<summary>
+		/// BottomOverlayText
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("bottomOverlayText")]
+		public string BottomOverlayText => global::Umbraco.Web.PublishedModels.HeroSection.GetBottomOverlayText(this);
+
+		///<summary>
+		/// BottomOverlayTitle
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("bottomOverlayTitle")]
+		public string BottomOverlayTitle => global::Umbraco.Web.PublishedModels.HeroSection.GetBottomOverlayTitle(this);
+
+		///<summary>
+		/// BottomRightImage
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("bottomRightImage")]
+		public global::Umbraco.Core.Models.PublishedContent.IPublishedContent BottomRightImage => global::Umbraco.Web.PublishedModels.HeroSection.GetBottomRightImage(this);
+
+		///<summary>
+		/// ButtonText
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("buttonText")]
+		public string ButtonText => global::Umbraco.Web.PublishedModels.HeroSection.GetButtonText(this);
+
+		///<summary>
+		/// MainBannerImage
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("mainBannerImage")]
+		public global::Umbraco.Core.Models.PublishedContent.IPublishedContent MainBannerImage => global::Umbraco.Web.PublishedModels.HeroSection.GetMainBannerImage(this);
+
+		///<summary>
+		/// TitleLine1
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("titleLine1")]
+		public string TitleLine1 => global::Umbraco.Web.PublishedModels.HeroSection.GetTitleLine1(this);
+
+		///<summary>
+		/// TitleLine2
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("titleLine2")]
+		public string TitleLine2 => global::Umbraco.Web.PublishedModels.HeroSection.GetTitleLine2(this);
+
+		///<summary>
+		/// TopRightImage
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("topRightImage")]
+		public global::Umbraco.Core.Models.PublishedContent.IPublishedContent TopRightImage => global::Umbraco.Web.PublishedModels.HeroSection.GetTopRightImage(this);
 
 		///<summary>
 		/// Page Content Text: This will be the text message displayed on the screen
@@ -1603,6 +1666,197 @@ namespace Umbraco.Web.PublishedModels
 		{ }
 
 		// properties
+	}
+
+	// Mixin Content Type with alias "heroSection"
+	/// <summary>Hero Section</summary>
+	public partial interface IHeroSection : IPublishedContent
+	{
+		/// <summary>BottomOverlayText</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		string BottomOverlayText { get; }
+
+		/// <summary>BottomOverlayTitle</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		string BottomOverlayTitle { get; }
+
+		/// <summary>BottomRightImage</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		global::Umbraco.Core.Models.PublishedContent.IPublishedContent BottomRightImage { get; }
+
+		/// <summary>ButtonText</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		string ButtonText { get; }
+
+		/// <summary>MainBannerImage</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		global::Umbraco.Core.Models.PublishedContent.IPublishedContent MainBannerImage { get; }
+
+		/// <summary>TitleLine1</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		string TitleLine1 { get; }
+
+		/// <summary>TitleLine2</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		string TitleLine2 { get; }
+
+		/// <summary>TopRightImage</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		global::Umbraco.Core.Models.PublishedContent.IPublishedContent TopRightImage { get; }
+	}
+
+	/// <summary>Hero Section</summary>
+	[PublishedModel("heroSection")]
+	public partial class HeroSection : PublishedContentModel, IHeroSection
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new const string ModelTypeAlias = "heroSection";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<HeroSection, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public HeroSection(IPublishedContent content)
+			: base(content)
+		{ }
+
+		// properties
+
+		///<summary>
+		/// BottomOverlayText
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("bottomOverlayText")]
+		public string BottomOverlayText => GetBottomOverlayText(this);
+
+		/// <summary>Static getter for BottomOverlayText</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static string GetBottomOverlayText(IHeroSection that) => that.Value<string>("bottomOverlayText");
+
+		///<summary>
+		/// BottomOverlayTitle
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("bottomOverlayTitle")]
+		public string BottomOverlayTitle => GetBottomOverlayTitle(this);
+
+		/// <summary>Static getter for BottomOverlayTitle</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static string GetBottomOverlayTitle(IHeroSection that) => that.Value<string>("bottomOverlayTitle");
+
+		///<summary>
+		/// BottomRightImage
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("bottomRightImage")]
+		public global::Umbraco.Core.Models.PublishedContent.IPublishedContent BottomRightImage => GetBottomRightImage(this);
+
+		/// <summary>Static getter for BottomRightImage</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static global::Umbraco.Core.Models.PublishedContent.IPublishedContent GetBottomRightImage(IHeroSection that) => that.Value<global::Umbraco.Core.Models.PublishedContent.IPublishedContent>("bottomRightImage");
+
+		///<summary>
+		/// ButtonText
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("buttonText")]
+		public string ButtonText => GetButtonText(this);
+
+		/// <summary>Static getter for ButtonText</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static string GetButtonText(IHeroSection that) => that.Value<string>("buttonText");
+
+		///<summary>
+		/// MainBannerImage
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("mainBannerImage")]
+		public global::Umbraco.Core.Models.PublishedContent.IPublishedContent MainBannerImage => GetMainBannerImage(this);
+
+		/// <summary>Static getter for MainBannerImage</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static global::Umbraco.Core.Models.PublishedContent.IPublishedContent GetMainBannerImage(IHeroSection that) => that.Value<global::Umbraco.Core.Models.PublishedContent.IPublishedContent>("mainBannerImage");
+
+		///<summary>
+		/// TitleLine1
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("titleLine1")]
+		public string TitleLine1 => GetTitleLine1(this);
+
+		/// <summary>Static getter for TitleLine1</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static string GetTitleLine1(IHeroSection that) => that.Value<string>("titleLine1");
+
+		///<summary>
+		/// TitleLine2
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("titleLine2")]
+		public string TitleLine2 => GetTitleLine2(this);
+
+		/// <summary>Static getter for TitleLine2</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static string GetTitleLine2(IHeroSection that) => that.Value<string>("titleLine2");
+
+		///<summary>
+		/// TopRightImage
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("topRightImage")]
+		public global::Umbraco.Core.Models.PublishedContent.IPublishedContent TopRightImage => GetTopRightImage(this);
+
+		/// <summary>Static getter for TopRightImage</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static global::Umbraco.Core.Models.PublishedContent.IPublishedContent GetTopRightImage(IHeroSection that) => that.Value<global::Umbraco.Core.Models.PublishedContent.IPublishedContent>("topRightImage");
+	}
+
+	/// <summary>Category Icon</summary>
+	[PublishedModel("categoryIcon")]
+	public partial class CategoryIcon : PublishedElementModel
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new const string ModelTypeAlias = "categoryIcon";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<CategoryIcon, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public CategoryIcon(IPublishedElement content)
+			: base(content)
+		{ }
+
+		// properties
+
+		///<summary>
+		/// Alt Text
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("altText")]
+		public string AltText => this.Value<string>("altText");
+
+		///<summary>
+		/// Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("iconImage")]
+		public global::Umbraco.Core.Models.PublishedContent.IPublishedContent IconImage => this.Value<global::Umbraco.Core.Models.PublishedContent.IPublishedContent>("iconImage");
 	}
 
 	/// <summary>Folder</summary>

@@ -1,0 +1,41 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@{
+    var titleLine1 = Model.Value("titleLine1");
+    var titleLine2 = Model.Value("titleLine2");
+    var buttonText = Model.Value("buttonText");
+    
+	var mainBanner = Model.Value<IPublishedContent>("mainBannerImage")?.Url ?? "";
+	var topBanner = Model.Value<IPublishedContent>("topRightImage")?.Url ?? "";
+	var bottomBanner = Model.Value<IPublishedContent>("bottomRightImage")?.Url ?? "";
+
+    var bottomOverlayTitle = Model.Value("bottomOverlayTitle");
+    var bottomOverlayText = Model.Value("bottomOverlayText");
+}
+<section class="hero-section">
+    <div class="container">
+        <div class="row no-gutters">
+            <!-- Left: Main Hero Banner -->
+            <div class="col-lg-8 mb-lg-0">
+                <div class="main-banner" style="background-image:url('@mainBanner')">
+                    <div class="main-banner-content">
+                        <p>@titleLine1</p>
+                        <p>@Html.Raw(titleLine2)</p>
+                        <div class="main-banner-btn">
+                            <a href="#" class="btn">@buttonText</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Right: Top + Bottom Banners -->
+            <div class="col-lg-4 d-flex flex-column">
+                <div class="banner top-banner" style="background-image: url('@topBanner')"></div>
+                <div class="banner bottom-banner" style="background-image: url('@bottomBanner')">
+                    <div class="overlay-box">
+                        <h4>@bottomOverlayTitle</h4>
+                        <p>@bottomOverlayText</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
