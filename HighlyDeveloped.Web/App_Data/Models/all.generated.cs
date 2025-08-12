@@ -6,7 +6,7 @@ using  Umbraco.Core.Models;
 using  Umbraco.Core.Models.PublishedContent;
 using  Umbraco.Web;
 using  Umbraco.ModelsBuilder.Embedded;
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "78a43487e07c3fc5")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "b22febbef313f621")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
 
 
@@ -38,7 +38,7 @@ namespace Umbraco.Web.PublishedModels
 {
 	/// <summary>Home</summary>
 	[PublishedModel("home")]
-	public partial class Home : PublishedContentModel, ICallToAction, ICrazyOffer, IHero, IHeroSection, IPageContent, ISEometadata, IXmlSiteMapSettings
+	public partial class Home : PublishedContentModel, ICallToAction, ICrazyOffer, IHero, IHeroSection, IPageContent, ISEometadata, ITrendingBrands, IXmlSiteMapSettings
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -235,6 +235,48 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		[ImplementPropertyType("seoTitle")]
 		public string SeoTitle => global::Umbraco.Web.PublishedModels.SEometadata.GetSeoTitle(this);
+
+		///<summary>
+		/// TrendingBottomRightImage
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("trendingbottomRightImage")]
+		public global::Umbraco.Core.Models.PublishedContent.IPublishedContent TrendingbottomRightImage => global::Umbraco.Web.PublishedModels.TrendingBrands.GetTrendingbottomRightImage(this);
+
+		///<summary>
+		/// TrendingMainBanner
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("trendingmainBanner")]
+		public global::Umbraco.Core.Models.PublishedContent.IPublishedContent TrendingmainBanner => global::Umbraco.Web.PublishedModels.TrendingBrands.GetTrendingmainBanner(this);
+
+		///<summary>
+		/// TrendingMiddleRightImage
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("trendingmiddleRightImage")]
+		public global::Umbraco.Core.Models.PublishedContent.IPublishedContent TrendingmiddleRightImage => global::Umbraco.Web.PublishedModels.TrendingBrands.GetTrendingmiddleRightImage(this);
+
+		///<summary>
+		/// Trending Paragraph
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("trendingparagraph")]
+		public string Trendingparagraph => global::Umbraco.Web.PublishedModels.TrendingBrands.GetTrendingparagraph(this);
+
+		///<summary>
+		/// Trending Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("trendingtitle")]
+		public string Trendingtitle => global::Umbraco.Web.PublishedModels.TrendingBrands.GetTrendingtitle(this);
+
+		///<summary>
+		/// TrendingTopRightImage
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("trendingtopRightImage")]
+		public global::Umbraco.Core.Models.PublishedContent.IPublishedContent TrendingtopRightImage => global::Umbraco.Web.PublishedModels.TrendingBrands.GetTrendingtopRightImage(this);
 
 		///<summary>
 		/// Hide From Xml Sitemap
@@ -2241,6 +2283,127 @@ namespace Umbraco.Web.PublishedModels
 		/// <summary>Static getter for Title</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		public static string GetTitle(ICrazyOffer that) => that.Value<string>("title");
+	}
+
+	// Mixin Content Type with alias "trendingBrands"
+	/// <summary>Trending Brands</summary>
+	public partial interface ITrendingBrands : IPublishedContent
+	{
+		/// <summary>TrendingBottomRightImage</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		global::Umbraco.Core.Models.PublishedContent.IPublishedContent TrendingbottomRightImage { get; }
+
+		/// <summary>TrendingMainBanner</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		global::Umbraco.Core.Models.PublishedContent.IPublishedContent TrendingmainBanner { get; }
+
+		/// <summary>TrendingMiddleRightImage</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		global::Umbraco.Core.Models.PublishedContent.IPublishedContent TrendingmiddleRightImage { get; }
+
+		/// <summary>Trending Paragraph</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		string Trendingparagraph { get; }
+
+		/// <summary>Trending Title</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		string Trendingtitle { get; }
+
+		/// <summary>TrendingTopRightImage</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		global::Umbraco.Core.Models.PublishedContent.IPublishedContent TrendingtopRightImage { get; }
+	}
+
+	/// <summary>Trending Brands</summary>
+	[PublishedModel("trendingBrands")]
+	public partial class TrendingBrands : PublishedContentModel, ITrendingBrands
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new const string ModelTypeAlias = "trendingBrands";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<TrendingBrands, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public TrendingBrands(IPublishedContent content)
+			: base(content)
+		{ }
+
+		// properties
+
+		///<summary>
+		/// TrendingBottomRightImage
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("trendingbottomRightImage")]
+		public global::Umbraco.Core.Models.PublishedContent.IPublishedContent TrendingbottomRightImage => GetTrendingbottomRightImage(this);
+
+		/// <summary>Static getter for TrendingBottomRightImage</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static global::Umbraco.Core.Models.PublishedContent.IPublishedContent GetTrendingbottomRightImage(ITrendingBrands that) => that.Value<global::Umbraco.Core.Models.PublishedContent.IPublishedContent>("trendingbottomRightImage");
+
+		///<summary>
+		/// TrendingMainBanner
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("trendingmainBanner")]
+		public global::Umbraco.Core.Models.PublishedContent.IPublishedContent TrendingmainBanner => GetTrendingmainBanner(this);
+
+		/// <summary>Static getter for TrendingMainBanner</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static global::Umbraco.Core.Models.PublishedContent.IPublishedContent GetTrendingmainBanner(ITrendingBrands that) => that.Value<global::Umbraco.Core.Models.PublishedContent.IPublishedContent>("trendingmainBanner");
+
+		///<summary>
+		/// TrendingMiddleRightImage
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("trendingmiddleRightImage")]
+		public global::Umbraco.Core.Models.PublishedContent.IPublishedContent TrendingmiddleRightImage => GetTrendingmiddleRightImage(this);
+
+		/// <summary>Static getter for TrendingMiddleRightImage</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static global::Umbraco.Core.Models.PublishedContent.IPublishedContent GetTrendingmiddleRightImage(ITrendingBrands that) => that.Value<global::Umbraco.Core.Models.PublishedContent.IPublishedContent>("trendingmiddleRightImage");
+
+		///<summary>
+		/// Trending Paragraph
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("trendingparagraph")]
+		public string Trendingparagraph => GetTrendingparagraph(this);
+
+		/// <summary>Static getter for Trending Paragraph</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static string GetTrendingparagraph(ITrendingBrands that) => that.Value<string>("trendingparagraph");
+
+		///<summary>
+		/// Trending Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("trendingtitle")]
+		public string Trendingtitle => GetTrendingtitle(this);
+
+		/// <summary>Static getter for Trending Title</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static string GetTrendingtitle(ITrendingBrands that) => that.Value<string>("trendingtitle");
+
+		///<summary>
+		/// TrendingTopRightImage
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("trendingtopRightImage")]
+		public global::Umbraco.Core.Models.PublishedContent.IPublishedContent TrendingtopRightImage => GetTrendingtopRightImage(this);
+
+		/// <summary>Static getter for TrendingTopRightImage</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static global::Umbraco.Core.Models.PublishedContent.IPublishedContent GetTrendingtopRightImage(ITrendingBrands that) => that.Value<global::Umbraco.Core.Models.PublishedContent.IPublishedContent>("trendingtopRightImage");
 	}
 
 	/// <summary>Folder</summary>

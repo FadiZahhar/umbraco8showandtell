@@ -3834,3 +3834,123 @@ section,
     margin-bottom: 2rem;
     font-family: "Lexend Exa", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
+
+
+
+
+.trending-brands .no-gutters {
+    min-height: 700px
+}
+
+.trending-brands .col-lg-8.mb-lg-0,.trending-brands .col-lg-4.d-flex.flex-column {
+    padding: 0
+}
+
+.trending-brands .main-banner {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+
+.trending-brands .main-banner .main-banner-content {
+    color: #000;
+    padding: 40px 30px
+}
+
+.trending-brands .main-banner .main-banner-content p {
+  
+        font-size: 1rem;
+    color: #FEEBC5;
+    margin: 0 0 .25rem;
+    font-family: "Lexend Exa", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+
+.trending-brands .banner {
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden
+}
+
+.trending-brands .banner.top-banner {
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.trending-brands .banner.bottom-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.trending-brands .banner.bottom-banner .overlay-box {
+    background-color: #f7b500;
+    padding: 16px 24px;
+    text-align: center;
+    opacity: .8
+}
+
+.trending-brands .banner.bottom-banner .overlay-box h4 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #000;
+    margin: 0;
+      font-family: 'Inter';
+}
+
+.trending-brands .banner.bottom-banner .overlay-box p {
+    font-family: Lexend Exa,Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;
+    font-size: 1.25rem;
+    color: #000;
+    margin-top: 6px
+}
+
+@media (max-width: 991px) {
+    .trending-brands .row {
+        flex-direction:column
+    }
+
+    .trending-brands .main-banner .main-banner-content {
+        padding: 20px
+    }
+
+    .trending-brands .banner {
+        height: 300px
+    }
+}
+
+@media (min-width: 500px) and (max-width: 991px) {
+    .trending-brands .col-lg-4.d-flex.flex-column {
+        flex-direction:row!important
+    }
+
+    .trending-brands .banner.top-banner,.trending-brands .banner.bottom-banner,.trending-brands .banner.middle-banner {
+        width: 33.33%;
+        height: 400px
+    }
+}
+section.trending-brands h1 {
+    color: #584318;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 2rem;
+    font-family: "Lexend Exa", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+.main-banner-content h1 {
+    color: white!important;
+}
+section.trending-brands a{
+    font-size: 14px;
+    color: #584318;
+    font-family: "Lexend Exa", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    text-decoration: none;
+}

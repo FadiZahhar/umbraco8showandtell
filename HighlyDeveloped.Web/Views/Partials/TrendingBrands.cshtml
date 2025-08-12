@@ -1,0 +1,41 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@{
+    var trendingtitle = Model.Value("trendingtitle");
+    var trendingparagraph = Model.Value("trendingparagraph");
+    
+	var trendingmainBanner = Model.Value<IPublishedContent>("trendingmainBanner")?.Url ?? "";
+	var trendingtopBanner = Model.Value<IPublishedContent>("trendingtopRightImage")?.Url ?? "";
+	var trendingmiddleBanner = Model.Value<IPublishedContent>("trendingmiddleRightImage")?.Url ?? "";
+	var trendingbottomBanner = Model.Value<IPublishedContent>("trendingbottomRightImage")?.Url ?? "";
+
+}
+<section class="trending-brands">
+    
+    <div class="container">
+                <div class="row">
+            <div class="col text-start">
+                <h1>Trending Brands</h1>
+            </div>
+            <div class="col text-end">
+                <a href="/ecommerce">View All</a>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <!-- Left: Main Hero Banner -->
+            <div class="col-lg-8 mb-lg-0">
+                <div class="main-banner" style="background-image:url('@trendingmainBanner')">
+                    <div class="main-banner-content">
+                        <h1>@trendingtitle</h1>
+                        <p>@trendingparagraph</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Right: Top + Bottom Banners -->
+            <div class="col-lg-4 d-flex flex-column">
+                <div class="banner top-banner" style="background-image: url('@trendingtopBanner')"></div>
+                <div class="banner middle-banner" style="background-image: url('@trendingmiddleBanner')"></div>
+                <div class="banner bottom-banner" style="background-image: url('@trendingbottomBanner')"></div>
+            </div>
+        </div>
+    </div>
+</section>
