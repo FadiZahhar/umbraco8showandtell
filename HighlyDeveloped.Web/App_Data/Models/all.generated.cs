@@ -6,8 +6,8 @@ using  Umbraco.Core.Models;
 using  Umbraco.Core.Models.PublishedContent;
 using  Umbraco.Web;
 using  Umbraco.ModelsBuilder.Embedded;
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "c53d6fcc9b006047")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "f644464327aedb9e")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
 
 
 // FILE: models.generated.cs
@@ -38,7 +38,7 @@ namespace Umbraco.Web.PublishedModels
 {
 	/// <summary>Home</summary>
 	[PublishedModel("home")]
-	public partial class Home : PublishedContentModel, ICallToAction, IHero, IHeroSection, IPageContent, ISEometadata, IXmlSiteMapSettings
+	public partial class Home : PublishedContentModel, ICallToAction, ICrazyOffer, IHero, IHeroSection, IPageContent, ISEometadata, IXmlSiteMapSettings
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -88,6 +88,34 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		[ImplementPropertyType("callToActionTitle")]
 		public string CallToActionTitle => global::Umbraco.Web.PublishedModels.CallToAction.GetCallToActionTitle(this);
+
+		///<summary>
+		/// CheckOut
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("checkOut")]
+		public global::Umbraco.Web.Models.Link CheckOut => global::Umbraco.Web.PublishedModels.CrazyOffer.GetCheckOut(this);
+
+		///<summary>
+		/// Offer
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("offer")]
+		public string Offer => global::Umbraco.Web.PublishedModels.CrazyOffer.GetOffer(this);
+
+		///<summary>
+		/// Subject
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("subject")]
+		public string Subject => global::Umbraco.Web.PublishedModels.CrazyOffer.GetSubject(this);
+
+		///<summary>
+		/// Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("title")]
+		public string Title => global::Umbraco.Web.PublishedModels.CrazyOffer.GetTitle(this);
 
 		///<summary>
 		/// Color Overlay
@@ -2100,6 +2128,97 @@ namespace Umbraco.Web.PublishedModels
 		/// <summary>Static getter for Product Sizes Nested Content</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		public static global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.ProductSize> GetProductSizesNestedContent(IProductSizes that) => that.Value<global::System.Collections.Generic.IEnumerable<global::Umbraco.Web.PublishedModels.ProductSize>>("productSizesNestedContent");
+	}
+
+	// Mixin Content Type with alias "crazyOffer"
+	/// <summary>Crazy Offer</summary>
+	public partial interface ICrazyOffer : IPublishedContent
+	{
+		/// <summary>CheckOut</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		global::Umbraco.Web.Models.Link CheckOut { get; }
+
+		/// <summary>Offer</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		string Offer { get; }
+
+		/// <summary>Subject</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		string Subject { get; }
+
+		/// <summary>Title</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		string Title { get; }
+	}
+
+	/// <summary>Crazy Offer</summary>
+	[PublishedModel("crazyOffer")]
+	public partial class CrazyOffer : PublishedContentModel, ICrazyOffer
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new const string ModelTypeAlias = "crazyOffer";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<CrazyOffer, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public CrazyOffer(IPublishedContent content)
+			: base(content)
+		{ }
+
+		// properties
+
+		///<summary>
+		/// CheckOut
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("checkOut")]
+		public global::Umbraco.Web.Models.Link CheckOut => GetCheckOut(this);
+
+		/// <summary>Static getter for CheckOut</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static global::Umbraco.Web.Models.Link GetCheckOut(ICrazyOffer that) => that.Value<global::Umbraco.Web.Models.Link>("checkOut");
+
+		///<summary>
+		/// Offer
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("offer")]
+		public string Offer => GetOffer(this);
+
+		/// <summary>Static getter for Offer</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static string GetOffer(ICrazyOffer that) => that.Value<string>("offer");
+
+		///<summary>
+		/// Subject
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("subject")]
+		public string Subject => GetSubject(this);
+
+		/// <summary>Static getter for Subject</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static string GetSubject(ICrazyOffer that) => that.Value<string>("subject");
+
+		///<summary>
+		/// Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("title")]
+		public string Title => GetTitle(this);
+
+		/// <summary>Static getter for Title</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static string GetTitle(ICrazyOffer that) => that.Value<string>("title");
 	}
 
 	/// <summary>Folder</summary>
