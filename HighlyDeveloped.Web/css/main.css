@@ -987,9 +987,10 @@ section,
 }
 
 .hero-section .main-banner .main-banner-content p {
-    font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;
+    font-family: 'Inter';
     font-size: 2rem;
-    margin-bottom: 0
+    margin-bottom: 0;
+    font-weight: 700;
 }
 
 .hero-section .main-banner .main-banner-content p .highlight {
@@ -997,16 +998,18 @@ section,
 }
 
 .hero-section .main-banner .main-banner-content .btn {
-    font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;
+    font-family: 'Inter';
     background-color: #f7b500;
     color: #fff;
     border: 1px solid white;
     padding: 12px 35px;
     font-size: 1.5rem;
     border-radius: 6px;
-    box-shadow: 0 2px 8px #f7b5004d
+    box-shadow: 0 2px 8px #f7b5004d;
 }
-
+.hero-section .main-banner .main-banner-content .btn:hover{
+        background-color: #fcd75b;
+}
 .hero-section .banner {
     height: 50%;
     background-size: cover;
@@ -1038,7 +1041,7 @@ section,
     font-weight: 600;
     color: #000;
     margin: 0;
-    font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif
+      font-family: 'Inter';
 }
 
 .hero-section .banner.bottom-banner .overlay-box p {
@@ -3822,103 +3825,12 @@ section,
 .dropdown.login-dropdown .dropdown-toggle::after{content:none}
 .dropdown.login-dropdown .dropdown-menu{transform:none!important;top:30px!important}
 
-
-:root {
-    --primary-color: #F7B500;
-    --primary-color-light: #FCD75B;
-    --primary-color-dark: #D5A000;
-    --text-dark: #5C3D00;
-    --text-gray: #333333;
-    --text-black: #000;
-    --bg-inactive: #EDEDED;
-    --bg-inactive-dark: #DCDCDC;
-    --star-color: #FFD700;
-    --border-radius: 6px;
-    --border-radius-large: 10px;
-  
-    --font-primary: 'Lexend Exa', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    --font-secondary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  }
-  
-  .crazy-offers {
-    background-color: #fff;
-    font-family: var(--font-primary);
-  }
-  
-  .crazy-offers h2,
-  .crazy-offers h4 {
-    font-size: 1.5rem;
+.crazy-offers{background-color:#fff;font-family:"Lexend Exa","Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}.crazy-offers h2,.crazy-offers h4{font-size:1.5rem;font-weight:700;color:#5c3d00}.crazy-offers .crazy-box{border:2px solid #e0dcdc}.crazy-offers .crazy-box h4{font-weight:600;color:#000}.crazy-offers .crazy-box .get-up{font-family: 'Lexend Exa';font-size:1.8rem;font-weight:700;color:#f7b500;margin:0}.crazy-offers .crazy-box h1{font-weight:700;color:#000}.crazy-offers .crazy-box .bubble{border:2px solid #e0dcdc;padding:16px;border-radius:50%;width:85px;height:85px;margin:0;margin-right:2rem;font-size:14px;color:#000}.crazy-offers .crazy-box .check-out{background-color:#f7b500;color:#000;border:1px solid rgba(0,0,0,0);display:inline-block;transition:.4s}.crazy-offers .crazy-box .check-out:hover{background-color:#fcd75b;border:1px solid #000;color:#000}@media(max-width: 576px){.crazy-offers .crazy-box .bubble{padding:12px;width:60px;height:60px;margin-right:.5rem;font-size:12px}.crazy-offers .crazy-box h1{font-size:1.5rem}.crazy-offers .crazy-box .get-up{font-size:1.3rem}.crazy-offers h2,.crazy-offers h4{font-size:1.3rem}}
+ .crazy-offers h1 {
+    color: #584318;
+    font-size: 36px;
     font-weight: 700;
-    color: var(--text-dark);
-  }
-  
-  .crazy-offers .crazy-box {
-    border: 2px solid #e0dcdc;
-  }
-  
-  .crazy-offers .crazy-box h4 {
-    font-weight: 600;
-    color: var(--text-black);
-  }
-  
-  .crazy-offers .crazy-box .get-up {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--primary-color);
     margin: 0;
-  }
-  
-  .crazy-offers .crazy-box h1 {
-    font-weight: 700;
-    color: var(--text-black);
-  }
-  
-  .crazy-offers .crazy-box .bubble {
-    border: 2px solid #e0dcdc;
-    padding: 16px;
-    border-radius: 50%;
-    width: 85px;
-    height: 85px;
-    margin: 0;
-    margin-right: 2rem;
-    font-size: 14px;
-    color: var(--text-black);
-  }
-  
-  .crazy-offers .crazy-box .check-out {
-    background-color: var(--primary-color);
-    color: var(--text-black);
-    border: 1px solid transparent;
-    display: inline-block;
-    transition: 0.4s;
-  }
-  
-  .crazy-offers .crazy-box .check-out:hover {
-    background-color: var(--primary-color-light);
-    border: 1px solid var(--text-black);
-    color: var(--text-black);
-  }
-  
-  /* Responsive */
-  @media (max-width: 576px) {
-    .crazy-offers .crazy-box .bubble {
-      padding: 12px;
-      width: 60px;
-      height: 60px;
-      margin-right: 0.5rem;
-      font-size: 12px;
-    }
-  
-    .crazy-offers .crazy-box h1 {
-      font-size: 1.5rem;
-    }
-  
-    .crazy-offers .crazy-box .get-up {
-      font-size: 1.3rem;
-    }
-  
-    .crazy-offers h2,
-    .crazy-offers h4 {
-      font-size: 1.3rem;
-    }
-  }
+    margin-bottom: 2rem;
+    font-family: "Lexend Exa", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
