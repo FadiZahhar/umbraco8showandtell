@@ -9,3 +9,50 @@
 @Html.Partial("CategoryIconsSection")
 
 @Html.Partial("HotDealsSection")
+
+
+<section class="crazy-offers"id="CrazyOffers">
+  <div class="container">
+    <!-- Section Header -->
+    <div class="row">
+      <div class="col-12">
+        <div class="section-header">
+          <h2 class="my-4">@Model.Value("title")</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row crazy-box rounded shadow p-3 mx-1 p-lg-5" >
+      <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
+          <h4 class="mb-3 mb-lg-5" data-aos="zoom-out">@Model.Value("subject")</h4>
+          <h1 data-aos="zoom-out">Hurry up! Offer ends in</h1>
+          <h2 class="get-up mb-3 mb-lg-5" data-aos="zoom-out">@Model.Value("offer")</h2>
+          <div class="d-flex flex-row" id="countdown">
+            <p class="d-flex flex-column align-items-center justify-content-center bubble shadow" data-unit="days" data-aos="fade-up" data-aos-delay="200">
+              <span class="value">0</span>
+              <span>Days</span>
+            </p>
+            <p class="d-flex flex-column align-items-center justify-content-center bubble shadow" data-unit="hours" data-aos="fade-up" data-aos-delay="300">
+              <span class="value">0</span>
+              <span>Hours</span>
+            </p>
+            <p class="d-flex flex-column align-items-center justify-content-center bubble shadow" data-unit="minutes" data-aos="fade-up" data-aos-delay="400">
+              <span class="value">0</span>
+              <span>Mins</span>
+            </p>
+            <p class="d-flex flex-column align-items-center justify-content-center bubble shadow" data-unit="seconds" data-aos="fade-up" data-aos-delay="500">
+              <span class="value">0</span>
+              <span>Sec</span>
+            </p>
+          </div>
+          <div class="text-centerr"data-aos="zoom-in">
+            <a href="@Model.Value("checkOut")" class="check-out mt-3 mt-lg-5 py-3 px-4 rounded" >Check Out</a>
+          </div>
+          
+      </div>
+      <div class="col-12 col-lg-6 d-flex flex-column align-items-center justify-content-center">
+          <img src="@Url.Content("~/media/Shopping Cart.png")" class="img-fluid " width="418" data-aos="zoom-out"/>
+      </div>
+    </div>
+   
+  </div>
+</section>
