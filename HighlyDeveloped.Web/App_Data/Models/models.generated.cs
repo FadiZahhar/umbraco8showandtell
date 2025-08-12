@@ -17,7 +17,7 @@ using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 using Umbraco.ModelsBuilder.Embedded;
 
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "f644464327aedb9e")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "78a43487e07c3fc5")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
 
 namespace Umbraco.Web.PublishedModels
@@ -81,6 +81,13 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		[ImplementPropertyType("checkOut")]
 		public global::Umbraco.Web.Models.Link CheckOut => global::Umbraco.Web.PublishedModels.CrazyOffer.GetCheckOut(this);
+
+		///<summary>
+		/// End At
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("endAt")]
+		public global::System.DateTime EndAt => global::Umbraco.Web.PublishedModels.CrazyOffer.GetEndAt(this);
 
 		///<summary>
 		/// Offer
@@ -2124,6 +2131,10 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		global::Umbraco.Web.Models.Link CheckOut { get; }
 
+		/// <summary>End At</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		global::System.DateTime EndAt { get; }
+
 		/// <summary>Offer</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		string Offer { get; }
@@ -2172,6 +2183,17 @@ namespace Umbraco.Web.PublishedModels
 		/// <summary>Static getter for CheckOut</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		public static global::Umbraco.Web.Models.Link GetCheckOut(ICrazyOffer that) => that.Value<global::Umbraco.Web.Models.Link>("checkOut");
+
+		///<summary>
+		/// End At
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("endAt")]
+		public global::System.DateTime EndAt => GetEndAt(this);
+
+		/// <summary>Static getter for End At</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		public static global::System.DateTime GetEndAt(ICrazyOffer that) => that.Value<global::System.DateTime>("endAt");
 
 		///<summary>
 		/// Offer
