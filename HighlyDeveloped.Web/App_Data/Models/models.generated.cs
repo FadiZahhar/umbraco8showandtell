@@ -17,7 +17,7 @@ using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 using Umbraco.ModelsBuilder.Embedded;
 
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "b22febbef313f621")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "78449714c6943dfc")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
 
 namespace Umbraco.Web.PublishedModels
@@ -2037,6 +2037,13 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
 		[ImplementPropertyType("ratings")]
 		public string Ratings => this.Value<string>("ratings");
+
+		///<summary>
+		/// TagHotDealArticle
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.3")]
+		[ImplementPropertyType("tagHotDealArticle")]
+		public global::System.Collections.Generic.IEnumerable<string> TagHotDealArticle => this.Value<global::System.Collections.Generic.IEnumerable<string>>("tagHotDealArticle");
 
 		///<summary>
 		/// Title

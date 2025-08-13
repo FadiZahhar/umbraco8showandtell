@@ -1,0 +1,136 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@using Umbraco.Core.PropertyEditors.ValueConverters;
+@{ 
+    
+    var articles = Umbraco.ContentAtRoot().DescendantsOrSelfOfType("hotDealsArticles").FirstOrDefault();
+    var news = articles.Children;
+    
+    if(!string.IsNullOrEmpty(Request.QueryString["cat"]))
+    {
+        news = articles.Children.Where(w => w.Value<string[]>("tagHotDealArticle").Contains(Request.QueryString["cat"]));
+    }
+    
+    <!-- Do we need to page -->
+    <!-- What is our page size? -->
+    const int pageSize = 2;
+    
+    <!-- Calculate how may pages would there be? -->
+    var numPages = (int)Math.Ceiling((double)news.Count() / (double)pageSize);
+    
+    <!-- What is the currently selected page -->
+    var selectedPage = 1;
+    if(!string.IsNullOrEmpty(Request.QueryString["page"]))
+    {
+        int.TryParse(Request.QueryString["page"], out selectedPage);
+        
+        //Range check
+        if(selectedPage <= 0 || selectedPage > numPages)
+        {
+            selectedPage = 1;
+        }
+    }
+    
+    news = news.Skip((selectedPage - 1) * pageSize).Take(pageSize).ToList();
+    
+
+	
+	var tags = articles.Children.Select(w => w.Value<string[]>("tagHotDealArticle"));
+	var categoryList = new List<string>();
+	foreach(var tagArray in tags)
+	{
+	    foreach(var tag in tagArray){
+	        if(!categoryList.Contains(tag)){
+	            categoryList.Add(tag);
+	        }
+	    }
+	}
+}
+
+<!-- News Article -->
+
+
+<section class="popular-items">
+  <div class="container">
+    <!-- Section Header -->
+    
+    
+    <!-- Category Filter -->
+    <div class="row">
+      <div class="col-12">
+        <div class="category-filter">
+          <div class="filter-scroll">
+           
+           <!-->
+           
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Products Grid -->
+    <div class="row products-grid">
+      @foreach (var article in articles.Children)
+      {
+          var productTitle = article.Value<string>("title");
+        var price = article.Value<decimal>("newPrice");
+          var originalPrice = article.Value<decimal>("oldPrice");
+          var rating = article.Value<decimal>("ratings");
+          
+          
+          var image = article.Value<ImageCropperValue>
+                    ("productImage");
+                    var thumbUrl = image.Src + image.GetCropUrl("Thumb");
+                    
+          <div class="col product-column">
+            <div class="product-card" data-category="category">
+              <div class="product-image">
+                <img 
+                    src="@thumbUrl" 
+                    alt="productTitle" 
+                    loading="lazy" />
+                <div class="product-details">
+                  <div class="product-header">
+                    <h3 class="product-title" title="@productTitle">productTitle</h3>
+                    <div class="product-rating">
+                      <i class="fas fa-star star"></i>
+                      <span class="rating-value">@rating.ToString("0.0")</span>
+                    </div>
+                  </div>
+                  <div class="product-footer">
+                    <div class="product-price">
+                      <span class="current-price">$ @price.ToString("0.00")</span>
+                      <!--if (originalPrice > 0)-->
+                      <!--{-->
+                      <!--    <span class="original-price">$ originalPrice.ToString("0.00")</span>-->
+                      <!--}-->
+                    </div>
+                    <button 
+                        class="btn-buy"
+                        type="button"
+                        data-product-id="article.Id"
+                        aria-label="Buy productTitle">
+                        Buy
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      }
+    </div>
+
+    <!-- CTA Button -->
+    <!--if (ctaButton != null)-->
+    <!--{-->
+    <!--    <div class="row">-->
+    <!--      <div class="col-12">-->
+    <!--        <div class="cta-section">-->
+    <!--          <a href="ctaButton.Url" class="btn-view-all">-->
+    <!--            ctaButton.Name-->
+    <!--          </a>-->
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--    </div>-->
+    <!--}-->
+  </div>
+</section>
