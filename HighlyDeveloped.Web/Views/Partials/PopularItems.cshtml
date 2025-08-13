@@ -10,28 +10,11 @@
         news = articles.Children.Where(w => w.Value<string[]>("tagHotDealArticle").Contains(Request.QueryString["cat"]));
     }
     
-    <!-- Do we need to page -->
-    <!-- What is our page size? -->
-    const int pageSize = 2;
+     var selectedCat = Request.QueryString["cat"];
     
-    <!-- Calculate how may pages would there be? -->
-    var numPages = (int)Math.Ceiling((double)news.Count() / (double)pageSize);
     
-    <!-- What is the currently selected page -->
-    var selectedPage = 1;
-    if(!string.IsNullOrEmpty(Request.QueryString["page"]))
-    {
-        int.TryParse(Request.QueryString["page"], out selectedPage);
-        
-        //Range check
-        if(selectedPage <= 0 || selectedPage > numPages)
-        {
-            selectedPage = 1;
-        }
-    }
-    
-    news = news.Skip((selectedPage - 1) * pageSize).Take(pageSize).ToList();
-    
+    // Take only the first 15 articles if they exist
+    news = news.Take(15).ToList();
 
 	
 	var tags = articles.Children.Select(w => w.Value<string[]>("tagHotDealArticle"));
@@ -49,7 +32,7 @@
 <!-- News Article -->
 
 
-<section class="popular-items">
+<section class="popular-items"  id="popular-items">
   <div class="container popularItems__head">
     <!-- Section Header -->
    
@@ -65,20 +48,31 @@
     
     <!-- Category Filter -->
     <div class="row">
-      <div class="col-12">
+    <div class="col-12">
         <div class="category-filter">
-          <div class="filter-scroll">
-           
-           <!-- -->
-           
-          </div>
+            <div class="filter-scroll">
+                 @foreach (var category in categoryList.OrderBy(o => o))
+    {
+        var isActive = string.IsNullOrEmpty(selectedCat)
+            ? category == categoryList.First()
+            : category == selectedCat;
+
+        <a href="@Model.Url?cat=@category"
+           class="filter-btn @(isActive ? "active" : "")"
+           data-filter="@category"
+           aria-label="Filter by @category">
+           @category
+        </a>
+    }
+            </div>
         </div>
-      </div>
     </div>
+</div>
+
     
     <!-- Products Grid -->
     <div class="row products-grid">
-      @foreach (var article in articles.Children)
+      @foreach (var article in news)
       {
           var productTitle = article.Value<string>("title");
         var price = article.Value<decimal>("newPrice");
@@ -129,17 +123,50 @@
     </div>
 
     <!-- CTA Button -->
-    <!--if (ctaButton != null)-->
-    <!--{-->
-    <!--    <div class="row">-->
-    <!--      <div class="col-12">-->
-    <!--        <div class="cta-section">-->
-    <!--          <a href="ctaButton.Url" class="btn-view-all">-->
-    <!--            ctaButton.Name-->
-    <!--          </a>-->
-    <!--        </div>-->
-    <!--      </div>-->
-    <!--    </div>-->
-    <!--}-->
+  
+        <div class="row">
+          <div class="col-12">
+            <div class="cta-section">
+              <a href="ctaButton.Url" class="btn-view-all">
+                View All
+              </a>
+            </div>
+          </div>
+        </div>
+
   </div>
 </section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".filter-btn");
+
+    buttons.forEach(btn => {
+        btn.addEventListener("click", function () {
+            // Remove active from all buttons
+            buttons.forEach(b => b.classList.remove("active"));
+            // Add active to clicked button
+            this.classList.add("active");
+        });
+    });
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    // Scroll to the popular-items section
+    const popularSection = document.getElementById("popular-items");
+    if (popularSection) {
+        popularSection.scrollIntoView({ behavior: "smooth" });
+    }
+
+    // Filter buttons behavior
+    const buttons = document.querySelectorAll(".filter-btn");
+    buttons.forEach(btn => {
+        btn.addEventListener("click", function () {
+            buttons.forEach(b => b.classList.remove("active"));
+            this.classList.add("active");
+        });
+    });
+});
+</script>
