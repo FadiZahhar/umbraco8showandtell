@@ -50,9 +50,18 @@
 
 
 <section class="popular-items">
-  <div class="container">
+  <div class="container popularItems__head">
     <!-- Section Header -->
-    
+   
+        <div class="row">
+      <div class="col-12">
+        <div class="section-header">
+          <h2>Popular Items</h2>
+          <a href={data.ctaButton.url} class="view-all">View All</a>
+        </div>
+      </div>
+    </div>
+  
     
     <!-- Category Filter -->
     <div class="row">
@@ -60,7 +69,7 @@
         <div class="category-filter">
           <div class="filter-scroll">
            
-           <!-->
+           <!-- -->
            
           </div>
         </div>
@@ -90,7 +99,7 @@
                     loading="lazy" />
                 <div class="product-details">
                   <div class="product-header">
-                    <h3 class="product-title" title="@productTitle">productTitle</h3>
+                    <h3 class="product-title" title="@productTitle">@productTitle</h3>
                     <div class="product-rating">
                       <i class="fas fa-star star"></i>
                       <span class="rating-value">@rating.ToString("0.0")</span>
